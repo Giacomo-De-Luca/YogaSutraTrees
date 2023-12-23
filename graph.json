@@ -1,0 +1,1005 @@
+{
+  "elements": {
+    "nodes": [
+      {
+        "data": {
+          "id": "I.1",
+          "label": "atha yogānuśāsanam",
+          "Translation_Bryant": "Now, the teachings of yoga [are presented]."
+        }
+      },
+      {
+        "data": {
+          "id": "I.2",
+          "label": "yogaś citta-vṛtti-nirodha",
+          "Translation_Bryant": "Yoga is the stilling of the changing states of the mind."
+        }
+      },
+      {
+        "data": {
+          "id": "I.3",
+          "label": "tadā draṣṭuḥ svarūpe ‘vasthānam",
+          "Translation_Bryant": "When that is accomplished, the seer abides in its own true nature."
+        }
+      },
+      {
+        "data": {
+          "id": "I.4",
+          "label": "vṛtti-sārūpyam itaratra",
+          "Translation_Bryant": "Otherwise, at other times, [the seer] is absorbed in the changing states [of the mind]."
+        }
+      },
+      {
+        "data": {
+          "id": "I.5",
+          "label": "vṛttayaḥ pañcatayyaḥ kliṣṭākliṣṭāḥ",
+          "Translation_Bryant": "There are five kinds of changing states of the mind, and they are either detrimental or nondetrimental [to the practice of yoga]."
+        }
+      },
+      {
+        "data": {
+          "id": "I.6",
+          "label": "pramāṇa-viparyaya-vikalpa-nidrā-smṛtayaḥ",
+          "Translation_Bryant": "[These five vṛttis are] right knowledge, error, imagination, sleep, and memory."
+        }
+      },
+      {
+        "data": {
+          "id": "I.7",
+          "label": "pratyakṣānumānāgamāḥ pramāṇāni",
+          "Translation_Bryant": "Right knowledge consists of sense perception, logic, and verbal testimony."
+        }
+      },
+      {
+        "data": {
+          "id": "I.8",
+          "label": "viparyayo mithyā-jñānam atad-rūpa-pratiṣṭham",
+          "Translation_Bryant": "Error is false knowledge stemming from the incorrect apprehension [of something]."
+        }
+      },
+      {
+        "data": {
+          "id": "I.9",
+          "label": "śabda-jñānānupātī vastu-śūnyo vikalpaḥ",
+          "Translation_Bryant": "Metaphor consists of the usage of words that are devoid of an actual object."
+        }
+      },
+      {
+        "data": {
+          "id": "I.10",
+          "label": "abhāva-pratyayālambanā vṛttir nidrā",
+          "Translation_Bryant": "Deep sleep is that state of mind which is based on an absence [of any content]."
+        }
+      },
+      {
+        "data": {
+          "id": "I.11",
+          "label": "anubhūta-viṣayāsampramoṣaḥ smṛtiḥ",
+          "Translation_Bryant": "Memory is the retention of [images of] sense objects that have been experienced."
+        }
+      },
+      {
+        "data": {
+          "id": "I.12",
+          "label": "abhyāsa-vairāgyābhyāṁ tan-nirodhaḥ",
+          "Translation_Bryant": "[The vṛtti states of mind] are stilled by practice and dispassion."
+        }
+      },
+      {
+        "data": {
+          "id": "I.13",
+          "label": "tatra sthitau yatno ‘bhyāsaḥ",
+          "Translation_Bryant": "From these, practice is the effort to be fixed in concentrating the mind."
+        }
+      },
+      {
+        "data": {
+          "id": "I.14",
+          "label": "sa tu dīrgha-kāla-nairantarya-satkārāsevito dṛḍha-bhūmiḥ",
+          "Translation_Bryant": "Practice becomes firmly established when it has been cultivated uninterruptedly and with devotion over a prolonged period of time."
+        }
+      },
+      {
+        "data": {
+          "id": "I.15",
+          "label": "dṛṣṭānuśravika-viṣaya-vitṛṣṇasya vaśīkāra-saṁjñā vairāgyam",
+          "Translation_Bryant": "Dispassion is the controlled consciousness of one who is without craving for sense objects, whether these are actually perceived, or described [in scripture]."
+        }
+      },
+      {
+        "data": {
+          "id": "I.16",
+          "label": "tat paraṁ puruṣa-khyāter guṇa-vaitṛṣṇyam",
+          "Translation_Bryant": "Higher than renunciation is indifference to the guṇas [themselves]. This stems from perception of the […]"
+        }
+      },
+      {
+        "data": {
+          "id": "I.17",
+          "label": "vitarka-vicārānandāsmitā-rūpānugamāt samprajñātaḥ",
+          "Translation_Bryant": "Samprajñāta [samādhi] consists of [the consecutive] mental stages of absorption with physical awareness, absorption with subtle awareness, absorption with bliss, and absorption with the sense of I-ness."
+        }
+      },
+      {
+        "data": {
+          "id": "I.18",
+          "label": "virāma-pratyayābhyāsa-pūrvaḥ saṁskāra-śeṣo ‘nyaḥ",
+          "Translation_Bryant": "The other samādhi [asamprajñāta-samādhi] is preceded by cultivating the determination to terminate [all thoughts]. [In this state] only latent impressions remain."
+        }
+      },
+      {
+        "data": {
+          "id": "I.19",
+          "label": "bhava-pratyayo videha-prakṛti-layānām",
+          "Translation_Bryant": "For [some], those who are unembodied and those who are merged in matter, [the state of samprajñāta is characterized] by absorption in [subtle] states of prakṛti."
+        }
+      },
+      {
+        "data": {
+          "id": "I.20",
+          "label": "śraddhā-vīrya-smṛti-samādhi-prajñā-pūrvaka itareṣām",
+          "Translation_Bryant": "[But] for others, [the state where only subconscious impressions remain] is preceded by faith, vigor, memory, samādhi absorption, and discernment."
+        }
+      },
+      {
+        "data": {
+          "id": "I.21",
+          "label": "tīvra-saṁvegānām āsannaḥ",
+          "Translation_Bryant": "[This state of samprajñāta] is near for those who apply themselves intensely."
+        }
+      },
+      {
+        "data": {
+          "id": "I.22",
+          "label": "mṛdu-madhyādhimātratvāt tato ‘pi viśeṣaḥ",
+          "Translation_Bryant": "Even among these, there is further differentiation [of this intensity into degrees of] mild, mediocre, and ardent."
+        }
+      },
+      {
+        "data": {
+          "id": "I.23",
+          "label": "Īśvara-praṇidhānād vā",
+          "Translation_Bryant": "Or, [this previously mentioned state is attainable] from devotion to the Lord."
+        }
+      },
+      {
+        "data": {
+          "id": "I.24",
+          "label": "kleśa-karma-vipākāśayair aparāmṛṣṭaḥ puruṣa-viśeṣa Īśvaraḥ",
+          "Translation_Bryant": "The Lord is a special soul[…]"
+        }
+      },
+      {
+        "data": {
+          "id": "I.25",
+          "label": "tatra niratiśāyam sarvajña-bījam",
+          "Translation_Bryant": "In him, the seed of omniscience is unsurpassed."
+        }
+      },
+      {
+        "data": {
+          "id": "I.26",
+          "label": "pūrveṣām api guruḥ kālenānavacchedāt",
+          "Translation_Bryant": "Īśvara was also the teacher of the ancients, because he is not limited by Time."
+        }
+      },
+      {
+        "data": {
+          "id": "I.27",
+          "label": "tasya vācakaḥ praṇavaḥ",
+          "Translation_Bryant": "The name designating him is the mystical syllable oṁ."
+        }
+      },
+      {
+        "data": {
+          "id": "I.28",
+          "label": "taj-japas tad-artha-bhāvanam",
+          "Translation_Bryant": "Its repetition and the contemplation of its meaning [should be performed]."
+        }
+      },
+      {
+        "data": {
+          "id": "I.29",
+          "label": "tataḥ pratyak-cetanādhigamo ‘py antarāyābhāvaś ca",
+          "Translation_Bryant": "From this comes the realization of the inner consciousness and freedom from all disturbances."
+        }
+      },
+      {
+        "data": {
+          "id": "I.30",
+          "label": "vyādhi-styāna-saṁśaya-pramādālasyāvirati-bhrānti-darśanālabdha-bhūmikatvānavasthitatvāni citta-vikṣepās te ‘ntarāyāḥ",
+          "Translation_Bryant": "These disturbances are disease, idleness, doubt, carelessness, sloth, lack of detachment, misapprehension, failure to attain a base for concentration, and instability. They are distractions for the mind."
+        }
+      },
+      {
+        "data": {
+          "id": "I.31",
+          "label": "duḥkha-daurmanasyāṅgam-ejayatva-śvāsa-praśvāsā vikṣepa-saha-bhuvaḥ",
+          "Translation_Bryant": "Suffering, dejection, trembling, inhalation, and exhalation accompany the distractions."
+        }
+      },
+      {
+        "data": {
+          "id": "I.32",
+          "label": "tat-pratiṣedhārtham eka-tattvābhyāsaḥ",
+          "Translation_Bryant": "Practice [of fixing the mind] on one object [should be performed] in order to eliminate these disturbances."
+        }
+      },
+      {
+        "data": {
+          "id": "I.33",
+          "label": "maitrī-karuṇā-muditopekṣaṇāṁ sukha-duḥkha-puṇyāpuṇya-viṣayāṇāṁ bhāvanātas citta-prasādanam",
+          "Translation_Bryant": "By cultivating an attitude of friendship toward those who are happy, compassion toward those in distress; joy toward those who are virtuous, and equanimity toward those who are non-virtuous, lucidity arises in the mind."
+        }
+      },
+      {
+        "data": {
+          "id": "I.34",
+          "label": "pracchardana-vidhāraṇābhyāṁ vā prāṇasya",
+          "Translation_Bryant": "Or [stability of mind is gained] by exhaling and retaining the breath."
+        }
+      },
+      {
+        "data": {
+          "id": "I.35",
+          "label": "viṣayavatī vā pravṛttir utpannā manasaḥ sthiti-nibandhanī",
+          "Translation_Bryant": "Or else, focus on a sense object arises, and this causes steadiness of the mind."
+        }
+      },
+      {
+        "data": {
+          "id": "I.36",
+          "label": "viśokā vā jyotiṣmatī",
+          "Translation_Bryant": "Or [steadiness of mind is gained when] the mind is pain-free and luminous."
+        }
+      },
+      {
+        "data": {
+          "id": "I.37",
+          "label": "vīta-rāga-viṣayaṁ vā cittam",
+          "Translation_Bryant": "Or [the mind becomes steady when it has] one who is free from desire as its object."
+        }
+      },
+      {
+        "data": {
+          "id": "I.38",
+          "label": "svapna-nidrā-jñānālambanaṁ vā",
+          "Translation_Bryant": "Or [the mind can become steady when it has] the knowledge attained from sleep and dreams as its support."
+        }
+      },
+      {
+        "data": {
+          "id": "I.39",
+          "label": "yathābhimata-dhyānād vā",
+          "Translation_Bryant": "Or [steadiness of the mind is attained] from meditation upon anything of one’s inclination."
+        }
+      },
+      {
+        "data": {
+          "id": "I.40",
+          "label": "paramāṇu-parama-mahattvānto ‘sya vaśīkaraḥ",
+          "Translation_Bryant": "The yogī’s mastery extends from the smallest particle of matter to the totality of matter."
+        }
+      },
+      {
+        "data": {
+          "id": "I.41",
+          "label": "kṣīṇa-vṛtter abhijātasyeva maṇer grahītṛ-grahaṇa-grāhyeṣu tat-stha-tad-añjanatā samāpattiḥ",
+          "Translation_Bryant": "Samāpatti, complete absorption of the mind when it is free from its vṛttis, occurs when the mind becomes just like a transparent jewel, taking the form of whatever object is placed before it, whether the object be the knower, the instrument of knowledge, or the object of knowledge."
+        }
+      },
+      {
+        "data": {
+          "id": "I.42",
+          "label": "tatra śabdārtha-jñāna-vikalpaiḥ saṅkīrṇā savitarkā-samāpattiḥ",
+          "Translation_Bryant": "In this stage, savitarka-samāpatti, “samādhi absorption with physical awareness” is intermixed with the notions of word, meaning, and idea."
+        }
+      },
+      {
+        "data": {
+          "id": "I.43",
+          "label": "smṛti-pariśuddhau svarūpa-śūnyevārtha-mātra-nirbhāsā nirvitarkā",
+          "Translation_Bryant": "Nirvitarka [samāpatti], “absorption without conceptualization,” occurs when memory has been purged and the mind is empty, as it were, of its own [reflective] nature. Now only the object [of meditation] shines forth [in its own right]."
+        }
+      },
+      {
+        "data": {
+          "id": "I.44",
+          "label": "etayaiva savicārā nirvicārā ca sūkṣma-viṣayā vyākhyātā",
+          "Translation_Bryant": "The states of samādhi with “subtle awareness” and without “subtle awareness,” whose objects of focus are the subtle nature [of things], are explained in the same manner."
+        }
+      },
+      {
+        "data": {
+          "id": "I.45",
+          "label": "sūkṣma-viṣayatvaṁ cāliṅga-paryavasānam",
+          "Translation_Bryant": "The subtle nature of things extends all the way up to prakṛti."
+        }
+      },
+      {
+        "data": {
+          "id": "I.46",
+          "label": "tā eva sabījaḥ samādhiḥ",
+          "Translation_Bryant": "These above mentioned samāpatti states are [known as] samādhi meditative absorption “with seed.”"
+        }
+      },
+      {
+        "data": {
+          "id": "I.47",
+          "label": "nirvicāra-vaiśāradye ‘dhyātma-prasādaḥ",
+          "Translation_Bryant": "Upon attaining the clarity of nirvicāra-samādhi, there is lucidity of the inner self."
+        }
+      },
+      {
+        "data": {
+          "id": "I.48",
+          "label": "ṛtam-bharā tatra prajñā",
+          "Translation_Bryant": "In that state, there is truth-bearing wisdom."
+        }
+      },
+      {
+        "data": {
+          "id": "I.49",
+          "label": "śrutānumāna-prajñābhyām anya-viṣayā viśeṣ ārthatvāt",
+          "Translation_Bryant": "It [seedless samādhi] has a different focus from that of inference and sacred scripture, because it has the particularity of things as its object."
+        }
+      },
+      {
+        "data": {
+          "id": "I.50",
+          "label": "taj-jaḥ saṁskāro ‘nya-saṁskāra-pratibandhī",
+          "Translation_Bryant": "The saṁskāras born out of that [truth-bearing wisdom] obstruct other saṁskāras [from emerging]."
+        }
+      },
+      {
+        "data": {
+          "id": "I.51",
+          "label": "tasyāpi nirodhe sarva-nirodhān nirbījaḥ samādhiḥ",
+          "Translation_Bryant": "Upon the cessation of even those [truth-bearing saṁskāras], nirbīja-samādhi, seedless meditative absorption, ensues."
+        }
+      }
+    ],
+    "edges": [
+      {
+        "data": {
+          "source": "I.1",
+          "target": "I.2",
+          "id": "169f6755-5a6f-4c2e-ac5e-124649bcb8d7"
+        }
+      },
+      {
+        "data": {
+          "source": "I.2",
+          "target": "I.3",
+          "id": "7f6171e1-3c8f-4fb5-828f-0c259ebc6edd"
+        }
+      },
+      {
+        "data": {
+          "source": "I.3",
+          "target": "I.4",
+          "id": "52b53d3a-2227-4090-92b5-cea3251dcffc"
+        }
+      },
+      {
+        "data": {
+          "source": "I.4",
+          "target": "I.5",
+          "id": "b01d9c20-cad2-496e-9bba-93aa1f85980f"
+        }
+      },
+      {
+        "data": {
+          "source": "I.5",
+          "target": "I.6",
+          "id": "0e971a41-c98a-4993-b20e-4be245985d04"
+        }
+      },
+      {
+        "data": {
+          "source": "I.6",
+          "target": "I.7",
+          "id": "cfe6da6c-7275-4480-85c9-500db3b9abb6"
+        }
+      },
+      {
+        "data": {
+          "source": "I.6",
+          "target": "I.8",
+          "id": "ccd3a7af-324d-41e3-9083-757ae6fb1519"
+        }
+      },
+      {
+        "data": {
+          "source": "I.6",
+          "target": "I.9",
+          "id": "172caf48-402a-4ea8-a74d-89b8b4ebbc6f"
+        }
+      },
+      {
+        "data": {
+          "source": "I.6",
+          "target": "I.10",
+          "id": "ba131c43-67e5-44a2-81d4-d4f3a8ea9b5a"
+        }
+      },
+      {
+        "data": {
+          "source": "I.6",
+          "target": "I.11",
+          "id": "6440d3cc-9248-4509-ac3a-7ce9507ab1e3"
+        }
+      },
+      {
+        "data": {
+          "source": "I.5",
+          "target": "I.12",
+          "id": "b2a098cd-5969-4a74-891d-aa3cf981c049"
+        }
+      },
+      {
+        "data": {
+          "source": "I.12",
+          "target": "I.13",
+          "id": "df1377a4-2dca-49ba-aab3-203027842061"
+        }
+      },
+      {
+        "data": {
+          "source": "I.12",
+          "target": "I.15",
+          "id": "9e3b64b9-e63a-4e65-b909-8e2ba31b97ac"
+        }
+      },
+      {
+        "data": {
+          "source": "I.15",
+          "target": "I.16",
+          "id": "769ff2a2-e660-4428-b159-d6a60f633dff"
+        }
+      },
+      {
+        "data": {
+          "source": "I.13",
+          "target": "I.14",
+          "id": "8e0922af-911b-46f9-8e95-1c1b2795fcc5"
+        }
+      },
+      {
+        "data": {
+          "source": "I.3",
+          "target": "I.17",
+          "id": "7dc21dae-5d96-470c-9244-bced49364e20"
+        }
+      },
+      {
+        "data": {
+          "source": "I.17",
+          "target": "I.18",
+          "id": "bfc8b2b6-3077-44b8-94ff-108d8d77f671"
+        }
+      },
+      {
+        "data": {
+          "source": "I.18",
+          "target": "I.19",
+          "id": "5508c182-3564-4b2e-91ec-24d4038a3432"
+        }
+      },
+      {
+        "data": {
+          "source": "I.17",
+          "target": "I.19",
+          "id": "9bae155b-f6b8-4ccf-913c-7c5d34badfd2"
+        }
+      },
+      {
+        "data": {
+          "source": "I.18",
+          "target": "I.20",
+          "id": "5cf7d0f9-6bff-4e23-bfea-8769adf43321"
+        }
+      },
+      {
+        "data": {
+          "source": "I.19",
+          "target": "I.20",
+          "id": "23929393-c7b5-4587-8978-eed19468bc59"
+        }
+      },
+      {
+        "data": {
+          "source": "I.20",
+          "target": "I.21",
+          "id": "f1b458c6-7a63-46c2-b3f7-a68e5937f874"
+        }
+      },
+      {
+        "data": {
+          "source": "I.21",
+          "target": "I.22",
+          "id": "13872086-0380-455f-94d0-b76cf933ad8a"
+        }
+      },
+      {
+        "data": {
+          "source": "I.17",
+          "target": "I.23",
+          "id": "016fe8d3-f070-4e8d-84e3-34c9b8088202"
+        }
+      },
+      {
+        "data": {
+          "source": "I.23",
+          "target": "I.24",
+          "id": "757f6910-78d9-402c-8b72-2a6393563913"
+        }
+      },
+      {
+        "data": {
+          "source": "I.24",
+          "target": "I.25",
+          "id": "2adf87cb-99cf-47f5-af87-fe6d7326bcf7"
+        }
+      },
+      {
+        "data": {
+          "source": "I.25",
+          "target": "I.26",
+          "id": "88a46c4b-d913-40ea-aa5a-3390d47b6ca1"
+        }
+      },
+      {
+        "data": {
+          "source": "I.26",
+          "target": "I.28",
+          "id": "93561d84-da79-4e13-ac16-6e77560c3dc9"
+        }
+      },
+      {
+        "data": {
+          "source": "I.23",
+          "target": "I.25",
+          "id": "a724e583-5476-4b09-b6af-582f8ff03d7d"
+        }
+      },
+      {
+        "data": {
+          "source": "I.23",
+          "target": "I.26",
+          "id": "b5fbeaea-f39b-42e4-9e7a-0c48a9839625"
+        }
+      },
+      {
+        "data": {
+          "source": "I.24",
+          "target": "I.28",
+          "id": "b7b02991-1a0e-4398-b838-16f3c3e14f33"
+        }
+      },
+      {
+        "data": {
+          "source": "I.25",
+          "target": "I.28",
+          "id": "85ec5631-b0ae-471f-924f-cd4951714db2"
+        }
+      },
+      {
+        "data": {
+          "source": "I.28",
+          "target": "I.27",
+          "id": "a3b567f7-38a7-4346-a1a1-8d3c27a41aa9"
+        }
+      },
+      {
+        "data": {
+          "source": "I.17",
+          "target": "I.29",
+          "id": "40897611-9477-423c-aff3-f8a3f34496a3"
+        }
+      },
+      {
+        "data": {
+          "source": "I.29",
+          "target": "I.30",
+          "id": "0d09f349-5737-4c87-ba15-8523a1b14692"
+        }
+      },
+      {
+        "data": {
+          "source": "I.30",
+          "target": "I.31",
+          "id": "4d697da2-3b72-472e-a6d2-1a7991295651"
+        }
+      },
+      {
+        "data": {
+          "source": "I.30",
+          "target": "I.32",
+          "id": "8929d135-5ac7-496a-879f-99c872818958"
+        }
+      },
+      {
+        "data": {
+          "source": "I.30",
+          "target": "I.34",
+          "id": "b53e14fb-0254-4413-902b-322fce25d52b"
+        }
+      },
+      {
+        "data": {
+          "source": "I.30",
+          "target": "I.35",
+          "id": "fad1b6e2-c91e-4404-87c7-275981345a6c"
+        }
+      },
+      {
+        "data": {
+          "source": "I.30",
+          "target": "I.36",
+          "id": "20a7f75b-0f1d-4266-b61a-105a7523b04d"
+        }
+      },
+      {
+        "data": {
+          "source": "I.30",
+          "target": "I.33",
+          "id": "d34e42e3-0715-4f2d-8e5a-09d2a4b28649"
+        }
+      },
+      {
+        "data": {
+          "source": "I.30",
+          "target": "I.37",
+          "id": "8fdc162d-aa03-4aae-91b9-8e612f60ef51"
+        }
+      },
+      {
+        "data": {
+          "source": "I.30",
+          "target": "I.39",
+          "id": "17729783-8cc5-4323-ae09-ff6b1d40cbb9"
+        }
+      },
+      {
+        "data": {
+          "source": "I.30",
+          "target": "I.38",
+          "id": "bc2b96c6-6023-446a-8ef5-6186d41ec9ae"
+        }
+      },
+      {
+        "data": {
+          "source": "I.17",
+          "target": "I.41",
+          "id": "2780af67-c22c-4b8e-b3aa-b59c8894913a"
+        }
+      },
+      {
+        "data": {
+          "source": "I.41",
+          "target": "I.42",
+          "id": "c11705e4-cbff-432c-a280-3e4201f2a8ce"
+        }
+      },
+      {
+        "data": {
+          "source": "I.41",
+          "target": "I.43",
+          "id": "d722662b-c1a2-4b20-974d-e376ad42088a"
+        }
+      },
+      {
+        "data": {
+          "source": "I.41",
+          "target": "I.44",
+          "id": "15049bfc-2f59-4ba7-8ac0-c1c8209d814c"
+        }
+      },
+      {
+        "data": {
+          "source": "I.39",
+          "target": "I.40",
+          "id": "2888968c-dcb4-4488-8899-9db8350df9ee"
+        }
+      },
+      {
+        "data": {
+          "source": "I.44",
+          "target": "I.45",
+          "id": "065af23a-d362-4529-9229-769d68a5fb46"
+        }
+      },
+      {
+        "data": {
+          "source": "I.44",
+          "target": "I.46",
+          "id": "f568dc6a-a18b-4eaa-9417-7c67ddad8a76"
+        }
+      },
+      {
+        "data": {
+          "source": "I.43",
+          "target": "I.46",
+          "id": "dd42c843-7463-4b1a-a465-1987876d7aa8"
+        }
+      },
+      {
+        "data": {
+          "source": "I.42",
+          "target": "I.46",
+          "id": "f4441133-9fdb-45c3-906f-97790908ba18"
+        }
+      },
+      {
+        "data": {
+          "source": "I.46",
+          "target": "I.17",
+          "id": "702655be-9030-4e01-982f-d7e0d2618ab6"
+        }
+      },
+      {
+        "data": {
+          "source": "I.41",
+          "target": "I.47",
+          "id": "e2838376-60fd-4494-b0ae-94ffcf344b7e"
+        }
+      },
+      {
+        "data": {
+          "source": "I.51",
+          "target": "I.50",
+          "id": "6c3af9e8-0b89-4cec-b762-3b362f42381d"
+        }
+      },
+      {
+        "data": {
+          "source": "I.35",
+          "target": "I.30",
+          "id": "deed6763-fba0-49d9-b31d-ce468d457695"
+        }
+      },
+      {
+        "data": {
+          "source": "I.50",
+          "target": "I.49",
+          "id": "ef60e8b6-6d8b-433d-98c9-d8adb799637f"
+        }
+      },
+      {
+        "data": {
+          "source": "I.50",
+          "target": "I.49",
+          "id": "8055887a-4b15-4a9b-b3db-60f4c2902615"
+        }
+      },
+      {
+        "data": {
+          "source": "I.49",
+          "target": "I.48",
+          "id": "cf4cc52c-0e6e-4c83-bc91-e9403cb5de9d"
+        }
+      },
+      {
+        "data": {
+          "source": "I.48",
+          "target": "I.47",
+          "id": "2cae0b60-5015-4b0e-b82f-72e4e550d8e2"
+        }
+      },
+      {
+        "data": {
+          "source": "I.47",
+          "target": "I.44",
+          "id": "0d7db610-4a1a-48de-b82d-860bbd9aed27"
+        }
+      }
+    ]
+  },
+  "positions": {
+    "I.1": {
+      "x": -760.9276908807979,
+      "y": -90.43887343930434
+    },
+    "I.2": {
+      "x": -590.0780429002166,
+      "y": -92.3658011463424
+    },
+    "I.3": {
+      "x": -434.22250241117854,
+      "y": -94.72034161933738
+    },
+    "I.4": {
+      "x": -431.15983378262916,
+      "y": 14.714119205860547
+    },
+    "I.5": {
+      "x": -284.79959695711796,
+      "y": -110.02411940360003
+    },
+    "I.6": {
+      "x": -88.32366812122216,
+      "y": -112.33781094782144
+    },
+    "I.7": {
+      "x": 89.80105278986824,
+      "y": -229.0751321998577
+    },
+    "I.8": {
+      "x": 91.12131300234284,
+      "y": -187.28290348552974
+    },
+    "I.9": {
+      "x": 78.63577857127524,
+      "y": -118.57193035774253
+    },
+    "I.10": {
+      "x": 93.36130949101675,
+      "y": -46.86741624667381
+    },
+    "I.11": {
+      "x": 105.8210759232695,
+      "y": 5.987081966562913
+    },
+    "I.12": {
+      "x": -88.51030252292897,
+      "y": 82.78215505030983
+    },
+    "I.13": {
+      "x": 120.20284126609093,
+      "y": 67.35103325184558
+    },
+    "I.14": {
+      "x": 375.40912732230237,
+      "y": 69.41290311243075
+    },
+    "I.15": {
+      "x": 117.71861679133217,
+      "y": 123.24851072824367
+    },
+    "I.16": {
+      "x": 368.5777360618989,
+      "y": 134.910566250545
+    },
+    "I.17": {
+      "x": -446.06542519408214,
+      "y": 186.25177510297664
+    },
+    "I.18": {
+      "x": -161.32191582768712,
+      "y": 193.68861290568853
+    },
+    "I.19": {
+      "x": -170.05537846836293,
+      "y": 262.1426567259914
+    },
+    "I.20": {
+      "x": 109.20707127024457,
+      "y": 198.90498218797958
+    },
+    "I.21": {
+      "x": 341.6473343039087,
+      "y": 203.06892336472418
+    },
+    "I.22": {
+      "x": 505.24656398245384,
+      "y": 202.6920972744945
+    },
+    "I.23": {
+      "x": -167.23109927884116,
+      "y": 348.8175342373618
+    },
+    "I.24": {
+      "x": 132.6908286151063,
+      "y": 277.8193266515572
+    },
+    "I.25": {
+      "x": 127.48666193366981,
+      "y": 343.4339352412298
+    },
+    "I.26": {
+      "x": 125.80353503451673,
+      "y": 446.1080164508122
+    },
+    "I.27": {
+      "x": 514.1955871687261,
+      "y": 357.8159314868948
+    },
+    "I.28": {
+      "x": 360.9444828004404,
+      "y": 355.52866257242283
+    },
+    "I.29": {
+      "x": -365.4243398122629,
+      "y": 408.5479860455315
+    },
+    "I.30": {
+      "x": -178.00827822913635,
+      "y": 505.8833847552593
+    },
+    "I.31": {
+      "x": 150.1594779923834,
+      "y": 516.2632557407152
+    },
+    "I.32": {
+      "x": 136.21994809744496,
+      "y": 615.8339160512497
+    },
+    "I.33": {
+      "x": 177.78351170948062,
+      "y": 677.8183348588188
+    },
+    "I.34": {
+      "x": 127.41168881991055,
+      "y": 738.2058203027651
+    },
+    "I.35": {
+      "x": 125.46532472066025,
+      "y": 795.4762948885675
+    },
+    "I.36": {
+      "x": 284.4215400943845,
+      "y": 616.132413366476
+    },
+    "I.37": {
+      "x": 287.7746339696558,
+      "y": 757.1918368350362
+    },
+    "I.38": {
+      "x": -30.113247737254298,
+      "y": 686.699174411713
+    },
+    "I.39": {
+      "x": 374.49480568938566,
+      "y": 607.6198735278247
+    },
+    "I.40": {
+      "x": 578.8311045821146,
+      "y": 605.1838470649263
+    },
+    "I.41": {
+      "x": -461.76842524979077,
+      "y": 614.2487659728047
+    },
+    "I.42": {
+      "x": -283.7270456221144,
+      "y": 610.3087111265023
+    },
+    "I.43": {
+      "x": -274.764039873538,
+      "y": 712.330419706747
+    },
+    "I.44": {
+      "x": -272.47225723604816,
+      "y": 825.9211409410451
+    },
+    "I.45": {
+      "x": -106.48307539566999,
+      "y": 834.2958196310104
+    },
+    "I.46": {
+      "x": -79.48051335382127,
+      "y": 792.049066355243
+    },
+    "I.47": {
+      "x": -369.01699206640797,
+      "y": 954.401943074774
+    },
+    "I.48": {
+      "x": -131.78543956182492,
+      "y": 889.9233571397673
+    },
+    "I.49": {
+      "x": 13.08968421257946,
+      "y": 898.7031046659685
+    },
+    "I.50": {
+      "x": 154.28239292558882,
+      "y": 883.2595982719796
+    },
+    "I.51": {
+      "x": 334.70304078691174,
+      "y": 903.5793173154374
+    }
+  }
+}
