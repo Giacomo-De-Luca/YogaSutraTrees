@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cytoscape.js Example</title>
+    <style>
+        #cy {
+            width: 110%;
+            height: 700px;
+            display: block;
+        }
+        #details-panel {
+            display: none;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 300px; /* Set the initial width */
+            padding: 10px;
+            background-color: #f0f0f0;
+            border: 0px solid #ccc;
+            z-index: 1000;
+            resize: both;
+            overflow: hidden;
+            font-family: 'Helvetica'; /* Add this line to set the font */
+        }
+
+        #details-content {
+            overflow: auto;
+            max-height: 400px; /* Set the maximum height */
+        }
+        #resize-btn {
+             cursor: nwse-resize;
+             position: absolute;
+             bottom: 0;
+             right: 0;
+             width: 15px;
+             height: 15px;
+             background-color: #ccc;
+            }
+            #close-btn {
+                cursor: pointer;
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
+
+
+    </style>
+    <!-- Include Cytoscape.js -->
+    <script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
+      <!-- Include Cytoscape.js context-menu extension -->
+    <script src="https://unpkg.com/cytoscape-context-menus/cytoscape-context-menus.js"></script>
+</head>
+<body>
+
+    <div id="cy"></div>
+    <div id="details-panel">
+      <div id="drag-area" onmousedown="startDragging(event)"></div> <!-- Add this line -->
+      <button id="close-btn" onclick="closeDetailsPanel()">x</button>
+      <button id="resize-btn"></button>
+      <div id="details-content"></div>
+    </div>
+
+    <style>
+        #button-container {
+            position: absolute;
+            top: 20px;
+            right: 0px;
+            z-index: 1; /* Add this line */
+        }
+    
+        #button-container button {
+            display: block;
+            margin-bottom: 10px;
+            padding: 8px 16px;
+            font-size: 15px;
+            font-family: 'Helvetica', sans-serif; 
+            text-align: center;
+            border: none;
+            border-radius: 5px;
+            color: black;
+            background-color: #a0a0a027;
+            cursor: pointer;
+            box-sizing: border-box; /* Add this line */
+            width: 100%; /* Add this line */
+        }
+    
+        #button-container button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+    
+    <div id="button-container">
+        <button id="save-btn">Save Configuration</button>
+        <button id="add-link-btn">Add Link</button>
+        <button id="remove-link-btn">Remove Link</button>
+        <button id="load-btn">Load Configuration</button>
+        <input type="file" id="file-input" accept=".json" style="display: none;">
+    </div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        let cy = null; // Define cy here
+        // Load your JSON data (replace 'your-graph.json' with your actual file path)
+        fetch('graph.json')
+            .then(response => response.json())
+            .then(data => {
+                // Initialize Cytoscape
+                const cy = cytoscape({
+                    container: document.getElementById('cy'),
+                    elements: data.elements,
+                    style: [
+                        {
+                            selector: 'node',
+                            style: {
+                                'width': 120,
+                                'height': 60,
+                                'shape': 'rectangle',
+                                'background-color': '#FFFFFF', // Set background color to white
+                                'border-width': 0,
+                                'label': function(ele) {
+                                    return ele.id() + '\n' +  ele.data('label') + '\n' + ele.data('Translation_Bryant');
+                                },
+                                'text-wrap': 'wrap',
+                                'text-max-width': 150,
+                                'text-valign': 'center',
+                                'text-halign': 'center',
+                                'color': '#000',
+                                'font-family': 'Palatino, Palatino Linotype, serif', // Add this line for font-family
+                                'font-size': 12,
+                                'text-margin-y': 10
+                            }
+                        },
+                        {
+                            selector: 'edge',
+                            style: {
+                                'curve-style': 'bezier',
+                                'control-point-step-size': 40,
+                                'target-arrow-shape': 'none',
+                                'width': 5,
+                                'line-color': '#ffb6c1',
+                                'target-arrow-color': '#ccc'
+                                
+                            }
+                        }
+                       
+                    ],
+                    
+                    layout: { 
+                        name: 'preset',
+                        positions: node => data.positions[node.data('id')]
+                    } // You can use a different layout if needed
+                });
+               
+                document.getElementById('save-btn').addEventListener('click', function () {
+                    // Get the current nodes and edges
+                    var nodes = cy.nodes().map(node => ({ data: node.data() }));
+                    var edges = cy.edges().map(edge => ({ data: edge.data() }));
+
+                    // Get the current positions
+                    var positions = {};
+                    cy.nodes().forEach(node => {
+                        positions[node.data('id')] = node.position();
+                    });
+
+                    // Create a new JSON object
+                    var json = {
+                        elements: {
+                            nodes: nodes,
+                            edges: edges
+                        },
+                        positions: positions
+                    };
+
+                    // Convert the JSON object to a string
+                    var jsonString = JSON.stringify(json, null, 2);
+
+                    // Create a new Blob object from the JSON string
+                    var blob = new Blob([jsonString], { type: 'application/json' });
+
+                    // Create a new object URL for the Blob object
+                    var url = URL.createObjectURL(blob);
+
+                    // Create a new link element
+                    var link = document.createElement('a');
+
+                    // Set the href of the link to the object URL
+                    link.href = url;
+
+                    // Set the download attribute of the link to the desired file name
+                    link.download = 'graph.json';
+
+                    // Append the link to the body
+                    document.body.appendChild(link);
+
+                    // Simulate a click on the link
+                    link.click();
+
+                    // Remove the link from the body
+                    document.body.removeChild(link);
+                });
+
+                function openDetailsWindow(node) {
+                    const nodeId = node.id();
+                    const originalLabel = node.data('label');
+                    const comments = node.data('comment') || '';
+                    const translationBryant = node.data('Translation_Bryant') || '';
+
+                    const detailsContent = `
+                    <h2>Aphorism Details</h2>
+                    <p><strong>Sutra:</strong> ${nodeId}</p>
+                    <p><strong>Sanskrit Text:</strong> ${originalLabel}</p>
+                    <p><strong>Translation Bryant:</strong> ${translationBryant}</p>
+                    <p id="commentsSection" ondblclick="makeCommentsEditable(this)"><strong>Comments:</strong> ${comments}</p>
+                    `;
+                    // Display details in the details panel
+                    document.getElementById('details-content').innerHTML = detailsContent;
+                    document.getElementById('details-panel').style.display = 'block';
+                    
+                    currentOpenNodeId = nodeId;
+                    // Attach dblclick event listener to make comments section editable
+                    const commentsSection = document.getElementById('commentsSection');
+                    commentsSection.addEventListener('dblclick', function () {
+                        makeCommentsEditable(commentsSection);
+                    });
+                }
+
+                // Function to make comments section editable on double-click
+                function makeCommentsEditable(commentsSection) {
+                    
+                    const nodeId = currentOpenNodeId;
+                    const node = cy.$id(nodeId);
+                    
+                    commentsSection.contentEditable = true;
+                    commentsSection.style.border = '1px solid #000';
+                    commentsSection.focus();
+                    
+                    commentsSection.addEventListener('input', function () {
+                        const updatedComment = commentsSection.innerHTML;
+                            node.data('comment', updatedComment);
+                        });
+
+                    commentsSection.addEventListener('focusout', function () {
+                        const updatedComment = commentsSection.innerHTML;
+                        node.data('comment', updatedComment);
+                        commentsSection.contentEditable = false;
+                        commentsSection.style.border = 'none';
+                    });
+                } 
+
+                function openCommentWindow(node) {
+                    const existingComment = node.data('comment') || '';
+                    const comment = prompt('Enter a comment:');
+                    if (comment !== null) {
+                        const updatedComment = existingComment + '<br>' + comment;
+                        // Update the data of the selected node to include the comment attribute
+                        node.data('comment', updatedComment);
+                        // Update the label of the node to display both the original label and the comment
+                        cy.$(`#${node.id()}`).data('label', `${node.data('label')}<br><br>${comment}`);
+                    }
+                }
+
+                
+
+
+                function handleNodeClick(callback) {
+                    let sourceNode = null;
+                    let targetNode = null;
+
+                    function onClick(event) {
+                        if (sourceNode === null) {
+                            sourceNode = event.target;
+                        } else {
+                            targetNode = event.target;
+                            if (sourceNode.id() !== targetNode.id()) {
+                                callback(sourceNode, targetNode);
+                            }
+                            sourceNode = null;
+                            targetNode = null;
+                            cy.nodes().off('click', onClick);
+                        }
+                    }
+
+                    cy.nodes().on('click', onClick);
+                }
+
+                // Event listener for the "Add Link" button
+                document.getElementById('add-link-btn').addEventListener('click', function () {
+                    handleNodeClick((sourceNode, targetNode) => {
+                        cy.add({ data: { source: sourceNode.id(), target: targetNode.id() } });
+                    });
+                });
+
+                // Event listener for the "Remove Link" button
+                document.getElementById('remove-link-btn').addEventListener('click', function () {
+                    handleNodeClick((sourceNode, targetNode) => {
+                        var edge = cy.edges(`[source="${sourceNode.id()}"][target="${targetNode.id()}"], [source="${targetNode.id()}"][target="${sourceNode.id()}"]`);
+                        if (edge.length > 0) {
+                            edge.remove();
+                        }
+                    });
+                });
+                document.getElementById('load-btn').addEventListener('click', function () {
+                    document.getElementById('file-input').click();
+                });
+                document.getElementById('file-input').addEventListener('change', function (e) {
+                    var file = e.target.files[0];
+                    if (!file) {
+                        return;
+                    }
+                    var reader = new FileReader();
+                    reader.onload = function (e) {
+                        var contents = e.target.result;
+                        var data = JSON.parse(contents);
+
+                        // Reconfigure the graph
+                        cy.elements().remove();
+                        cy.add(data.elements);
+                        cy.nodes().forEach(node => {
+                            node.position(data.positions[node.data('id')]);
+                        });
+                    };
+                    reader.readAsText(file);
+                });
+
+                cy.on('select', 'node', function (event) {
+                    const node = event.target;
+                    openDetailsWindow(node);
+                });
+
+                
+
+
+
+            })
+            .catch(error => console.error('Error:', error));
+    });
+    // Function to close the details panel
+    function closeDetailsPanel() {
+        document.getElementById('details-panel').style.display = 'none';
+        }
+</script>
+
+</body>
+</html>
