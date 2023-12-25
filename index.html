@@ -67,6 +67,11 @@
       <button id="close-btn" onclick="closeDetailsPanel()">x</button>
       <button id="resize-btn"></button>
       <div id="details-content"></div>
+      <div id="editable-content">
+        <p id="tagsSection" ondblclick="makeTagsEditable(this)"><strong>Tags:</strong></p>
+        <p id="referencesSection" ondblclick="makeReferencesEditable(this)"><strong>References:</strong></p>
+        <p id="commentsSection" ondblclick="makeCommentsEditable(this)"><strong>Comments:</strong></p>
+    </div>
     </div>
 
 
@@ -112,6 +117,7 @@
         <select id="attributeSelector" multiple="multiple"></select>
         <button id="save-btn">Save Configuration</button>
         <button id="add-link-btn">Add Link</button>
+        <select id="displaySelector" multiple="multiple"></select>
         <button id="add-link-type2-btn">Add Type 2 Link</button>
         <button id="remove-link-btn">Remove Link</button>
         <input type="text" id="nodeSearch" placeholder="Search text">
@@ -248,8 +254,7 @@
                     document.body.removeChild(link);
                 });
 
-                
-
+               
                 function openDetailsWindow(node) {
                     const nodeId = node.id();
                     const originalLabel = node.data('label');
@@ -258,16 +263,24 @@
                     const tags = node.data('tags') || '';
                     const references = node.data('references') || '';
 
-
-                    const detailsContent = `
+                    let detailsContent = `
+                     
                     <h2>Aphorism Details</h2>
-                    <p><strong>Sutra:</strong> ${nodeId}</p>
-                    <p><strong>Sanskrit Text:</strong> ${originalLabel}</p>
-                    <p><strong>Translation Bryant:</strong> ${translationBryant}</p>
-                    <p id="tagsSection" ondblclick="makeTagsEditable(this)"><strong>Tags:</strong> ${tags}</p>
-                    <p id="referencesSection" ondblclick="makeReferencesEditable(this)"><strong>References:</strong> ${references}</p>
-                    <p id="commentsSection" ondblclick="makeCommentsEditable(this)"><strong>Comments:</strong> ${comments}</p>
+                    
                     `;
+                    // Check if displaySelector is initialized and has selected options
+                    if ($.fn.select2 && $('#displaySelector').data('select2')) {
+                        // Get the selected attributes
+                        const selectedAttributes = $('#displaySelector').select2('data').map(option => option.id);
+                        
+                        // Build the additional details content using the selected attributes
+                        selectedAttributes.forEach(attribute => {
+                            if (node.data(attribute)) {
+                                detailsContent += `<p><strong>${attribute}:</strong> ${node.data(attribute)}</p>`;
+                            }
+                        });
+                    };
+
                     // Display details in the details panel
                     document.getElementById('details-content').innerHTML = detailsContent;
                     document.getElementById('details-panel').style.display = 'block';
@@ -337,15 +350,24 @@
                     
                 }
 
-                // Assuming you have obtained the list of node attributes as 'nodeAttributes'
-                const nodeAttributes = ['id', 'label', 'Translation_Bryant']; // Replace this with your actual list
+                // Get all nodes
+                const nodes = cy.nodes();
+                
+                // Get the unique attributes from all nodes
+                let nodeAttributes = [];
+                nodes.forEach(node => {
+                    nodeAttributes = [...nodeAttributes, ...Object.keys(node.data())];
+                });
+                nodeAttributes = [...new Set(nodeAttributes)]; // Remove duplicates
 
+                 
                 // Get the select element
                 const attributeSelector = $('#attributeSelector');
                 
                 // Populate the dropdown with options
                 nodeAttributes.forEach(attribute => {
-                    const option = new Option(attribute, attribute, true, true);
+                    const isSelected = ['id', 'label', 'Translation_Bryant'].includes(attribute);
+                    const option = new Option(attribute, attribute, isSelected, isSelected);
                     attributeSelector.append(option);
                 });
                 
@@ -372,11 +394,87 @@
                     },
                     // Your other styles here
                 });
-                
+
+
                 // Update the Cytoscape styles whenever the selected options change
                 $('#attributeSelector').on('change', function() {
                     cy.style().update(); // This will force Cytoscape to reapply the styles
                 });
+                
+
+
+               // Get the select element for the display
+               const displaySelector = $('#displaySelector');
+               
+               // Populate the dropdown with options
+               nodeAttributes.forEach(attribute => {
+               // Exclude 'tags', 'references', and 'comment' fields
+               if (!['tags', 'references', 'comment'].includes(attribute)) {
+                const isSelected = ['id', 'label', 'Translation_Bryant'].includes(attribute);
+                const option = new Option(attribute, attribute, isSelected, isSelected);
+                displaySelector.append(option);
+            }
+        });
+                
+                // Initialize Select2 for the displaySelector dropdown
+                displaySelector.select2({
+                    placeholder: 'Select attributes',
+                    allowClear: true,
+                    closeOnSelect: false
+                });
+                  
+
+
+                // Store the currently selected node
+                let selectedNode = null;
+                
+                // Update selectedNode whenever a node is selected
+                cy.on('select', 'node', function(event) {
+                    selectedNode = event.target;
+                    updateDetailsWindow();
+                });
+                
+                // Clear selectedNode whenever a node is unselected
+                cy.on('unselect', 'node', function() {
+                    selectedNode = null;
+                    updateDetailsWindow();
+                });
+                
+                // Update the details window whenever the selected options change
+                $('#displaySelector').on('change', updateDetailsWindow);
+                
+                function updateDetailsWindow() {
+                    if (selectedNode) {
+                        // Get the selected attributes
+                        const selectedAttributes = $('#displaySelector').select2('data').map(option => option.id);
+                        
+                        // Build the details content using the selected attributes
+                        let detailsContent = '<h2>Aphorism Details</h2>';
+                        selectedAttributes.forEach(attribute => {
+                            if (selectedNode.data(attribute)) {
+                                detailsContent += `<p><strong>${attribute}:</strong> ${selectedNode.data(attribute)}</p>`;
+                            }
+                        });
+
+                        // Update the details content
+                        document.getElementById('details-content').innerHTML = detailsContent;
+
+                        // Update the editable content
+                        document.getElementById('tagsSection').innerHTML = `<strong>Tags:</strong> ${selectedNode.data('tags') || ''}`;
+                        document.getElementById('referencesSection').innerHTML = `<strong>References:</strong> ${selectedNode.data('references') || ''}`;
+                        document.getElementById('commentsSection').innerHTML = `<strong>Comments:</strong> ${selectedNode.data('comment') || ''}`;
+                    } else {
+                        // Clear the details content if no node is selected
+                        document.getElementById('details-content').innerHTML = '';
+                        document.getElementById('tagsSection').innerHTML = '<strong>Tags:</strong>';
+                        document.getElementById('referencesSection').innerHTML = '<strong>References:</strong>';
+                        document.getElementById('commentsSection').innerHTML = '<strong>Comments:</strong>';
+                    }
+                }
+                    
+
+                
+                
 
                 let select = document.createElement('select');
                 select.multiple = true;
@@ -635,15 +733,11 @@
                 }
 
                 // Event listener for the "Add Link" button
-                document.getElementById('add-link-btn').addEventListener('click', clickHandler);
-                document.getElementById('add-link-btn').addEventListener('touchstart', clickHandler);
-
-
-                function clickHandler() {
-                        handleNodeClick((sourceNode, targetNode) => {
-                            cy.add({ data: { source: sourceNode.id(), target: targetNode.id() } });
-                        });
-                    }
+                document.getElementById('add-link-btn').addEventListener('click', function () {
+                    handleNodeClick((sourceNode, targetNode) => {
+                        cy.add({ data: { source: sourceNode.id(), target: targetNode.id() } });
+                    });
+                });
 
                 // Event listener for the "Add Type 2 Link" button
                 document.getElementById('add-link-type2-btn').addEventListener('click', function () {
@@ -690,9 +784,6 @@
                 });
 
                 
-
-
-
             })
             .catch(error => console.error('Error:', error));
     });
