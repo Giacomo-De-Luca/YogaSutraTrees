@@ -635,11 +635,15 @@
                 }
 
                 // Event listener for the "Add Link" button
-                document.getElementById('add-link-btn').addEventListener('click', function () {
-                    handleNodeClick((sourceNode, targetNode) => {
-                        cy.add({ data: { source: sourceNode.id(), target: targetNode.id() } });
-                    });
-                });
+                document.getElementById('add-link-btn').addEventListener('click', clickHandler);
+                document.getElementById('add-link-btn').addEventListener('touchstart', clickHandler);
+
+
+                function clickHandler() {
+                        handleNodeClick((sourceNode, targetNode) => {
+                            cy.add({ data: { source: sourceNode.id(), target: targetNode.id() } });
+                        });
+                    }
 
                 // Event listener for the "Add Type 2 Link" button
                 document.getElementById('add-link-type2-btn').addEventListener('click', function () {
