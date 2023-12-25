@@ -19,6 +19,7 @@
             padding: 10px;
             background-color: #f0f0f0;
             border: 0px solid #ccc;
+            border-radius: 10px; /* Add this line */
             z-index: 1000;
             resize: both;
             overflow: hidden;
@@ -47,10 +48,16 @@
 
 
     </style>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- Include Cytoscape.js -->
     <script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
       <!-- Include Cytoscape.js context-menu extension -->
     <script src="https://unpkg.com/cytoscape-context-menus/cytoscape-context-menus.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
+    
+    
 </head>
 <body>
 
@@ -61,6 +68,7 @@
       <button id="resize-btn"></button>
       <div id="details-content"></div>
     </div>
+
 
     <style>
         #button-container {
@@ -85,6 +93,15 @@
             box-sizing: border-box; /* Add this line */
             width: 100%; /* Add this line */
         }
+
+
+        #tagSelect {
+            width: 250px;
+            font-family: "Helvetica", sans-serif;
+        }
+        
+       
+
     
         #button-container button:hover {
             background-color: #0056b3;
@@ -92,11 +109,14 @@
     </style>
     
     <div id="button-container">
+        <select id="attributeSelector" multiple="multiple"></select>
         <button id="save-btn">Save Configuration</button>
         <button id="add-link-btn">Add Link</button>
+        <button id="add-link-type2-btn">Add Type 2 Link</button>
         <button id="remove-link-btn">Remove Link</button>
+        <input type="text" id="nodeSearch" placeholder="Search text">
         <button id="load-btn">Load Configuration</button>
-        <input type="file" id="file-input" accept=".json" style="display: none;">
+        <input type="file" id="file-input" accept=".json" style="display: none;">             
     </div>
 
 <script>
@@ -114,14 +134,13 @@
                         {
                             selector: 'node',
                             style: {
-                                'width': 120,
-                                'height': 60,
-                                'shape': 'rectangle',
-                                'background-color': '#FFFFFF', // Set background color to white
-                                'border-width': 0,
-                                'label': function(ele) {
-                                    return ele.id() + '\n' +  ele.data('label') + '\n' + ele.data('Translation_Bryant');
-                                },
+
+                                'label': 'data(id)',
+                                'width': 'label', // Set the width based on the label content
+                                'height': 'label', // Set the height based on the label content
+                                'shape': 'roundrectangle',
+                                'background-color': 'white', // Set background color to white
+                                'border-width': 2,                                
                                 'text-wrap': 'wrap',
                                 'text-max-width': 150,
                                 'text-valign': 'center',
@@ -129,7 +148,9 @@
                                 'color': '#000',
                                 'font-family': 'Palatino, Palatino Linotype, serif', // Add this line for font-family
                                 'font-size': 12,
-                                'text-margin-y': 10
+                                'border-color': '#E09FA9', // Set your desired border color
+                                'padding-bottom': '10px', // Add padding to the bottom
+                                
                             }
                         },
                         {
@@ -143,9 +164,35 @@
                                 'target-arrow-color': '#ccc'
                                 
                             }
+                        },
+                        {
+                            selector: 'edge[edgeType = "type2"]',
+                            style: {
+                                'curve-style': 'bezier',
+                                'control-point-step-size': 40,
+                                'target-arrow-shape': 'none',
+                                'width': 5,
+                                'line-color': '#8BCCE6', // Change this to the color you want for the new type of edge
+                                'target-arrow-color': '#ccc'
+                            }
+                        },
+                        {
+                            selector: '.highlighted',
+                            style: {
+                                'background-color': '#E0CD9F'
+                            }
+                        },
+                
+                        {
+                            selector: '.blurred',
+                            style: {
+                                'opacity': 0.5
+                            }
                         }
+                        
                        
                     ],
+                    
                     
                     layout: { 
                         name: 'preset',
@@ -201,17 +248,24 @@
                     document.body.removeChild(link);
                 });
 
+                
+
                 function openDetailsWindow(node) {
                     const nodeId = node.id();
                     const originalLabel = node.data('label');
                     const comments = node.data('comment') || '';
                     const translationBryant = node.data('Translation_Bryant') || '';
+                    const tags = node.data('tags') || '';
+                    const references = node.data('references') || '';
+
 
                     const detailsContent = `
                     <h2>Aphorism Details</h2>
                     <p><strong>Sutra:</strong> ${nodeId}</p>
                     <p><strong>Sanskrit Text:</strong> ${originalLabel}</p>
                     <p><strong>Translation Bryant:</strong> ${translationBryant}</p>
+                    <p id="tagsSection" ondblclick="makeTagsEditable(this)"><strong>Tags:</strong> ${tags}</p>
+                    <p id="referencesSection" ondblclick="makeReferencesEditable(this)"><strong>References:</strong> ${references}</p>
                     <p id="commentsSection" ondblclick="makeCommentsEditable(this)"><strong>Comments:</strong> ${comments}</p>
                     `;
                     // Display details in the details panel
@@ -224,6 +278,238 @@
                     commentsSection.addEventListener('dblclick', function () {
                         makeCommentsEditable(commentsSection);
                     });
+                    const tagsSection = document.getElementById('tagsSection');
+                    tagsSection.addEventListener('dblclick', function () {
+                        makeTagsEditable(tagsSection);
+                    });
+                    // Attach dblclick event listener to make references section editable
+                    const referencesSection = document.getElementById('referencesSection');
+                    referencesSection.addEventListener('dblclick', function () {
+                        makeReferencesEditable(referencesSection);
+                    });
+                }
+
+
+                function makeTagsEditable(element) {
+                    const nodeId = currentOpenNodeId;
+                    const node = cy.$id(nodeId);
+                    const tags = node.data('tags') ? node.data('tags').split(', ') : [];
+                
+                    const input = document.createElement('input');
+                    input.type = 'text';
+                    input.value = tags.join(', ');
+                    input.onblur = function () {
+                        const newTags = input.value.split(', ');
+                        node.data('tags', newTags.join(', '));
+                        element.innerHTML = `<strong>Tags:</strong> ${newTags.join(', ')}`;
+                        updateDropdownOptions();
+                    };
+                
+                    element.innerHTML = '';
+                    element.appendChild(input);
+                    input.focus();
+                }
+
+                function updateDropdownOptions() {
+                    const select = document.getElementById('tagSelect');
+                    select.innerHTML = '';
+                
+                    const uniqueTags = new Set();
+                    cy.nodes().forEach(function (node) {
+                        const nodeTags = node.data('tags') ? node.data('tags').split(', ') : [];
+                        nodeTags.forEach(tag => uniqueTags.add(tag));
+                    });
+                
+                    const tagsArray = Array.from(uniqueTags);
+                    tagsArray.forEach(tag => {
+                        let option = document.createElement('option');
+                        option.value = tag;
+                        option.text = tag;
+                        select.appendChild(option);
+                
+                        // If the tag doesn't have a color yet, assign it one
+                        if (!tagColors[tag]) {
+                            tagColors[tag] = colorPalette[colorIndex];
+                            colorIndex = (colorIndex + 1) % colorPalette.length;
+                        }
+                    });
+                
+                    
+                }
+
+                // Assuming you have obtained the list of node attributes as 'nodeAttributes'
+                const nodeAttributes = ['id', 'label', 'Translation_Bryant']; // Replace this with your actual list
+
+                // Get the select element
+                const attributeSelector = $('#attributeSelector');
+                
+                // Populate the dropdown with options
+                nodeAttributes.forEach(attribute => {
+                    const option = new Option(attribute, attribute, true, true);
+                    attributeSelector.append(option);
+                });
+                
+                // Initialize Select2 for the attributeSelector dropdown
+                attributeSelector.select2({
+                    placeholder: 'Select attributes',
+                    allowClear: true,
+                    closeOnSelect: false
+                });
+
+                // Add the label function inside the style array
+                cy.style().selector('node').style({
+                    'label': function(ele) {
+                        // Get the selected attributes
+                        const selectedAttributes = $('#attributeSelector').select2('data').map(option => option.id);
+                        // Build the label using the selected attributes
+                        let label = '';
+                        selectedAttributes.forEach(attribute => {
+                            if (ele.data(attribute)) {
+                                label += ele.data(attribute) + '\n';
+                            }
+                        });
+                        return label;
+                    },
+                    // Your other styles here
+                });
+                
+                // Update the Cytoscape styles whenever the selected options change
+                $('#attributeSelector').on('change', function() {
+                    cy.style().update(); // This will force Cytoscape to reapply the styles
+                });
+
+                let select = document.createElement('select');
+                select.multiple = true;
+                select.id = 'tagSelect';
+
+                // Get the button container and append the select element to it
+                let buttonContainer = document.getElementById('button-container');
+                buttonContainer.appendChild(select);
+
+                $(select).select2({
+                    tags: true,
+                    tokenSeparators: [','],
+                    placeholder: 'Select tags',
+                    templateResult: formatTag,
+                    templateSelection: formatTag
+                });
+                
+              // Define the formatTag function
+              function formatTag(tag) {
+                var $tag = $('<span><i class="tag-color"></i> ' + tag.text + '</span>');
+                $tag.find('.tag-color').css({
+                    'background-color': tagColors[tag.text] || '#000',
+                    'display': 'inline-block',
+                    'width': '10px',
+                    'height': '10px',
+                    'margin-right': '5px'
+                });
+                return $tag;
+            }
+
+                // Define the color palette
+                const colorPalette = ['#DBD788', '#DB9B88', '#88DBC5', '#A588DB', '#839993'];
+                
+                // Create a mapping from tags to colors
+                let tagColors = {};
+                let colorIndex = 0;
+                cy.nodes().forEach(function (node) {
+                    const nodeTags = node.data('tags') ? node.data('tags').split(', ') : [];
+                    nodeTags.forEach(tag => {
+                        if (!tagColors[tag]) {
+                            tagColors[tag] = colorPalette[colorIndex];
+                            colorIndex = (colorIndex + 1) % colorPalette.length;
+                        }
+                    });
+                });
+
+
+                // Add event listener
+                $(select).on('change', function () {
+                    let selectedTags = $(select).select2('data').map(option => option.text);
+                    filterNodesByTag(selectedTags);
+                });
+                
+                updateDropdownOptions();
+                
+                $(select).on('change', function () {
+                    const selectedTags = $(this).select2('data').map(option => option.text);
+                    if (selectedTags.length > 0) {
+                        filterNodesByTag(selectedTags);
+                    } else {
+                        cy.nodes().removeClass('filtered');
+                    }
+                });
+
+                const searchInput = document.getElementById('nodeSearch');
+                const matchCountDisplay = document.getElementById('matchCount');
+                
+                searchInput.addEventListener('input', function() {
+                    const searchText = searchInput.value.trim().toLowerCase();
+                    let matchCount = 0;
+                
+                    // First, remove all temporary edges
+                    cy.edges('.temporary-text').remove();
+                
+                    // If the search text is empty, remove the 'highlighted' and 'blurred' classes from all nodes and return
+                    if (searchText === '') {
+                        cy.nodes().removeClass('highlighted blurred');
+                        return;
+                    }
+                
+                    // Get the nodes that match the search text
+                    const matchedNodes = cy.nodes().filter(node => {
+                        const nodeId = node.data('id').toLowerCase();
+                        const nodeLabel = node.data('label').toLowerCase();
+                        const translationBryant = node.data('Translation_Bryant').toLowerCase();
+                
+                        // Check if any of the fields contains the search text
+                        if (nodeId.includes(searchText) || nodeLabel.includes(searchText) || translationBryant.includes(searchText)) {
+                            // Add the 'highlighted' class and remove the 'blurred' class
+                            node.addClass('highlighted');
+                            node.removeClass('blurred');
+                            matchCount++;
+                            return true;
+                        } else {
+                            // Add the 'blurred' class and remove the 'highlighted' class
+                            node.addClass('blurred');
+                            node.removeClass('highlighted');
+                            return false;
+                        }
+                    });
+                
+                    // Create temporary edges between the matched nodes
+                    matchedNodes.forEach(function (node, index) {
+                        for (let i = index + 1; i < matchedNodes.length; i++) {
+                            const otherNode = matchedNodes[i];
+                            cy.add({
+                                group: 'edges',
+                                data: { source: node.id(), target: otherNode.id() },
+                                classes: 'temporary-text',
+                                style: { 'line-color': '#CFC8FA' } // Change this to the color you want
+                            });
+                        }
+                    });
+                });
+                
+
+                function makeReferencesEditable(element) {
+                    const nodeId = currentOpenNodeId;
+                    const node = cy.$id(nodeId);
+                    const references = node.data('references') ? node.data('references').split(', ') : [];
+                
+                    const input = document.createElement('input');
+                    input.type = 'text';
+                    input.value = references.join(', ');
+                    input.onblur = function () {
+                        const newReferences = input.value.split(', ');
+                        node.data('references', newReferences.join(', '));
+                        element.innerHTML = `<strong>References:</strong> ${newReferences.join(', ')}`;
+                    };
+                
+                    element.innerHTML = '';
+                    element.appendChild(input);
+                    input.focus();
                 }
 
                 // Function to make comments section editable on double-click
@@ -261,6 +547,69 @@
                     }
                 }
 
+                function mixColors(colors) {
+                    let r = 0;
+                    let g = 0;
+                    let b = 0;
+                
+                    colors.forEach(color => {
+                        r += parseInt(color.slice(1, 3), 16);
+                        g += parseInt(color.slice(3, 5), 16);
+                        b += parseInt(color.slice(5, 7), 16);
+                    });
+                
+                    r = Math.floor(r / colors.length);
+                    g = Math.floor(g / colors.length);
+                    b = Math.floor(b / colors.length);
+                
+                    return '#' + r.toString(16).padStart(2, '0') + g.toString(16).padStart(2, '0') + b.toString(16).padStart(2, '0');
+                }
+
+
+
+                function filterNodesByTag(selectedTags) {
+                    // First, remove all temporary edges
+                    cy.edges('.temporary-tag').remove();
+                
+                    // Reset all nodes to their default color
+                    cy.nodes().style('background-color', '');
+                
+                    // If no tags are selected, remove the 'blurred' class from all nodes and return
+                    if (selectedTags.length === 0) {
+                        cy.nodes().removeClass('blurred');
+                        return;
+                    }
+                
+                    cy.nodes().addClass('blurred');
+                
+                    // Get the nodes that have at least one of the selected tags
+                    const selectedNodes = cy.nodes().filter(function (node) {
+                        const nodeTags = node.data('tags') ? node.data('tags').split(', ') : [];
+                        const nodeSelectedTags = nodeTags.filter(tag => selectedTags.includes(tag));
+                        return nodeSelectedTags.length > 0;
+                    });
+                
+                    // For each selected node
+                    selectedNodes.forEach(function (node, index) {
+                        const nodeTags = node.data('tags') ? node.data('tags').split(', ') : [];
+                        const nodeSelectedTags = nodeTags.filter(tag => selectedTags.includes(tag));
+                        const nodeSelectedColors = nodeSelectedTags.map(tag => tagColors[tag]);
+                        node.style('background-color', mixColors(nodeSelectedColors));
+                        node.removeClass('blurred'); // Remove the 'blurred' class
+                
+                        // Create temporary edges between this node and all other selected nodes
+                        for (let i = index + 1; i < selectedNodes.length; i++) {
+                            const otherNode = selectedNodes[i];
+                            cy.add({
+                                group: 'edges',
+                                data: { source: node.id(), target: otherNode.id() },
+                                classes: 'temporary-tag',
+                                style: { 'line-color': mixColors(nodeSelectedColors) }
+                            });
+                        }                    
+                    });
+                }
+
                 
 
 
@@ -291,6 +640,13 @@
                         cy.add({ data: { source: sourceNode.id(), target: targetNode.id() } });
                     });
                 });
+
+                // Event listener for the "Add Type 2 Link" button
+                document.getElementById('add-link-type2-btn').addEventListener('click', function () {
+                    handleNodeClick((sourceNode, targetNode) => {
+                        cy.add({ data: { source: sourceNode.id(), target: targetNode.id(), edgeType: 'type2' } });
+                    });
+                });                
 
                 // Event listener for the "Remove Link" button
                 document.getElementById('remove-link-btn').addEventListener('click', function () {
@@ -336,10 +692,14 @@
             })
             .catch(error => console.error('Error:', error));
     });
+    
     // Function to close the details panel
     function closeDetailsPanel() {
         document.getElementById('details-panel').style.display = 'none';
         }
+    window.makeTagsEditable = makeTagsEditable;    
+    window.makeReferencesEditable = makeReferencesEditable;
+
 </script>
 
 </body>
