@@ -1,1044 +1,1094 @@
 {
-  "elements": {
-    "nodes": [
-      {
-        "data": {
-          "id": "I.1",
-          "label": "atha yogānuśāsanam",
-          "Translation_Bryant": "Now, the teachings of yoga [are presented].",
-          "Translation_Leggett": "Now, the exposition of yoga.",
-          "Vyasa_Sanskrit": "Bhāṣyam - Athetyayamadhikārārthaḥ| Yogānuśāsanaṁ śāstramadhikṛtaṁ veditavyam| Yogaḥ samādhiḥ| Sa ca sārvabhaumaścittasya dharmaḥ| Kṣiptaṁ mūdhaṁ vikṣiptam ekāgraṁ niruddhamiti cittabhūmayaḥ| Tatra vikṣipte cetasi vikṣepopasarjanībhūtaḥ samādhirna yogapakṣe vartate| Yastvekāgre cetasi sadbhūtamartham pradyotayati kṣiṇoti ca kleśān karmabandhanāni ślathayati nirodhamabhimukhaṁ karoti sa samprajñāto yoga ityākhyāyate| Sa ca vitarkānugato vicārānugata ānandānugato'smitānugata ityupariṣṭāt pravedayiṣyāmaḥ| Sarvavṛttinirodhe tvasamprajñātaḥ samādhiḥ||1||",
-          "Vyasa_commentary": "Commentary (bhāṣyam) - 'Atha' (atha iti), this (word) (ayam) means (arthaḥ) (the beginning of) a topic (adhikāra)| It is to be understood (vediyatavyam) that (this) scripture (śāstram) (dealing with) the instruction (anuśāsanam) regarding Yoga (yoga) (is) the subject (to be studied) (adhikṛtam)| Yoga (yogaḥ) is Samādhi or Perfect Concentration (samādhiḥ)| And (ca) this (Yoga) (saḥ) (is) a quality (dharmaḥ) related to all conditions (sārvabhauma) of the mind (cittasya)| (Those) mental (citta) conditions (bhūmayaḥ) (are the following:) Kṣipta --restless-- (kṣiptam), Mūḍha --stupefied-- (mūḍham), Vikṣipta --distraught-- (vikṣiptam), Ekāgra --one-pointed-- (ekāgram) (and) Niruddha --arrested or suppressed-- (niruddham iti)| In that (tatra) distraught (vikṣipte) mind --cetas-- (cetasi), Samādhi or Perfect Concentration (samādhiḥ) is (bhūtaḥ) subordinated (upasarjanī) to (its) distraction (vikṣepa). (This Samādhi) is not (na... vartate) on the Yoga's (yoga) side (pakṣe) --i.e. it does not belong to Yoga--| However (tu) that (Samādhi) (yaḥ) (occurring) in an one-pointed (ekāgre) mind --cetas-- (cetasi) brings enlightenment (pradyotayati) about a real (sadbhūtam) entity (artham)1  and (ca) destroys (kṣiṇoti) the Kleśa-s or Afflictions (kleśān)2 , loosens (ślathayati) the bonds (bandhāni) of Karma (karma) (and) leads (abhimukham karoti) to the arrested or suppressed state of mind (nirodham). That (Samādhi) (saḥ) is to be called (ākhyāte) Samprajñātayoga (samprajñāto yogaḥ iti)| Besides (ca), that (Samprajñātayoga) (saḥ) concerns (anugataḥ... anugataḥ... anugataḥ... anugataḥ) Vitarka (vitarka), Vicāra (vicāra), Ānanda (ānanda) (and) Asmitā (asmitā... iti) 3 . We will make (this subject) known (pravedayiṣyāmaḥ) later on (upariṣṭāt)| Nevertheless (tu), when all (sarva) (mental) modifications (vṛtti) are suppressed (nirodhe), (that is) Asamprajñātasamādhi (asamprajñātaḥ samādhiḥ)||1||",
-          "Sankara_commentary": "(Opponent) If the sūtra has been presented to give this definition, it should have been ‘Yoga has inhibition of the mental processes’; to put them in apposition is not right, for a definition should not be simply the thing defined. Or at any rate it should have been said, ‘The definition is, inhibition of the mental processes.’\n\n(Answer) A definition is projected (adhyas) on to the thing defined. When we say ‘This person is Devadatta’ there is a projection (adhyāsa) of the definition on to the thing defined. So there is no fault.\n\nThe omission of the word All shows that the cognitive (samādhi) too is yoga.\n\n(Opponent) (The commentator’s previous gloss) But the ultra-cognitive is when there is inhibition of all mental processes is also a definition of it, so the sūtra should have been ‘Yoga is inhibition of all mental processes.’ This has not been said and the definition is too wide.\n\n(Answer) As to why the word All is omitted from the sūtra, he says that if All were put in, it would be denying that the cognitive samādhi, which comes about by restricting the processes to a single point, is yoga at all. To prevent that, the word All is left out.\n\n(Opponent) If so, the cognitive and ultra-cognitive have the same definition and are not in fact distinguished.\n\n(Answer) The subject is yoga, as we see from the repetition of the word (in the first two sūtra-s). And unless he did intend a distinction, there would have been no point in putting into the definition the word yoga (which is well known to include meditation on objects).\n\n(Opponent) The word yoga is of minor importance for actual exposition; it would suit the purpose of exposition if the definition just said ‘Inhibition of the mental processes’ without the word yoga at all.\n\n(Answer) Not so, because what was introduced was an exposition of yoga, and it is exposition of yoga that has been begun, not exposition of non-yoga. The proposed definition could have too many contexts and would not be connected to the meaning of the words ‘exposition of yoga’. For the idea of an exposition of yoga does not follow from the words ‘inhibition of mental processes’.\n\n(Opponent) Why then should the word yoga lead to a definition of the ultra-cognitive samādhi alone, and not to a definition of the cognitive, if there is no such distinction in the word itself?\n\n(Answer) Because it applies exactly. What applies loosely is not a definition of a thing. The definition as inhibition applies exactly to the ultra-cognitive samādhi, but only loosely to the cognitive. Having horns is not the mark of cow-ness, because it applies also to buffaloes and other animals.\n\n(Opponent) Neither is inhibition exact as a definition of the ultra-cognitive; (it is too loose) because there is inhibition in the cognitive too, namely inhibition of the undesired mental processes.\n\n(Answer) True, but the ultra-cognitive cannot be defined by anything else except inhibition. Inhibition alone is its definition because nothing else is there, whereas the cognitive is definable in terms of special characteristics like verbal associations. As a parallel case, when tangibility is cited as a defining mark, it is the element Air alone that is defined by the fact of tangibility, which is regarded as special to it, though in fact tangibility is found also in the other elements in the descending order from Fire (to Water and then Earth).\n\nThus the word yoga is simply a corroboration (anuvāda), and so it is that All has not been put in the sūtra. It is settled that the ultra-cognitive is defined by the bare word ‘inhibition’, and if ‘All (the mental processes)’ were included, it would deny that the cognitive also is yoga. Therefore this is the definition of ultra-cognitive alone, and the commentator will sum up later in these words: Ultra-cognitive (a-sam-prajñāta) in the sense that in it no thing is cognized (sam-prajñāyate): this yoga is inhibition of the mental process.\n\nWhat is the nature of that mind, inhibition of whose processes is called yoga? To explain mind and its processes and their inhibition, the commentator says:\n\nNow mind always tends towards illumination, activity, or stasis (sthiti); so it consists of the three guṇa-s.\n\nMind is said to consist of the three guṇa-s, because it is always tending towards illumination, activity, or stasis. Illumination is making known, bringing to light, that being characteristic of sattva guṇa. Activity is motion and operation, that being characteristic of rajas. Stasis is being stationary, limitation, and resistance, such being characteristic of tamas. These are the invariable tendencies of the guṇa-s, and as mind is always tending towards one of them, it is true to say that it is continual transformation of the three guṇa-s.\n\nTo the objection that illumination and the others have not been established as causes, he says:\n\nFor mind-sattva is by nature illumination.\n\nThe word For means that this is something generally accepted; it is well known in the world and from scripture how mind makes everything manifest. So mind is sattva, and is therefore called mind-sattva, because its main transformation is that of sattva.\n\nOr again, mind can be pointed out clearly as pure knowledge (khyāti) having other mental processes mutually combining and separating. So it is that he says For mind-sattva is by nature illumination.\n\nMingled with rajas and tamas, mind is drawn towards power and possessions. Pervaded by tamas, it becomes subject to a-dharma, Ignorance, attachment and helplessness. That same mind, when the covering of illusion (moha) has dwindled, pervaded by a measure of rajas, is endowed with dharma, knowledge (jñāna), detachment and power. When the last trace of the stain of rajas is removed, the mind is grounded in its own nature, becoming simply the Knowledge (khyāti) that sattva and Puruṣa are different, and it is endowed with the Rain-cloud of Dharma, which the meditators call the highest prasaṅkhyāna (continuous meditation on Knowledge).\n\nNow he explains the conflicting varieties of mental processes which arise from relative dominance or subordination of rajas and tamas. When sattva is predominant, but mingled with rajas and tamas, they being equally strong, mind becomes fond of power and possessions, and this fondness for them is passion. The meaning is, that thoughts arise concentrated on the passion for power and possessions.\n\nWhen that mind, which is illumination by nature, is pervaded by tamas, with rajas subordinate in it, then tainted thoughts arise of a-dharma and the other three (Ignorance, passion, and helplessness).\n\nThat same mind, when the covering of illusion has dwindled, when tamas has been overcome, as when the rain-cloud passes away the darkness is at an end and the sun-disc illumines everything pervaded by a measure by a trace of rajas, is endowed with dharma, etc. (knowledge, detachment, and power), and pure thoughts of dharma and the others arise.\n\nWhen the last stain of the trace of rajas is removed, the mind is grounded in its own nature in its own nature as illumination and that alone. It becomes simply the Knowledge that sattva and Puruṣa are different. Mind is sattva, and Puruṣa is the experiencer (bhoktṛ); discriminating them as different is Knowledge (khyāti) of them, awareness of them. The word simply indicates that it is free from taints or any other things (than Knowledge). It is endowed with the meditation called Rain-cloud of Dharma, this being the samādhi of that name.\n\nThe mind overcomes rajas and tamas by power of prasaṅkhyāna, which is meditation (dhyāna) established in the perception of the nature of Puruṣa alone, pure Knowledge itself, which the meditators the yogins call the highest prasaṅkhyāna (continuous meditation on Knowledge).\n\nThe power-of-consciousness is unchangeable, does not engage with objects, has the objects shown to it, is pure and infinite.\n\nHaving explained what the mental process is in itself, he shows how it is to be inhibited. The power-of-consciousness (citi-śakti) is unchangeable: consciousness alone is power, so it is called power-of-consciousness. Powers which blossom out only in births appropriate to the possession of those powers are not inherent power, but consciousness is inherent power, dependent on nothing else. It is therefore eternally established. The apposition of the word consciousness (citi) meaning pure consciousness (cinmātra) and the word power (śakti) is to show that the subjective consciousness is of unvarying nature. This being so, it is something unchanging. When in an abiding possessor-of-qualities (dharmin), one quality (dharma) gives way to a different one, that is called change. Since this consciousness never changes, it is unchanging. For just this reason, it does not engage with objects. For it is only things like mind, which do change, that are found to engage with objects.\n\nSo the various objects are shown to it: an object is shown to it through the mind (antaḥ-karaṇa). Therefore it is pure and therefore in space and in time it is infinite. (In this explanation which has been given) each fact is to be understood as the cause of the next one.\n\nOpposed to pure consciousness is Knowledge-of-the-difference (viveka-khyāti), whose nature is sattva-guṇa. Therefore the mind, turning away from even that Knowledge, inhibits it.\n\nAn example of the contrary is mind and senses. Opposed to pure consciousness is Knowledge-of-the-difference, whose nature is sattva-guṇa. Sattva-guṇa means pure sattva, and its essence is that alone. To say that its nature is sattva means that its nature is essentially to illumine. Again, it is said to be essentially sattva-guṇa because this thought is not concerned with any object of the world.\n\nAgain, Knowledge is bound by the very fact of being Knowledge, just because it is essentially sattva. This Knowledge being thus distinct from, and opposed to, the characteristics of the power-of-consciousness described, does have changes and so on.\n\nBeing associated with qualities like change, it is inferior to the supreme Puruṣa which is free from them. Therefore because it sees the defect (doṣa) in its own nature, the mind, turning away from giving up even that Knowledge, inhibits it.\n\nIn this state what remains is saṃskāra-s, and it is the seedless (nirbīja) samādhi. There is no cognition of anything in it, so it is ultra-cognitive. This yoga is inhibition of the mental processes.\n\nIn this state the state of inhibition what remains is saṃskāra-s; only saṃskāra-s are left. This samādhi in this state of inhibition is the seedless. The meaning is, that here the seed is gone; in this all the seeds of taint and so on are gone.\n\nTo show this very mark of the ultra-cognitive samādhi, he quotes the sūtra, This yoga is inhibition of the mental processes.\n\nWhat is Puruṣa, the cognizer of buddhi (buddhi-bodhātman), in that state when there is no object for him?"
-        }
-      },
-      {
-        "data": {
-          "id": "I.2",
-          "label": "yogaś citta-vṛtti-nirodha",
-          "Translation_Bryant": "Yoga is the stilling of the changing states of the mind.",
-          "tags": "Samkhya, Buddhism"
-        }
-      },
-      {
-        "data": {
-          "id": "I.3",
-          "label": "tadā draṣṭuḥ svarūpe ‘vasthānam",
-          "Translation_Bryant": "When that is accomplished, the seer abides in its own true nature.",
-          "comment": "<strong>Comments:</strong> ",
-          "tags": "Upanishad"
-        }
-      },
-      {
-        "data": {
-          "id": "I.4",
-          "label": "vṛtti-sārūpyam itaratra",
-          "Translation_Bryant": "Otherwise, at other times, [the seer] is absorbed in the changing states [of the mind].",
-          "tags": "Samkhya"
-        }
-      },
-      {
-        "data": {
-          "id": "I.5",
-          "label": "vṛttayaḥ pañcatayyaḥ kliṣṭākliṣṭāḥ",
-          "Translation_Bryant": "There are five kinds of changing states of the mind, and they are either detrimental or nondetrimental [to the practice of yoga].",
-          "tags": "Samkhya, Buddhism"
-        }
-      },
-      {
-        "data": {
-          "id": "I.6",
-          "label": "pramāṇa-viparyaya-vikalpa-nidrā-smṛtayaḥ",
-          "Translation_Bryant": "[These five vṛttis are] right knowledge, error, imagination, sleep, and memory."
-        }
-      },
-      {
-        "data": {
-          "id": "I.7",
-          "label": "pratyakṣānumānāgamāḥ pramāṇāni",
-          "Translation_Bryant": "Right knowledge consists of sense perception, logic, and verbal testimony.",
-          "tags": "Samkhya, Upanishad"
-        }
-      },
-      {
-        "data": {
-          "id": "I.8",
-          "label": "viparyayo mithyā-jñānam atad-rūpa-pratiṣṭham",
-          "Translation_Bryant": "Error is false knowledge stemming from the incorrect apprehension [of something]."
-        }
-      },
-      {
-        "data": {
-          "id": "I.9",
-          "label": "śabda-jñānānupātī vastu-śūnyo vikalpaḥ",
-          "Translation_Bryant": "Metaphor consists of the usage of words that are devoid of an actual object."
-        }
-      },
-      {
-        "data": {
-          "id": "I.10",
-          "label": "abhāva-pratyayālambanā vṛttir nidrā",
-          "Translation_Bryant": "Deep sleep is that state of mind which is based on an absence [of any content]."
-        }
-      },
-      {
-        "data": {
-          "id": "I.11",
-          "label": "anubhūta-viṣayāsampramoṣaḥ smṛtiḥ",
-          "Translation_Bryant": "Memory is the retention of [images of] sense objects that have been experienced.",
-          "tags": "Buddhism"
-        }
-      },
-      {
-        "data": {
-          "id": "I.12",
-          "label": "abhyāsa-vairāgyābhyāṁ tan-nirodhaḥ",
-          "Translation_Bryant": "[The vṛtti states of mind] are stilled by practice and dispassion."
-        }
-      },
-      {
-        "data": {
-          "id": "I.13",
-          "label": "tatra sthitau yatno ‘bhyāsaḥ",
-          "Translation_Bryant": "From these, practice is the effort to be fixed in concentrating the mind."
-        }
-      },
-      {
-        "data": {
-          "id": "I.14",
-          "label": "sa tu dīrgha-kāla-nairantarya-satkārāsevito dṛḍha-bhūmiḥ",
-          "Translation_Bryant": "Practice becomes firmly established when it has been cultivated uninterruptedly and with devotion over a prolonged period of time."
-        }
-      },
-      {
-        "data": {
-          "id": "I.15",
-          "label": "dṛṣṭānuśravika-viṣaya-vitṛṣṇasya vaśīkāra-saṁjñā vairāgyam",
-          "Translation_Bryant": "Dispassion is the controlled consciousness of one who is without craving for sense objects, whether these are actually perceived, or described [in scripture]."
-        }
-      },
-      {
-        "data": {
-          "id": "I.16",
-          "label": "tat paraṁ puruṣa-khyāter guṇa-vaitṛṣṇyam",
-          "Translation_Bryant": "Higher than renunciation is indifference to the guṇas [themselves]. This stems from perception of the […]"
-        }
-      },
-      {
-        "data": {
-          "id": "I.17",
-          "label": "vitarka-vicārānandāsmitā-rūpānugamāt samprajñātaḥ",
-          "Translation_Bryant": "Samprajñāta [samādhi] consists of [the consecutive] mental stages of absorption with physical awareness, absorption with subtle awareness, absorption with bliss, and absorption with the sense of I-ness."
-        }
-      },
-      {
-        "data": {
-          "id": "I.18",
-          "label": "virāma-pratyayābhyāsa-pūrvaḥ saṁskāra-śeṣo ‘nyaḥ",
-          "Translation_Bryant": "The other samādhi [asamprajñāta-samādhi] is preceded by cultivating the determination to terminate [all thoughts]. [In this state] only latent impressions remain."
-        }
-      },
-      {
-        "data": {
-          "id": "I.19",
-          "label": "bhava-pratyayo videha-prakṛti-layānām",
-          "Translation_Bryant": "For [some], those who are unembodied and those who are merged in matter, [the state of samprajñāta is characterized] by absorption in [subtle] states of prakṛti."
-        }
-      },
-      {
-        "data": {
-          "id": "I.20",
-          "label": "śraddhā-vīrya-smṛti-samādhi-prajñā-pūrvaka itareṣām",
-          "Translation_Bryant": "[But] for others, [the state where only subconscious impressions remain] is preceded by faith, vigor, memory, samādhi absorption, and discernment."
-        }
-      },
-      {
-        "data": {
-          "id": "I.21",
-          "label": "tīvra-saṁvegānām āsannaḥ",
-          "Translation_Bryant": "[This state of samprajñāta] is near for those who apply themselves intensely."
-        }
-      },
-      {
-        "data": {
-          "id": "I.22",
-          "label": "mṛdu-madhyādhimātratvāt tato ‘pi viśeṣaḥ",
-          "Translation_Bryant": "Even among these, there is further differentiation [of this intensity into degrees of] mild, mediocre, and ardent."
-        }
-      },
-      {
-        "data": {
-          "id": "I.23",
-          "label": "Īśvara-praṇidhānād vā",
-          "Translation_Bryant": "Or, [this previously mentioned state is attainable] from devotion to the Lord."
-        }
-      },
-      {
-        "data": {
-          "id": "I.24",
-          "label": "kleśa-karma-vipākāśayair aparāmṛṣṭaḥ puruṣa-viśeṣa Īśvaraḥ",
-          "Translation_Bryant": "The Lord is a special soul[…]"
-        }
-      },
-      {
-        "data": {
-          "id": "I.25",
-          "label": "tatra niratiśāyam sarvajña-bījam",
-          "Translation_Bryant": "In him, the seed of omniscience is unsurpassed."
-        }
-      },
-      {
-        "data": {
-          "id": "I.26",
-          "label": "pūrveṣām api guruḥ kālenānavacchedāt",
-          "Translation_Bryant": "Īśvara was also the teacher of the ancients, because he is not limited by Time."
-        }
-      },
-      {
-        "data": {
-          "id": "I.27",
-          "label": "tasya vācakaḥ praṇavaḥ",
-          "Translation_Bryant": "The name designating him is the mystical syllable oṁ."
-        }
-      },
-      {
-        "data": {
-          "id": "I.28",
-          "label": "taj-japas tad-artha-bhāvanam",
-          "Translation_Bryant": "Its repetition and the contemplation of its meaning [should be performed]."
-        }
-      },
-      {
-        "data": {
-          "id": "I.29",
-          "label": "tataḥ pratyak-cetanādhigamo ‘py antarāyābhāvaś ca",
-          "Translation_Bryant": "From this comes the realization of the inner consciousness and freedom from all disturbances."
-        }
-      },
-      {
-        "data": {
-          "id": "I.30",
-          "label": "vyādhi-styāna-saṁśaya-pramādālasyāvirati-bhrānti-darśanālabdha-bhūmikatvānavasthitatvāni citta-vikṣepās te ‘ntarāyāḥ",
-          "Translation_Bryant": "These disturbances are disease, idleness, doubt, carelessness, sloth, lack of detachment, misapprehension, failure to attain a base for concentration, and instability. They are distractions for the mind."
-        }
-      },
-      {
-        "data": {
-          "id": "I.31",
-          "label": "duḥkha-daurmanasyāṅgam-ejayatva-śvāsa-praśvāsā vikṣepa-saha-bhuvaḥ",
-          "Translation_Bryant": "Suffering, dejection, trembling, inhalation, and exhalation accompany the distractions."
-        }
-      },
-      {
-        "data": {
-          "id": "I.32",
-          "label": "tat-pratiṣedhārtham eka-tattvābhyāsaḥ",
-          "Translation_Bryant": "Practice [of fixing the mind] on one object [should be performed] in order to eliminate these disturbances."
-        }
-      },
-      {
-        "data": {
-          "id": "I.33",
-          "label": "maitrī-karuṇā-muditopekṣaṇāṁ sukha-duḥkha-puṇyāpuṇya-viṣayāṇāṁ bhāvanātas citta-prasādanam",
-          "Translation_Bryant": "By cultivating an attitude of friendship toward those who are happy, compassion toward those in distress; joy toward those who are virtuous, and equanimity toward those who are non-virtuous, lucidity arises in the mind."
-        }
-      },
-      {
-        "data": {
-          "id": "I.34",
-          "label": "pracchardana-vidhāraṇābhyāṁ vā prāṇasya",
-          "Translation_Bryant": "Or [stability of mind is gained] by exhaling and retaining the breath."
-        }
-      },
-      {
-        "data": {
-          "id": "I.35",
-          "label": "viṣayavatī vā pravṛttir utpannā manasaḥ sthiti-nibandhanī",
-          "Translation_Bryant": "Or else, focus on a sense object arises, and this causes steadiness of the mind."
-        }
-      },
-      {
-        "data": {
-          "id": "I.36",
-          "label": "viśokā vā jyotiṣmatī",
-          "Translation_Bryant": "Or [steadiness of mind is gained when] the mind is pain-free and luminous."
-        }
-      },
-      {
-        "data": {
-          "id": "I.37",
-          "label": "vīta-rāga-viṣayaṁ vā cittam",
-          "Translation_Bryant": "Or [the mind becomes steady when it has] one who is free from desire as its object."
-        }
-      },
-      {
-        "data": {
-          "id": "I.38",
-          "label": "svapna-nidrā-jñānālambanaṁ vā",
-          "Translation_Bryant": "Or [the mind can become steady when it has] the knowledge attained from sleep and dreams as its support."
-        }
-      },
-      {
-        "data": {
-          "id": "I.39",
-          "label": "yathābhimata-dhyānād vā",
-          "Translation_Bryant": "Or [steadiness of the mind is attained] from meditation upon anything of one’s inclination."
-        }
-      },
-      {
-        "data": {
-          "id": "I.40",
-          "label": "paramāṇu-parama-mahattvānto ‘sya vaśīkaraḥ",
-          "Translation_Bryant": "The yogī’s mastery extends from the smallest particle of matter to the totality of matter."
-        }
-      },
-      {
-        "data": {
-          "id": "I.41",
-          "label": "kṣīṇa-vṛtter abhijātasyeva maṇer grahītṛ-grahaṇa-grāhyeṣu tat-stha-tad-añjanatā samāpattiḥ",
-          "Translation_Bryant": "Samāpatti, complete absorption of the mind when it is free from its vṛttis, occurs when the mind becomes just like a transparent jewel, taking the form of whatever object is placed before it, whether the object be the knower, the instrument of knowledge, or the object of knowledge."
-        }
-      },
-      {
-        "data": {
-          "id": "I.42",
-          "label": "tatra śabdārtha-jñāna-vikalpaiḥ saṅkīrṇā savitarkā-samāpattiḥ",
-          "Translation_Bryant": "In this stage, savitarka-samāpatti, “samādhi absorption with physical awareness” is intermixed with the notions of word, meaning, and idea."
-        }
-      },
-      {
-        "data": {
-          "id": "I.43",
-          "label": "smṛti-pariśuddhau svarūpa-śūnyevārtha-mātra-nirbhāsā nirvitarkā",
-          "Translation_Bryant": "Nirvitarka [samāpatti], “absorption without conceptualization,” occurs when memory has been purged and the mind is empty, as it were, of its own [reflective] nature. Now only the object [of meditation] shines forth [in its own right]."
-        }
-      },
-      {
-        "data": {
-          "id": "I.44",
-          "label": "etayaiva savicārā nirvicārā ca sūkṣma-viṣayā vyākhyātā",
-          "Translation_Bryant": "The states of samādhi with “subtle awareness” and without “subtle awareness,” whose objects of focus are the subtle nature [of things], are explained in the same manner."
-        }
-      },
-      {
-        "data": {
-          "id": "I.45",
-          "label": "sūkṣma-viṣayatvaṁ cāliṅga-paryavasānam",
-          "Translation_Bryant": "The subtle nature of things extends all the way up to prakṛti."
-        }
-      },
-      {
-        "data": {
-          "id": "I.46",
-          "label": "tā eva sabījaḥ samādhiḥ",
-          "Translation_Bryant": "These above mentioned samāpatti states are [known as] samādhi meditative absorption “with seed.”"
-        }
-      },
-      {
-        "data": {
-          "id": "I.47",
-          "label": "nirvicāra-vaiśāradye ‘dhyātma-prasādaḥ",
-          "Translation_Bryant": "Upon attaining the clarity of nirvicāra-samādhi, there is lucidity of the inner self."
-        }
-      },
-      {
-        "data": {
-          "id": "I.48",
-          "label": "ṛtam-bharā tatra prajñā",
-          "Translation_Bryant": "In that state, there is truth-bearing wisdom."
-        }
-      },
-      {
-        "data": {
-          "id": "I.49",
-          "label": "śrutānumāna-prajñābhyām anya-viṣayā viśeṣ ārthatvāt",
-          "Translation_Bryant": "It [seedless samādhi] has a different focus from that of inference and sacred scripture, because it has the particularity of things as its object."
-        }
-      },
-      {
-        "data": {
-          "id": "I.50",
-          "label": "taj-jaḥ saṁskāro ‘nya-saṁskāra-pratibandhī",
-          "Translation_Bryant": "The saṁskāras born out of that [truth-bearing wisdom] obstruct other saṁskāras [from emerging]."
-        }
-      },
-      {
-        "data": {
-          "id": "I.51",
-          "label": "tasyāpi nirodhe sarva-nirodhān nirbījaḥ samādhiḥ",
-          "Translation_Bryant": "Upon the cessation of even those [truth-bearing saṁskāras], nirbīja-samādhi, seedless meditative absorption, ensues."
-        }
-      }
-    ],
-    "edges": [
-      {
-        "data": {
-          "source": "I.1",
-          "target": "I.2",
-          "id": "169f6755-5a6f-4c2e-ac5e-124649bcb8d7"
-        }
-      },
-      {
-        "data": {
-          "source": "I.2",
-          "target": "I.3",
-          "id": "7f6171e1-3c8f-4fb5-828f-0c259ebc6edd"
-        }
-      },
-      {
-        "data": {
-          "source": "I.3",
-          "target": "I.4",
-          "id": "52b53d3a-2227-4090-92b5-cea3251dcffc"
-        }
-      },
-      {
-        "data": {
-          "source": "I.4",
-          "target": "I.5",
-          "id": "b01d9c20-cad2-496e-9bba-93aa1f85980f"
-        }
-      },
-      {
-        "data": {
-          "source": "I.5",
-          "target": "I.6",
-          "id": "0e971a41-c98a-4993-b20e-4be245985d04"
-        }
-      },
-      {
-        "data": {
-          "source": "I.6",
-          "target": "I.7",
-          "id": "cfe6da6c-7275-4480-85c9-500db3b9abb6"
-        }
-      },
-      {
-        "data": {
-          "source": "I.6",
-          "target": "I.8",
-          "id": "ccd3a7af-324d-41e3-9083-757ae6fb1519"
-        }
-      },
-      {
-        "data": {
-          "source": "I.6",
-          "target": "I.9",
-          "id": "172caf48-402a-4ea8-a74d-89b8b4ebbc6f"
-        }
-      },
-      {
-        "data": {
-          "source": "I.6",
-          "target": "I.10",
-          "id": "ba131c43-67e5-44a2-81d4-d4f3a8ea9b5a"
-        }
-      },
-      {
-        "data": {
-          "source": "I.6",
-          "target": "I.11",
-          "id": "6440d3cc-9248-4509-ac3a-7ce9507ab1e3"
-        }
-      },
-      {
-        "data": {
-          "source": "I.5",
-          "target": "I.12",
-          "id": "b2a098cd-5969-4a74-891d-aa3cf981c049"
-        }
-      },
-      {
-        "data": {
-          "source": "I.12",
-          "target": "I.13",
-          "id": "df1377a4-2dca-49ba-aab3-203027842061"
-        }
-      },
-      {
-        "data": {
-          "source": "I.12",
-          "target": "I.15",
-          "id": "9e3b64b9-e63a-4e65-b909-8e2ba31b97ac"
-        }
-      },
-      {
-        "data": {
-          "source": "I.15",
-          "target": "I.16",
-          "id": "769ff2a2-e660-4428-b159-d6a60f633dff"
-        }
-      },
-      {
-        "data": {
-          "source": "I.13",
-          "target": "I.14",
-          "id": "8e0922af-911b-46f9-8e95-1c1b2795fcc5"
-        }
-      },
-      {
-        "data": {
-          "source": "I.3",
-          "target": "I.17",
-          "id": "7dc21dae-5d96-470c-9244-bced49364e20"
-        }
-      },
-      {
-        "data": {
-          "source": "I.17",
-          "target": "I.18",
-          "id": "bfc8b2b6-3077-44b8-94ff-108d8d77f671"
-        }
-      },
-      {
-        "data": {
-          "source": "I.18",
-          "target": "I.19",
-          "id": "5508c182-3564-4b2e-91ec-24d4038a3432"
-        }
-      },
-      {
-        "data": {
-          "source": "I.17",
-          "target": "I.19",
-          "id": "9bae155b-f6b8-4ccf-913c-7c5d34badfd2"
-        }
-      },
-      {
-        "data": {
-          "source": "I.18",
-          "target": "I.20",
-          "id": "5cf7d0f9-6bff-4e23-bfea-8769adf43321"
-        }
-      },
-      {
-        "data": {
-          "source": "I.19",
-          "target": "I.20",
-          "id": "23929393-c7b5-4587-8978-eed19468bc59"
-        }
-      },
-      {
-        "data": {
-          "source": "I.20",
-          "target": "I.21",
-          "id": "f1b458c6-7a63-46c2-b3f7-a68e5937f874"
-        }
-      },
-      {
-        "data": {
-          "source": "I.21",
-          "target": "I.22",
-          "id": "13872086-0380-455f-94d0-b76cf933ad8a"
-        }
-      },
-      {
-        "data": {
-          "source": "I.17",
-          "target": "I.23",
-          "id": "016fe8d3-f070-4e8d-84e3-34c9b8088202"
-        }
-      },
-      {
-        "data": {
-          "source": "I.23",
-          "target": "I.24",
-          "id": "757f6910-78d9-402c-8b72-2a6393563913"
-        }
-      },
-      {
-        "data": {
-          "source": "I.24",
-          "target": "I.25",
-          "id": "2adf87cb-99cf-47f5-af87-fe6d7326bcf7"
-        }
-      },
-      {
-        "data": {
-          "source": "I.25",
-          "target": "I.26",
-          "id": "88a46c4b-d913-40ea-aa5a-3390d47b6ca1"
-        }
-      },
-      {
-        "data": {
-          "source": "I.26",
-          "target": "I.28",
-          "id": "93561d84-da79-4e13-ac16-6e77560c3dc9"
-        }
-      },
-      {
-        "data": {
-          "source": "I.23",
-          "target": "I.25",
-          "id": "a724e583-5476-4b09-b6af-582f8ff03d7d"
-        }
-      },
-      {
-        "data": {
-          "source": "I.23",
-          "target": "I.26",
-          "id": "b5fbeaea-f39b-42e4-9e7a-0c48a9839625"
-        }
-      },
-      {
-        "data": {
-          "source": "I.24",
-          "target": "I.28",
-          "id": "b7b02991-1a0e-4398-b838-16f3c3e14f33"
-        }
-      },
-      {
-        "data": {
-          "source": "I.25",
-          "target": "I.28",
-          "id": "85ec5631-b0ae-471f-924f-cd4951714db2"
-        }
-      },
-      {
-        "data": {
-          "source": "I.28",
-          "target": "I.27",
-          "id": "a3b567f7-38a7-4346-a1a1-8d3c27a41aa9"
-        }
-      },
-      {
-        "data": {
-          "source": "I.17",
-          "target": "I.29",
-          "id": "40897611-9477-423c-aff3-f8a3f34496a3"
-        }
-      },
-      {
-        "data": {
-          "source": "I.29",
-          "target": "I.30",
-          "id": "0d09f349-5737-4c87-ba15-8523a1b14692"
-        }
-      },
-      {
-        "data": {
-          "source": "I.30",
-          "target": "I.31",
-          "id": "4d697da2-3b72-472e-a6d2-1a7991295651"
-        }
-      },
-      {
-        "data": {
-          "source": "I.30",
-          "target": "I.32",
-          "id": "8929d135-5ac7-496a-879f-99c872818958"
-        }
-      },
-      {
-        "data": {
-          "source": "I.23",
-          "target": "I.27",
-          "id": "bb487693-a62f-4ca0-87b5-52b48b1178ff"
-        }
-      },
-      {
-        "data": {
-          "source": "I.20",
-          "target": "I.22",
-          "id": "6590b4ea-bc02-4b90-a232-b9e192e46ef6"
-        }
-      },
-      {
-        "data": {
-          "source": "I.47",
-          "target": "I.44",
-          "id": "0d7db610-4a1a-48de-b82d-860bbd9aed27"
-        }
-      },
-      {
-        "data": {
-          "source": "I.30",
-          "target": "I.33",
-          "id": "d34e42e3-0715-4f2d-8e5a-09d2a4b28649"
-        }
-      },
-      {
-        "data": {
-          "source": "I.48",
-          "target": "I.47",
-          "id": "2cae0b60-5015-4b0e-b82f-72e4e550d8e2"
-        }
-      },
-      {
-        "data": {
-          "source": "I.33",
-          "target": "I.38",
-          "id": "c36c6b72-5c33-43e8-8b62-b73d561fec26"
-        }
-      },
-      {
-        "data": {
-          "source": "I.49",
-          "target": "I.48",
-          "id": "cf4cc52c-0e6e-4c83-bc91-e9403cb5de9d"
-        }
-      },
-      {
-        "data": {
-          "source": "I.17",
-          "target": "I.41",
-          "id": "2780af67-c22c-4b8e-b3aa-b59c8894913a"
-        }
-      },
-      {
-        "data": {
-          "source": "I.41",
-          "target": "I.42",
-          "id": "c11705e4-cbff-432c-a280-3e4201f2a8ce"
-        }
-      },
-      {
-        "data": {
-          "source": "I.41",
-          "target": "I.43",
-          "id": "d722662b-c1a2-4b20-974d-e376ad42088a"
-        }
-      },
-      {
-        "data": {
-          "source": "I.41",
-          "target": "I.44",
-          "id": "15049bfc-2f59-4ba7-8ac0-c1c8209d814c"
-        }
-      },
-      {
-        "data": {
-          "source": "I.39",
-          "target": "I.40",
-          "id": "2888968c-dcb4-4488-8899-9db8350df9ee"
-        }
-      },
-      {
-        "data": {
-          "source": "I.44",
-          "target": "I.45",
-          "id": "065af23a-d362-4529-9229-769d68a5fb46"
-        }
-      },
-      {
-        "data": {
-          "source": "I.44",
-          "target": "I.46",
-          "id": "f568dc6a-a18b-4eaa-9417-7c67ddad8a76"
-        }
-      },
-      {
-        "data": {
-          "source": "I.43",
-          "target": "I.46",
-          "id": "dd42c843-7463-4b1a-a465-1987876d7aa8"
-        }
-      },
-      {
-        "data": {
-          "source": "I.42",
-          "target": "I.46",
-          "id": "f4441133-9fdb-45c3-906f-97790908ba18"
-        }
-      },
-      {
-        "data": {
-          "source": "I.46",
-          "target": "I.17",
-          "id": "702655be-9030-4e01-982f-d7e0d2618ab6"
-        }
-      },
-      {
-        "data": {
-          "source": "I.45",
-          "target": "I.40",
-          "id": "40538a56-0c8f-4cbb-a83b-cc2cc37b6638"
-        }
-      },
-      {
-        "data": {
-          "source": "I.51",
-          "target": "I.50",
-          "id": "6c3af9e8-0b89-4cec-b762-3b362f42381d"
-        }
-      },
-      {
-        "data": {
-          "source": "I.26",
-          "target": "I.27",
-          "id": "55546442-4395-4c90-85e2-438278dd4093"
-        }
-      },
-      {
-        "data": {
-          "source": "I.33",
-          "target": "I.39",
-          "id": "245f121b-be49-4c42-adda-093e56b3cc02"
-        }
-      },
-      {
-        "data": {
-          "source": "I.33",
-          "target": "I.34",
-          "id": "8feee38f-5114-4542-acc6-62af81f54ea4"
-        }
-      },
-      {
-        "data": {
-          "source": "I.33",
-          "target": "I.35",
-          "id": "223c97b2-72ff-437b-b5ca-b2e9da9e2810"
-        }
-      },
-      {
-        "data": {
-          "source": "I.33",
-          "target": "I.36",
-          "id": "b340ff9d-0eaf-4a70-9ab7-ca3694c8078d"
-        }
-      },
-      {
-        "data": {
-          "source": "I.33",
-          "target": "I.37",
-          "id": "e84edff0-40f3-4ed6-b972-0aaba0029c40"
-        }
-      },
-      {
-        "data": {
-          "source": "I.49",
-          "target": "I.50",
-          "id": "a2a67df1-c26d-408c-ad62-fd9d64180473"
-        }
-      },
-      {
-        "data": {
-          "source": "I.47",
-          "target": "I.49",
-          "id": "33a43439-4d69-4677-a7f0-2e7aa21611e0"
-        }
-      },
-      {
-        "data": {
-          "source": "I.47",
-          "target": "I.50",
-          "id": "9dd708b5-7b5c-4a42-a04f-5941707bef0d"
-        }
-      },
-      {
-        "data": {
-          "source": "I.2",
-          "target": "I.4",
-          "id": "89e2e13f-edf8-40bb-bd2d-cca54c8beead"
-        }
-      }
-    ]
-  },
-  "positions": {
-    "I.1": {
-      "x": -903.396096734982,
-      "y": -229.0636223212696
+    "elements": {
+        "nodes": [
+            {
+                "data": {
+                    "id": "I.1",
+                    "label": "atha yog\u0101nu\u015b\u0101sanam",
+                    "Translation_Bryant": "Now, the teachings of yoga [are presented].",
+                    "Translation_Leggett": "Now the exposition of yoga",
+                    "Vyasa_Sanskrit": "Bh\u0101\u1e63yam - Athetyayamadhik\u0101r\u0101rtha\u1e25| Yog\u0101nu\u015b\u0101sana\u1e41 \u015b\u0101stramadhik\u1e5bta\u1e41 veditavyam| Yoga\u1e25 sam\u0101dhi\u1e25| Sa ca s\u0101rvabhauma\u015bcittasya dharma\u1e25| K\u1e63ipta\u1e41 m\u016bdha\u1e41 vik\u1e63iptam ek\u0101gra\u1e41 niruddhamiti cittabh\u016bmaya\u1e25| Tatra vik\u1e63ipte cetasi vik\u1e63epopasarjan\u012bbh\u016bta\u1e25 sam\u0101dhirna yogapak\u1e63e vartate| Yastvek\u0101gre cetasi sadbh\u016btamartham pradyotayati k\u1e63i\u1e47oti ca kle\u015b\u0101n karmabandhan\u0101ni \u015blathayati nirodhamabhimukha\u1e41 karoti sa sampraj\u00f1\u0101to yoga ity\u0101khy\u0101yate| Sa ca vitark\u0101nugato vic\u0101r\u0101nugata \u0101nand\u0101nugato'smit\u0101nugata ityupari\u1e63\u1e6d\u0101t pravedayi\u1e63y\u0101ma\u1e25| Sarvav\u1e5bttinirodhe tvasampraj\u00f1\u0101ta\u1e25 sam\u0101dhi\u1e25||1||",
+                    "Vyasa_commentary": "Commentary (bh\u0101\u1e63yam) - 'Atha' (atha iti), this (word) (ayam) means (artha\u1e25) (the beginning of) a topic (adhik\u0101ra)| It is to be understood (vediyatavyam) that (this) scripture (\u015b\u0101stram) (dealing with) the instruction (anu\u015b\u0101sanam) regarding Yoga (yoga) (is) the subject (to be studied) (adhik\u1e5btam)| Yoga (yoga\u1e25) is Sam\u0101dhi or Perfect Concentration (sam\u0101dhi\u1e25)| And (ca) this (Yoga) (sa\u1e25) (is) a quality (dharma\u1e25) related to all conditions (s\u0101rvabhauma) of the mind (cittasya)| (Those) mental (citta) conditions (bh\u016bmaya\u1e25) (are the following:) K\u1e63ipta --restless-- (k\u1e63iptam), M\u016b\u1e0dha --stupefied-- (m\u016b\u1e0dham), Vik\u1e63ipta --distraught-- (vik\u1e63iptam), Ek\u0101gra --one-pointed-- (ek\u0101gram) (and) Niruddha --arrested or suppressed-- (niruddham iti)| In that (tatra) distraught (vik\u1e63ipte) mind --cetas-- (cetasi), Sam\u0101dhi or Perfect Concentration (sam\u0101dhi\u1e25) is (bh\u016bta\u1e25) subordinated (upasarjan\u012b) to (its) distraction (vik\u1e63epa). (This Sam\u0101dhi) is not (na... vartate) on the Yoga's (yoga) side (pak\u1e63e) --i.e. it does not belong to Yoga--| However (tu) that (Sam\u0101dhi) (ya\u1e25) (occurring) in an one-pointed (ek\u0101gre) mind --cetas-- (cetasi) brings enlightenment (pradyotayati) about a real (sadbh\u016btam) entity (artham)1  and (ca) destroys (k\u1e63i\u1e47oti) the Kle\u015ba-s or Afflictions (kle\u015b\u0101n)2 , loosens (\u015blathayati) the bonds (bandh\u0101ni) of Karma (karma) (and) leads (abhimukham karoti) to the arrested or suppressed state of mind (nirodham). That (Sam\u0101dhi) (sa\u1e25) is to be called (\u0101khy\u0101te) Sampraj\u00f1\u0101tayoga (sampraj\u00f1\u0101to yoga\u1e25 iti)| Besides (ca), that (Sampraj\u00f1\u0101tayoga) (sa\u1e25) concerns (anugata\u1e25... anugata\u1e25... anugata\u1e25... anugata\u1e25) Vitarka (vitarka), Vic\u0101ra (vic\u0101ra), \u0100nanda (\u0101nanda) (and) Asmit\u0101 (asmit\u0101... iti) 3 . We will make (this subject) known (pravedayi\u1e63y\u0101ma\u1e25) later on (upari\u1e63\u1e6d\u0101t)| Nevertheless (tu), when all (sarva) (mental) modifications (v\u1e5btti) are suppressed (nirodhe), (that is) Asampraj\u00f1\u0101tasam\u0101dhi (asampraj\u00f1\u0101ta\u1e25 sam\u0101dhi\u1e25)||1||",
+                    "Sankara_commentary": "(Opponent) If the s\u016btra has been presented to give this definition, it should have been \u2018Yoga has inhibition of the mental processes\u2019; to put them in apposition is not right, for a definition should not be simply the thing defined. Or at any rate it should have been said, \u2018The definition is, inhibition of the mental processes.\u2019\n\n(Answer) A definition is projected (adhyas) on to the thing defined. When we say \u2018This person is Devadatta\u2019 there is a projection (adhy\u0101sa) of the definition on to the thing defined. So there is no fault.\n\nThe omission of the word All shows that the cognitive (sam\u0101dhi) too is yoga.\n\n(Opponent) (The commentator\u2019s previous gloss) But the ultra-cognitive is when there is inhibition of all mental processes is also a definition of it, so the s\u016btra should have been \u2018Yoga is inhibition of all mental processes.\u2019 This has not been said and the definition is too wide.\n\n(Answer) As to why the word All is omitted from the s\u016btra, he says that if All were put in, it would be denying that the cognitive sam\u0101dhi, which comes about by restricting the processes to a single point, is yoga at all. To prevent that, the word All is left out.\n\n(Opponent) If so, the cognitive and ultra-cognitive have the same definition and are not in fact distinguished.\n\n(Answer) The subject is yoga, as we see from the repetition of the word (in the first two s\u016btra-s). And unless he did intend a distinction, there would have been no point in putting into the definition the word yoga (which is well known to include meditation on objects).\n\n(Opponent) The word yoga is of minor importance for actual exposition; it would suit the purpose of exposition if the definition just said \u2018Inhibition of the mental processes\u2019 without the word yoga at all.\n\n(Answer) Not so, because what was introduced was an exposition of yoga, and it is exposition of yoga that has been begun, not exposition of non-yoga. The proposed definition could have too many contexts and would not be connected to the meaning of the words \u2018exposition of yoga\u2019. For the idea of an exposition of yoga does not follow from the words \u2018inhibition of mental processes\u2019.\n\n(Opponent) Why then should the word yoga lead to a definition of the ultra-cognitive sam\u0101dhi alone, and not to a definition of the cognitive, if there is no such distinction in the word itself?\n\n(Answer) Because it applies exactly. What applies loosely is not a definition of a thing. The definition as inhibition applies exactly to the ultra-cognitive sam\u0101dhi, but only loosely to the cognitive. Having horns is not the mark of cow-ness, because it applies also to buffaloes and other animals.\n\n(Opponent) Neither is inhibition exact as a definition of the ultra-cognitive; (it is too loose) because there is inhibition in the cognitive too, namely inhibition of the undesired mental processes.\n\n(Answer) True, but the ultra-cognitive cannot be defined by anything else except inhibition. Inhibition alone is its definition because nothing else is there, whereas the cognitive is definable in terms of special characteristics like verbal associations. As a parallel case, when tangibility is cited as a defining mark, it is the element Air alone that is defined by the fact of tangibility, which is regarded as special to it, though in fact tangibility is found also in the other elements in the descending order from Fire (to Water and then Earth).\n\nThus the word yoga is simply a corroboration (anuv\u0101da), and so it is that All has not been put in the s\u016btra. It is settled that the ultra-cognitive is defined by the bare word \u2018inhibition\u2019, and if \u2018All (the mental processes)\u2019 were included, it would deny that the cognitive also is yoga. Therefore this is the definition of ultra-cognitive alone, and the commentator will sum up later in these words: Ultra-cognitive (a-sam-praj\u00f1\u0101ta) in the sense that in it no thing is cognized (sam-praj\u00f1\u0101yate): this yoga is inhibition of the mental process.\n\nWhat is the nature of that mind, inhibition of whose processes is called yoga? To explain mind and its processes and their inhibition, the commentator says:\n\nNow mind always tends towards illumination, activity, or stasis (sthiti); so it consists of the three gu\u1e47a-s.\n\nMind is said to consist of the three gu\u1e47a-s, because it is always tending towards illumination, activity, or stasis. Illumination is making known, bringing to light, that being characteristic of sattva gu\u1e47a. Activity is motion and operation, that being characteristic of rajas. Stasis is being stationary, limitation, and resistance, such being characteristic of tamas. These are the invariable tendencies of the gu\u1e47a-s, and as mind is always tending towards one of them, it is true to say that it is continual transformation of the three gu\u1e47a-s.\n\nTo the objection that illumination and the others have not been established as causes, he says:\n\nFor mind-sattva is by nature illumination.\n\nThe word For means that this is something generally accepted; it is well known in the world and from scripture how mind makes everything manifest. So mind is sattva, and is therefore called mind-sattva, because its main transformation is that of sattva.\n\nOr again, mind can be pointed out clearly as pure knowledge (khy\u0101ti) having other mental processes mutually combining and separating. So it is that he says For mind-sattva is by nature illumination.\n\nMingled with rajas and tamas, mind is drawn towards power and possessions. Pervaded by tamas, it becomes subject to a-dharma, Ignorance, attachment and helplessness. That same mind, when the covering of illusion (moha) has dwindled, pervaded by a measure of rajas, is endowed with dharma, knowledge (j\u00f1\u0101na), detachment and power. When the last trace of the stain of rajas is removed, the mind is grounded in its own nature, becoming simply the Knowledge (khy\u0101ti) that sattva and Puru\u1e63a are different, and it is endowed with the Rain-cloud of Dharma, which the meditators call the highest prasa\u1e45khy\u0101na (continuous meditation on Knowledge).\n\nNow he explains the conflicting varieties of mental processes which arise from relative dominance or subordination of rajas and tamas. When sattva is predominant, but mingled with rajas and tamas, they being equally strong, mind becomes fond of power and possessions, and this fondness for them is passion. The meaning is, that thoughts arise concentrated on the passion for power and possessions.\n\nWhen that mind, which is illumination by nature, is pervaded by tamas, with rajas subordinate in it, then tainted thoughts arise of a-dharma and the other three (Ignorance, passion, and helplessness).\n\nThat same mind, when the covering of illusion has dwindled, when tamas has been overcome, as when the rain-cloud passes away the darkness is at an end and the sun-disc illumines everything pervaded by a measure by a trace of rajas, is endowed with dharma, etc. (knowledge, detachment, and power), and pure thoughts of dharma and the others arise.\n\nWhen the last stain of the trace of rajas is removed, the mind is grounded in its own nature in its own nature as illumination and that alone. It becomes simply the Knowledge that sattva and Puru\u1e63a are different. Mind is sattva, and Puru\u1e63a is the experiencer (bhokt\u1e5b); discriminating them as different is Knowledge (khy\u0101ti) of them, awareness of them. The word simply indicates that it is free from taints or any other things (than Knowledge). It is endowed with the meditation called Rain-cloud of Dharma, this being the sam\u0101dhi of that name.\n\nThe mind overcomes rajas and tamas by power of prasa\u1e45khy\u0101na, which is meditation (dhy\u0101na) established in the perception of the nature of Puru\u1e63a alone, pure Knowledge itself, which the meditators the yogins call the highest prasa\u1e45khy\u0101na (continuous meditation on Knowledge).\n\nThe power-of-consciousness is unchangeable, does not engage with objects, has the objects shown to it, is pure and infinite.\n\nHaving explained what the mental process is in itself, he shows how it is to be inhibited. The power-of-consciousness (citi-\u015bakti) is unchangeable: consciousness alone is power, so it is called power-of-consciousness. Powers which blossom out only in births appropriate to the possession of those powers are not inherent power, but consciousness is inherent power, dependent on nothing else. It is therefore eternally established. The apposition of the word consciousness (citi) meaning pure consciousness (cinm\u0101tra) and the word power (\u015bakti) is to show that the subjective consciousness is of unvarying nature. This being so, it is something unchanging. When in an abiding possessor-of-qualities (dharmin), one quality (dharma) gives way to a different one, that is called change. Since this consciousness never changes, it is unchanging. For just this reason, it does not engage with objects. For it is only things like mind, which do change, that are found to engage with objects.\n\nSo the various objects are shown to it: an object is shown to it through the mind (anta\u1e25-kara\u1e47a). Therefore it is pure and therefore in space and in time it is infinite. (In this explanation which has been given) each fact is to be understood as the cause of the next one.\n\nOpposed to pure consciousness is Knowledge-of-the-difference (viveka-khy\u0101ti), whose nature is sattva-gu\u1e47a. Therefore the mind, turning away from even that Knowledge, inhibits it.\n\nAn example of the contrary is mind and senses. Opposed to pure consciousness is Knowledge-of-the-difference, whose nature is sattva-gu\u1e47a. Sattva-gu\u1e47a means pure sattva, and its essence is that alone. To say that its nature is sattva means that its nature is essentially to illumine. Again, it is said to be essentially sattva-gu\u1e47a because this thought is not concerned with any object of the world.\n\nAgain, Knowledge is bound by the very fact of being Knowledge, just because it is essentially sattva. This Knowledge being thus distinct from, and opposed to, the characteristics of the power-of-consciousness described, does have changes and so on.\n\nBeing associated with qualities like change, it is inferior to the supreme Puru\u1e63a which is free from them. Therefore because it sees the defect (do\u1e63a) in its own nature, the mind, turning away from giving up even that Knowledge, inhibits it.\n\nIn this state what remains is sa\u1e43sk\u0101ra-s, and it is the seedless (nirb\u012bja) sam\u0101dhi. There is no cognition of anything in it, so it is ultra-cognitive. This yoga is inhibition of the mental processes.\n\nIn this state the state of inhibition what remains is sa\u1e43sk\u0101ra-s; only sa\u1e43sk\u0101ra-s are left. This sam\u0101dhi in this state of inhibition is the seedless. The meaning is, that here the seed is gone; in this all the seeds of taint and so on are gone.\n\nTo show this very mark of the ultra-cognitive sam\u0101dhi, he quotes the s\u016btra, This yoga is inhibition of the mental processes.\n\nWhat is Puru\u1e63a, the cognizer of buddhi (buddhi-bodh\u0101tman), in that state when there is no object for him?"
+                }
+            },
+            {
+                "data": {
+                    "id": "I.2",
+                    "label": "yoga\u015b citta-v\u1e5btti-nirodha",
+                    "Translation_Bryant": "Yoga is the stilling of the changing states of the mind.",
+                    "tags": "Samkhya, Buddhism",
+                    "Translation_Leggett": "Yoga is inhibition of the mental processes"
+                }
+            },
+            {
+                "data": {
+                    "id": "I.3",
+                    "label": "tad\u0101 dra\u1e63\u1e6du\u1e25 svar\u016bpe \u2018vasth\u0101nam",
+                    "Translation_Bryant": "When that is accomplished, the seer abides in its own true nature.",
+                    "comment": "<strong>Comments:</strong> ",
+                    "tags": "Upanishad",
+                    "Translation_Leggett": "Then the Seer is established in his own nature"
+                }
+            },
+            {
+                "data": {
+                    "id": "I.4",
+                    "label": "v\u1e5btti-s\u0101r\u016bpyam itaratra",
+                    "Translation_Bryant": "Otherwise, at other times, [the seer] is absorbed in the changing states [of the mind].",
+                    "tags": "Samkhya",
+                    "Translation_Leggett": "Otherwise, it conforms itself to the mental process"
+                }
+            },
+            {
+                "data": {
+                    "id": "I.5",
+                    "label": "v\u1e5bttaya\u1e25 pa\u00f1catayya\u1e25 kli\u1e63\u1e6d\u0101kli\u1e63\u1e6d\u0101\u1e25",
+                    "Translation_Bryant": "There are five kinds of changing states of the mind, and they are either detrimental or nondetrimental [to the practice of yoga].",
+                    "tags": "Samkhya, Buddhism",
+                    "Translation_Leggett": "The mental processes are of five kinds; they are tainted or pure"
+                }
+            },
+            {
+                "data": {
+                    "id": "I.6",
+                    "label": "pram\u0101\u1e47a-viparyaya-vikalpa-nidr\u0101-sm\u1e5btaya\u1e25",
+                    "Translation_Bryant": "[These five v\u1e5bttis are] right knowledge, error, imagination, sleep, and memory.",
+                    "Translation_Leggett": "Right knowledge, illusion, logical construction, sleep, memory"
+                }
+            },
+            {
+                "data": {
+                    "id": "I.7",
+                    "label": "pratyak\u1e63\u0101num\u0101n\u0101gam\u0101\u1e25 pram\u0101\u1e47\u0101ni",
+                    "Translation_Bryant": "Right knowledge consists of sense perception, logic, and verbal testimony.",
+                    "tags": "Samkhya, Upanishad",
+                    "Translation_Leggett": "Right knowledge is either direct perception, inference, or authority"
+                }
+            },
+            {
+                "data": {
+                    "id": "I.8",
+                    "label": "viparyayo mithy\u0101-j\u00f1\u0101nam atad-r\u016bpa-prati\u1e63\u1e6dham",
+                    "Translation_Bryant": "Error is false knowledge stemming from the incorrect apprehension [of something].",
+                    "Translation_Leggett": "Illusion is false knowledge based on an untrue form"
+                }
+            },
+            {
+                "data": {
+                    "id": "I.9",
+                    "label": "\u015babda-j\u00f1\u0101n\u0101nup\u0101t\u012b vastu-\u015b\u016bnyo vikalpa\u1e25",
+                    "Translation_Bryant": "Metaphor consists of the usage of words that are devoid of an actual object.",
+                    "Translation_Leggett": "Logical construction is something that follows verbal knowledge but has no real object"
+                }
+            },
+            {
+                "data": {
+                    "id": "I.10",
+                    "label": "abh\u0101va-pratyay\u0101lamban\u0101 v\u1e5bttir nidr\u0101",
+                    "Translation_Bryant": "Deep sleep is that state of mind which is based on an absence [of any content].",
+                    "Translation_Leggett": "The mental process which rests on the notion of non-existence is sleep"
+                }
+            },
+            {
+                "data": {
+                    "id": "I.11",
+                    "label": "anubh\u016bta-vi\u1e63ay\u0101sampramo\u1e63a\u1e25 sm\u1e5bti\u1e25",
+                    "Translation_Bryant": "Memory is the retention of [images of] sense objects that have been experienced.",
+                    "tags": "Buddhism",
+                    "Translation_Leggett": "Memory is not letting slip away an object experienced"
+                }
+            },
+            {
+                "data": {
+                    "id": "I.12",
+                    "label": "abhy\u0101sa-vair\u0101gy\u0101bhy\u0101\u1e41 tan-nirodha\u1e25",
+                    "Translation_Bryant": "[The v\u1e5btti states of mind] are stilled by practice and dispassion.",
+                    "Translation_Leggett": "Their inhibition is by practice and detachment"
+                }
+            },
+            {
+                "data": {
+                    "id": "I.13",
+                    "label": "tatra sthitau yatno \u2018bhy\u0101sa\u1e25",
+                    "Translation_Bryant": "From these, practice is the effort to be fixed in concentrating the mind.",
+                    "Translation_Leggett": "Practice is the effort at steadiness in it"
+                }
+            },
+            {
+                "data": {
+                    "id": "I.14",
+                    "label": "sa tu d\u012brgha-k\u0101la-nairantarya-satk\u0101r\u0101sevito d\u1e5b\u1e0dha-bh\u016bmi\u1e25",
+                    "Translation_Bryant": "Practice becomes firmly established when it has been cultivated uninterruptedly and with devotion over a prolonged period of time.",
+                    "Translation_Leggett": "But practised for a long time, uninterruptedly and with reverence, it becomes firmly grounded"
+                }
+            },
+            {
+                "data": {
+                    "id": "I.15",
+                    "label": "d\u1e5b\u1e63\u1e6d\u0101nu\u015bravika-vi\u1e63aya-vit\u1e5b\u1e63\u1e47asya va\u015b\u012bk\u0101ra-sa\u1e41j\u00f1\u0101 vair\u0101gyam",
+                    "Translation_Bryant": "Dispassion is the controlled consciousness of one who is without craving for sense objects, whether these are actually perceived, or described [in scripture].",
+                    "Translation_Leggett": "Detachment is consciousness of self-mastery, of one who has no thirst for any object either seen or heard about"
+                }
+            },
+            {
+                "data": {
+                    "id": "I.16",
+                    "label": "tat para\u1e41 puru\u1e63a-khy\u0101ter gu\u1e47a-vait\u1e5b\u1e63\u1e47yam",
+                    "Translation_Bryant": "Higher than renunciation is indifference to the gu\u1e47as [themselves]. This stems from perception of the [\u2026]",
+                    "Translation_Leggett": "It is the higher detachment when from knowledge of Puru\u1e63a there is no thirst for (even) the gu\u1e47a-s"
+                }
+            },
+            {
+                "data": {
+                    "id": "I.17",
+                    "label": "vitarka-vic\u0101r\u0101nand\u0101smit\u0101-r\u016bp\u0101nugam\u0101t sampraj\u00f1\u0101ta\u1e25",
+                    "Translation_Bryant": "Sampraj\u00f1\u0101ta [sam\u0101dhi] consists of [the consecutive] mental stages of absorption with physical awareness, absorption with subtle awareness, absorption with bliss, and absorption with the sense of I-ness.",
+                    "Translation_Leggett": "It is cognitive because accompanied with verbal associations (vitarka), with subtle associations (vic\u0101ra), with joy (\u0101nanda), and the form of I-am-ness (asmit\u0101)"
+                }
+            },
+            {
+                "data": {
+                    "id": "I.18",
+                    "label": "vir\u0101ma-pratyay\u0101bhy\u0101sa-p\u016brva\u1e25 sa\u1e41sk\u0101ra-\u015be\u1e63o \u2018nya\u1e25",
+                    "Translation_Bryant": "The other sam\u0101dhi [asampraj\u00f1\u0101ta-sam\u0101dhi] is preceded by cultivating the determination to terminate [all thoughts]. [In this state] only latent impressions remain.",
+                    "Translation_Leggett": "The other (sam\u0101dhi) follows on practice of the idea of stopping, and consists of sa\u1e43sk\u0101ra-s alone"
+                }
+            },
+            {
+                "data": {
+                    "id": "I.19",
+                    "label": "bhava-pratyayo videha-prak\u1e5bti-lay\u0101n\u0101m",
+                    "Translation_Bryant": "For [some], those who are unembodied and those who are merged in matter, [the state of sampraj\u00f1\u0101ta is characterized] by absorption in [subtle] states of prak\u1e5bti.",
+                    "Translation_Leggett": "It results from birth in the case of gods discarnate, and in the case of those who absorb themselves into prak\u1e5bti"
+                }
+            },
+            {
+                "data": {
+                    "id": "I.20",
+                    "label": "\u015braddh\u0101-v\u012brya-sm\u1e5bti-sam\u0101dhi-praj\u00f1\u0101-p\u016brvaka itare\u1e63\u0101m",
+                    "Translation_Bryant": "[But] for others, [the state where only subconscious impressions remain] is preceded by faith, vigor, memory, sam\u0101dhi absorption, and discernment.",
+                    "Translation_Leggett": "For the others, it comes after faith, energy, memory, (cognitive) sam\u0101dhi, and knowledge"
+                }
+            },
+            {
+                "data": {
+                    "id": "I.21",
+                    "label": "t\u012bvra-sa\u1e41veg\u0101n\u0101m \u0101sanna\u1e25",
+                    "Translation_Bryant": "[This state of sampraj\u00f1\u0101ta] is near for those who apply themselves intensely.",
+                    "Translation_Leggett": "For those who practise with ardent energy, it is near"
+                }
+            },
+            {
+                "data": {
+                    "id": "I.22",
+                    "label": "m\u1e5bdu-madhy\u0101dhim\u0101tratv\u0101t tato \u2018pi vi\u015be\u1e63a\u1e25",
+                    "Translation_Bryant": "Even among these, there is further differentiation [of this intensity into degrees of] mild, mediocre, and ardent.",
+                    "Translation_Leggett": "Even among the ardent, there is a distinction of mild or moderate or intense"
+                }
+            },
+            {
+                "data": {
+                    "id": "I.23",
+                    "label": "\u012a\u015bvara-pra\u1e47idh\u0101n\u0101d v\u0101",
+                    "Translation_Bryant": "Or, [this previously mentioned state is attainable] from devotion to the Lord.",
+                    "Translation_Leggett": "Or by special devotion to the Lord"
+                }
+            },
+            {
+                "data": {
+                    "id": "I.24",
+                    "label": "kle\u015ba-karma-vip\u0101k\u0101\u015bayair apar\u0101m\u1e5b\u1e63\u1e6da\u1e25 puru\u1e63a-vi\u015be\u1e63a \u012a\u015bvara\u1e25",
+                    "Translation_Bryant": "The Lord is a special soul[\u2026]",
+                    "Translation_Leggett": "Untouched by taints or karma-s or their fruition or their latent stocks is the Lord, who is a special kind of Puru\u1e63a"
+                }
+            },
+            {
+                "data": {
+                    "id": "I.25",
+                    "label": "tatra nirati\u015b\u0101yam sarvaj\u00f1a-b\u012bjam",
+                    "Translation_Bryant": "In him, the seed of omniscience is unsurpassed.",
+                    "Translation_Leggett": "In whom the seed of omniscience becomes transcendent"
+                }
+            },
+            {
+                "data": {
+                    "id": "I.26",
+                    "label": "p\u016brve\u1e63\u0101m api guru\u1e25 k\u0101len\u0101navacched\u0101t",
+                    "Translation_Bryant": "\u012a\u015bvara was also the teacher of the ancients, because he is not limited by Time.",
+                    "Translation_Leggett": "The teacher of even the first teachers, because not particularized by time"
+                }
+            },
+            {
+                "data": {
+                    "id": "I.27",
+                    "label": "tasya v\u0101caka\u1e25 pra\u1e47ava\u1e25",
+                    "Translation_Bryant": "The name designating him is the mystical syllable o\u1e41.",
+                    "Translation_Leggett": "Of him, the expression is pra\u1e47ava (OM)"
+                }
+            },
+            {
+                "data": {
+                    "id": "I.28",
+                    "label": "taj-japas tad-artha-bh\u0101vanam",
+                    "Translation_Bryant": "Its repetition and the contemplation of its meaning [should be performed].",
+                    "Translation_Leggett": "Repetition of it and meditation on its meaning"
+                }
+            },
+            {
+                "data": {
+                    "id": "I.29",
+                    "label": "tata\u1e25 pratyak-cetan\u0101dhigamo \u2018py antar\u0101y\u0101bh\u0101va\u015b ca",
+                    "Translation_Bryant": "From this comes the realization of the inner consciousness and freedom from all disturbances.",
+                    "Translation_Leggett": "From that, realization of the separate consciousness, and absence of obstacles"
+                }
+            },
+            {
+                "data": {
+                    "id": "I.30",
+                    "label": "vy\u0101dhi-sty\u0101na-sa\u1e41\u015baya-pram\u0101d\u0101lasy\u0101virati-bhr\u0101nti-dar\u015ban\u0101labdha-bh\u016bmikatv\u0101navasthitatv\u0101ni citta-vik\u1e63ep\u0101s te \u2018ntar\u0101y\u0101\u1e25",
+                    "Translation_Bryant": "These disturbances are disease, idleness, doubt, carelessness, sloth, lack of detachment, misapprehension, failure to attain a base for concentration, and instability. They are distractions for the mind.",
+                    "Translation_Leggett": "Illness, apathy, doubt, carelessness, laziness, failure to withdraw, misconceptions, failure to attain a state, instability (in the state) \u2013 these distractions of the mind are the obstacles"
+                }
+            },
+            {
+                "data": {
+                    "id": "I.31",
+                    "label": "du\u1e25kha-daurmanasy\u0101\u1e45gam-ejayatva-\u015bv\u0101sa-pra\u015bv\u0101s\u0101 vik\u1e63epa-saha-bhuva\u1e25",
+                    "Translation_Bryant": "Suffering, dejection, trembling, inhalation, and exhalation accompany the distractions.",
+                    "Translation_Leggett": "Pain, frustration, restlessness of the body, spasmodic breathing in or out are the accompaniments of these distractions"
+                }
+            },
+            {
+                "data": {
+                    "id": "I.32",
+                    "label": "tat-prati\u1e63edh\u0101rtham eka-tattv\u0101bhy\u0101sa\u1e25",
+                    "Translation_Bryant": "Practice [of fixing the mind] on one object [should be performed] in order to eliminate these disturbances.",
+                    "Translation_Leggett": "To prevent them, practice on one principle"
+                }
+            },
+            {
+                "data": {
+                    "id": "I.33",
+                    "label": "maitr\u012b-karu\u1e47\u0101-muditopek\u1e63a\u1e47\u0101\u1e41 sukha-du\u1e25kha-pu\u1e47y\u0101pu\u1e47ya-vi\u1e63ay\u0101\u1e47\u0101\u1e41 bh\u0101van\u0101tas citta-pras\u0101danam",
+                    "Translation_Bryant": "By cultivating an attitude of friendship toward those who are happy, compassion toward those in distress; joy toward those who are virtuous, and equanimity toward those who are non-virtuous, lucidity arises in the mind.",
+                    "Translation_Leggett": "The mind is made clear by meditation on friendliness towards the happy, compassion for the suffering, goodwill towards the virtuous, and disinterest in the sinful"
+                }
+            },
+            {
+                "data": {
+                    "id": "I.34",
+                    "label": "pracchardana-vidh\u0101ra\u1e47\u0101bhy\u0101\u1e41 v\u0101 pr\u0101\u1e47asya",
+                    "Translation_Bryant": "Or [stability of mind is gained] by exhaling and retaining the breath.",
+                    "Translation_Leggett": "Or by expulsion and retention of pr\u0101\u1e47a"
+                }
+            },
+            {
+                "data": {
+                    "id": "I.35",
+                    "label": "vi\u1e63ayavat\u012b v\u0101 prav\u1e5bttir utpann\u0101 manasa\u1e25 sthiti-nibandhan\u012b",
+                    "Translation_Bryant": "Or else, focus on a sense object arises, and this causes steadiness of the mind.",
+                    "Translation_Leggett": "Or achievement of supernormal perception of a divine object brings the mind to steadiness"
+                }
+            },
+            {
+                "data": {
+                    "id": "I.36",
+                    "label": "vi\u015bok\u0101 v\u0101 jyoti\u1e63mat\u012b",
+                    "Translation_Bryant": "Or [steadiness of mind is gained when] the mind is pain-free and luminous.",
+                    "Translation_Leggett": "Or a radiant perception beyond sorrow"
+                }
+            },
+            {
+                "data": {
+                    "id": "I.37",
+                    "label": "v\u012bta-r\u0101ga-vi\u1e63aya\u1e41 v\u0101 cittam",
+                    "Translation_Bryant": "Or [the mind becomes steady when it has] one who is free from desire as its object.",
+                    "Translation_Leggett": "Or on a mind whose meditation is on freedom from passion"
+                }
+            },
+            {
+                "data": {
+                    "id": "I.38",
+                    "label": "svapna-nidr\u0101-j\u00f1\u0101n\u0101lambana\u1e41 v\u0101",
+                    "Translation_Bryant": "Or [the mind can become steady when it has] the knowledge attained from sleep and dreams as its support.",
+                    "Translation_Leggett": "Or meditating on the knowledge of dream and sleep"
+                }
+            },
+            {
+                "data": {
+                    "id": "I.39",
+                    "label": "yath\u0101bhimata-dhy\u0101n\u0101d v\u0101",
+                    "Translation_Bryant": "Or [steadiness of the mind is attained] from meditation upon anything of one\u2019s inclination.",
+                    "Translation_Leggett": "Or by meditation on what appeals to him"
+                }
+            },
+            {
+                "data": {
+                    "id": "I.40",
+                    "label": "param\u0101\u1e47u-parama-mahattv\u0101nto \u2018sya va\u015b\u012bkara\u1e25",
+                    "Translation_Bryant": "The yog\u012b\u2019s mastery extends from the smallest particle of matter to the totality of matter.",
+                    "Translation_Leggett": "His mastery extends right to the ultimate atom and to the ultimate magnitude"
+                }
+            },
+            {
+                "data": {
+                    "id": "I.41",
+                    "label": "k\u1e63\u012b\u1e47a-v\u1e5btter abhij\u0101tasyeva ma\u1e47er grah\u012bt\u1e5b-graha\u1e47a-gr\u0101hye\u1e63u tat-stha-tad-a\u00f1janat\u0101 sam\u0101patti\u1e25",
+                    "Translation_Bryant": "Sam\u0101patti, complete absorption of the mind when it is free from its v\u1e5bttis, occurs when the mind becomes just like a transparent jewel, taking the form of whatever object is placed before it, whether the object be the knower, the instrument of knowledge, or the object of knowledge.",
+                    "Translation_Leggett": "Identification-in-sam\u0101dhi (sam\u0101patti) is when the mental process has dwindled and the mind rests on either the knower or the knowing process or a known object, and like a crystal apparently takes on their respective qualities"
+                }
+            },
+            {
+                "data": {
+                    "id": "I.42",
+                    "label": "tatra \u015babd\u0101rtha-j\u00f1\u0101na-vikalpai\u1e25 sa\u1e45k\u012br\u1e47\u0101 savitark\u0101-sam\u0101patti\u1e25",
+                    "Translation_Bryant": "In this stage, savitarka-sam\u0101patti, \u201csam\u0101dhi absorption with physical awareness\u201d is intermixed with the notions of word, meaning, and idea.",
+                    "Translation_Leggett": "The sam\u0101dhi-identification is called sa-vitarka when it is mixed up with mental constructs of word, thing and idea"
+                }
+            },
+            {
+                "data": {
+                    "id": "I.43",
+                    "label": "sm\u1e5bti-pari\u015buddhau svar\u016bpa-\u015b\u016bnyev\u0101rtha-m\u0101tra-nirbh\u0101s\u0101 nirvitark\u0101",
+                    "Translation_Bryant": "Nirvitarka [sam\u0101patti], \u201cabsorption without conceptualization,\u201d occurs when memory has been purged and the mind is empty, as it were, of its own [reflective] nature. Now only the object [of meditation] shines forth [in its own right].",
+                    "Translation_Leggett": "When there is purification from memories, (that sam\u0101dhi) apparently empty of its own nature of knowledge, with the object alone shining forth, is nir-vitarka"
+                }
+            },
+            {
+                "data": {
+                    "id": "I.44",
+                    "label": "etayaiva savic\u0101r\u0101 nirvic\u0101r\u0101 ca s\u016bk\u1e63ma-vi\u1e63ay\u0101 vy\u0101khy\u0101t\u0101",
+                    "Translation_Bryant": "The states of sam\u0101dhi with \u201csubtle awareness\u201d and without \u201csubtle awareness,\u201d whose objects of focus are the subtle nature [of things], are explained in the same manner.",
+                    "Translation_Leggett": "In the same way, when it is on subtle objects, it is called savic\u0101ra (with subtle associations) and nir-vic\u0101ra (without subtle associations)"
+                }
+            },
+            {
+                "data": {
+                    "id": "I.45",
+                    "label": "s\u016bk\u1e63ma-vi\u1e63ayatva\u1e41 c\u0101li\u1e45ga-paryavas\u0101nam",
+                    "Translation_Bryant": "The subtle nature of things extends all the way up to prak\u1e5bti.",
+                    "Translation_Leggett": "The scale of (causal) subtlety of objects ends in pradh\u0101na"
+                }
+            },
+            {
+                "data": {
+                    "id": "I.46",
+                    "label": "t\u0101 eva sab\u012bja\u1e25 sam\u0101dhi\u1e25",
+                    "Translation_Bryant": "These above mentioned sam\u0101patti states are [known as] sam\u0101dhi meditative absorption \u201cwith seed.\u201d",
+                    "Translation_Leggett": "These are sam\u0101dhi from-a-seed"
+                }
+            },
+            {
+                "data": {
+                    "id": "I.47",
+                    "label": "nirvic\u0101ra-vai\u015b\u0101radye \u2018dhy\u0101tma-pras\u0101da\u1e25",
+                    "Translation_Bryant": "Upon attaining the clarity of nirvic\u0101ra-sam\u0101dhi, there is lucidity of the inner self.",
+                    "Translation_Leggett": "From skill in nir-vic\u0101ra, a clearness in the self"
+                }
+            },
+            {
+                "data": {
+                    "id": "I.48",
+                    "label": "\u1e5btam-bhar\u0101 tatra praj\u00f1\u0101",
+                    "Translation_Bryant": "In that state, there is truth-bearing wisdom.",
+                    "Translation_Leggett": "In this, the knowledge is Truth-bearing"
+                }
+            },
+            {
+                "data": {
+                    "id": "I.49",
+                    "label": "\u015brut\u0101num\u0101na-praj\u00f1\u0101bhy\u0101m anya-vi\u1e63ay\u0101 vi\u015be\u1e63 \u0101rthatv\u0101t",
+                    "Translation_Bryant": "It [seedless sam\u0101dhi] has a different focus from that of inference and sacred scripture, because it has the particularity of things as its object.",
+                    "Translation_Leggett": "This knowledge is of a particular thing, unlike knowledge from authority or from inference"
+                }
+            },
+            {
+                "data": {
+                    "id": "I.50",
+                    "label": "taj-ja\u1e25 sa\u1e41sk\u0101ro \u2018nya-sa\u1e41sk\u0101ra-pratibandh\u012b",
+                    "Translation_Bryant": "The sa\u1e41sk\u0101ras born out of that [truth-bearing wisdom] obstruct other sa\u1e41sk\u0101ras [from emerging].",
+                    "Translation_Leggett": "The sa\u1e43sk\u0101ra produced by it inhibits other sa\u1e43sk\u0101ra-s"
+                }
+            },
+            {
+                "data": {
+                    "id": "I.51",
+                    "label": "tasy\u0101pi nirodhe sarva-nirodh\u0101n nirb\u012bja\u1e25 sam\u0101dhi\u1e25",
+                    "Translation_Bryant": "Upon the cessation of even those [truth-bearing sa\u1e41sk\u0101ras], nirb\u012bja-sam\u0101dhi, seedless meditative absorption, ensues.",
+                    "Translation_Leggett": "When that too is inhibited, everything is inhibited, and thus this sam\u0101dhi is without-seed"
+                }
+            }
+        ],
+        "edges": [
+            {
+                "data": {
+                    "source": "I.1",
+                    "target": "I.2",
+                    "id": "169f6755-5a6f-4c2e-ac5e-124649bcb8d7"
+                }
+            },
+            {
+                "data": {
+                    "source": "I.2",
+                    "target": "I.3",
+                    "id": "7f6171e1-3c8f-4fb5-828f-0c259ebc6edd"
+                }
+            },
+            {
+                "data": {
+                    "source": "I.3",
+                    "target": "I.4",
+                    "id": "52b53d3a-2227-4090-92b5-cea3251dcffc"
+                }
+            },
+            {
+                "data": {
+                    "source": "I.4",
+                    "target": "I.5",
+                    "id": "b01d9c20-cad2-496e-9bba-93aa1f85980f"
+                }
+            },
+            {
+                "data": {
+                    "source": "I.5",
+                    "target": "I.6",
+                    "id": "0e971a41-c98a-4993-b20e-4be245985d04"
+                }
+            },
+            {
+                "data": {
+                    "source": "I.6",
+                    "target": "I.7",
+                    "id": "cfe6da6c-7275-4480-85c9-500db3b9abb6"
+                }
+            },
+            {
+                "data": {
+                    "source": "I.6",
+                    "target": "I.8",
+                    "id": "ccd3a7af-324d-41e3-9083-757ae6fb1519"
+                }
+            },
+            {
+                "data": {
+                    "source": "I.6",
+                    "target": "I.9",
+                    "id": "172caf48-402a-4ea8-a74d-89b8b4ebbc6f"
+                }
+            },
+            {
+                "data": {
+                    "source": "I.6",
+                    "target": "I.10",
+                    "id": "ba131c43-67e5-44a2-81d4-d4f3a8ea9b5a"
+                }
+            },
+            {
+                "data": {
+                    "source": "I.6",
+                    "target": "I.11",
+                    "id": "6440d3cc-9248-4509-ac3a-7ce9507ab1e3"
+                }
+            },
+            {
+                "data": {
+                    "source": "I.5",
+                    "target": "I.12",
+                    "id": "b2a098cd-5969-4a74-891d-aa3cf981c049"
+                }
+            },
+            {
+                "data": {
+                    "source": "I.12",
+                    "target": "I.13",
+                    "id": "df1377a4-2dca-49ba-aab3-203027842061"
+                }
+            },
+            {
+                "data": {
+                    "source": "I.12",
+                    "target": "I.15",
+                    "id": "9e3b64b9-e63a-4e65-b909-8e2ba31b97ac"
+                }
+            },
+            {
+                "data": {
+                    "source": "I.15",
+                    "target": "I.16",
+                    "id": "769ff2a2-e660-4428-b159-d6a60f633dff"
+                }
+            },
+            {
+                "data": {
+                    "source": "I.13",
+                    "target": "I.14",
+                    "id": "8e0922af-911b-46f9-8e95-1c1b2795fcc5"
+                }
+            },
+            {
+                "data": {
+                    "source": "I.3",
+                    "target": "I.17",
+                    "id": "7dc21dae-5d96-470c-9244-bced49364e20"
+                }
+            },
+            {
+                "data": {
+                    "source": "I.17",
+                    "target": "I.18",
+                    "id": "bfc8b2b6-3077-44b8-94ff-108d8d77f671"
+                }
+            },
+            {
+                "data": {
+                    "source": "I.18",
+                    "target": "I.19",
+                    "id": "5508c182-3564-4b2e-91ec-24d4038a3432"
+                }
+            },
+            {
+                "data": {
+                    "source": "I.17",
+                    "target": "I.19",
+                    "id": "9bae155b-f6b8-4ccf-913c-7c5d34badfd2"
+                }
+            },
+            {
+                "data": {
+                    "source": "I.18",
+                    "target": "I.20",
+                    "id": "5cf7d0f9-6bff-4e23-bfea-8769adf43321"
+                }
+            },
+            {
+                "data": {
+                    "source": "I.19",
+                    "target": "I.20",
+                    "id": "23929393-c7b5-4587-8978-eed19468bc59"
+                }
+            },
+            {
+                "data": {
+                    "source": "I.20",
+                    "target": "I.21",
+                    "id": "f1b458c6-7a63-46c2-b3f7-a68e5937f874"
+                }
+            },
+            {
+                "data": {
+                    "source": "I.21",
+                    "target": "I.22",
+                    "id": "13872086-0380-455f-94d0-b76cf933ad8a"
+                }
+            },
+            {
+                "data": {
+                    "source": "I.17",
+                    "target": "I.23",
+                    "id": "016fe8d3-f070-4e8d-84e3-34c9b8088202"
+                }
+            },
+            {
+                "data": {
+                    "source": "I.23",
+                    "target": "I.24",
+                    "id": "757f6910-78d9-402c-8b72-2a6393563913"
+                }
+            },
+            {
+                "data": {
+                    "source": "I.24",
+                    "target": "I.25",
+                    "id": "2adf87cb-99cf-47f5-af87-fe6d7326bcf7"
+                }
+            },
+            {
+                "data": {
+                    "source": "I.25",
+                    "target": "I.26",
+                    "id": "88a46c4b-d913-40ea-aa5a-3390d47b6ca1"
+                }
+            },
+            {
+                "data": {
+                    "source": "I.26",
+                    "target": "I.28",
+                    "id": "93561d84-da79-4e13-ac16-6e77560c3dc9"
+                }
+            },
+            {
+                "data": {
+                    "source": "I.23",
+                    "target": "I.25",
+                    "id": "a724e583-5476-4b09-b6af-582f8ff03d7d"
+                }
+            },
+            {
+                "data": {
+                    "source": "I.23",
+                    "target": "I.26",
+                    "id": "b5fbeaea-f39b-42e4-9e7a-0c48a9839625"
+                }
+            },
+            {
+                "data": {
+                    "source": "I.24",
+                    "target": "I.28",
+                    "id": "b7b02991-1a0e-4398-b838-16f3c3e14f33"
+                }
+            },
+            {
+                "data": {
+                    "source": "I.25",
+                    "target": "I.28",
+                    "id": "85ec5631-b0ae-471f-924f-cd4951714db2"
+                }
+            },
+            {
+                "data": {
+                    "source": "I.28",
+                    "target": "I.27",
+                    "id": "a3b567f7-38a7-4346-a1a1-8d3c27a41aa9"
+                }
+            },
+            {
+                "data": {
+                    "source": "I.17",
+                    "target": "I.29",
+                    "id": "40897611-9477-423c-aff3-f8a3f34496a3"
+                }
+            },
+            {
+                "data": {
+                    "source": "I.29",
+                    "target": "I.30",
+                    "id": "0d09f349-5737-4c87-ba15-8523a1b14692"
+                }
+            },
+            {
+                "data": {
+                    "source": "I.30",
+                    "target": "I.31",
+                    "id": "4d697da2-3b72-472e-a6d2-1a7991295651"
+                }
+            },
+            {
+                "data": {
+                    "source": "I.30",
+                    "target": "I.32",
+                    "id": "8929d135-5ac7-496a-879f-99c872818958"
+                }
+            },
+            {
+                "data": {
+                    "source": "I.23",
+                    "target": "I.27",
+                    "id": "bb487693-a62f-4ca0-87b5-52b48b1178ff"
+                }
+            },
+            {
+                "data": {
+                    "source": "I.20",
+                    "target": "I.22",
+                    "id": "6590b4ea-bc02-4b90-a232-b9e192e46ef6"
+                }
+            },
+            {
+                "data": {
+                    "source": "I.47",
+                    "target": "I.44",
+                    "id": "0d7db610-4a1a-48de-b82d-860bbd9aed27"
+                }
+            },
+            {
+                "data": {
+                    "source": "I.30",
+                    "target": "I.33",
+                    "id": "d34e42e3-0715-4f2d-8e5a-09d2a4b28649"
+                }
+            },
+            {
+                "data": {
+                    "source": "I.48",
+                    "target": "I.47",
+                    "id": "2cae0b60-5015-4b0e-b82f-72e4e550d8e2"
+                }
+            },
+            {
+                "data": {
+                    "source": "I.33",
+                    "target": "I.38",
+                    "id": "c36c6b72-5c33-43e8-8b62-b73d561fec26"
+                }
+            },
+            {
+                "data": {
+                    "source": "I.49",
+                    "target": "I.48",
+                    "id": "cf4cc52c-0e6e-4c83-bc91-e9403cb5de9d"
+                }
+            },
+            {
+                "data": {
+                    "source": "I.17",
+                    "target": "I.41",
+                    "id": "2780af67-c22c-4b8e-b3aa-b59c8894913a"
+                }
+            },
+            {
+                "data": {
+                    "source": "I.41",
+                    "target": "I.42",
+                    "id": "c11705e4-cbff-432c-a280-3e4201f2a8ce"
+                }
+            },
+            {
+                "data": {
+                    "source": "I.41",
+                    "target": "I.43",
+                    "id": "d722662b-c1a2-4b20-974d-e376ad42088a"
+                }
+            },
+            {
+                "data": {
+                    "source": "I.41",
+                    "target": "I.44",
+                    "id": "15049bfc-2f59-4ba7-8ac0-c1c8209d814c"
+                }
+            },
+            {
+                "data": {
+                    "source": "I.39",
+                    "target": "I.40",
+                    "id": "2888968c-dcb4-4488-8899-9db8350df9ee"
+                }
+            },
+            {
+                "data": {
+                    "source": "I.44",
+                    "target": "I.45",
+                    "id": "065af23a-d362-4529-9229-769d68a5fb46"
+                }
+            },
+            {
+                "data": {
+                    "source": "I.44",
+                    "target": "I.46",
+                    "id": "f568dc6a-a18b-4eaa-9417-7c67ddad8a76"
+                }
+            },
+            {
+                "data": {
+                    "source": "I.43",
+                    "target": "I.46",
+                    "id": "dd42c843-7463-4b1a-a465-1987876d7aa8"
+                }
+            },
+            {
+                "data": {
+                    "source": "I.42",
+                    "target": "I.46",
+                    "id": "f4441133-9fdb-45c3-906f-97790908ba18"
+                }
+            },
+            {
+                "data": {
+                    "source": "I.46",
+                    "target": "I.17",
+                    "id": "702655be-9030-4e01-982f-d7e0d2618ab6"
+                }
+            },
+            {
+                "data": {
+                    "source": "I.45",
+                    "target": "I.40",
+                    "id": "40538a56-0c8f-4cbb-a83b-cc2cc37b6638"
+                }
+            },
+            {
+                "data": {
+                    "source": "I.51",
+                    "target": "I.50",
+                    "id": "6c3af9e8-0b89-4cec-b762-3b362f42381d"
+                }
+            },
+            {
+                "data": {
+                    "source": "I.26",
+                    "target": "I.27",
+                    "id": "55546442-4395-4c90-85e2-438278dd4093"
+                }
+            },
+            {
+                "data": {
+                    "source": "I.33",
+                    "target": "I.39",
+                    "id": "245f121b-be49-4c42-adda-093e56b3cc02"
+                }
+            },
+            {
+                "data": {
+                    "source": "I.33",
+                    "target": "I.34",
+                    "id": "8feee38f-5114-4542-acc6-62af81f54ea4"
+                }
+            },
+            {
+                "data": {
+                    "source": "I.33",
+                    "target": "I.35",
+                    "id": "223c97b2-72ff-437b-b5ca-b2e9da9e2810"
+                }
+            },
+            {
+                "data": {
+                    "source": "I.33",
+                    "target": "I.36",
+                    "id": "b340ff9d-0eaf-4a70-9ab7-ca3694c8078d"
+                }
+            },
+            {
+                "data": {
+                    "source": "I.33",
+                    "target": "I.37",
+                    "id": "e84edff0-40f3-4ed6-b972-0aaba0029c40"
+                }
+            },
+            {
+                "data": {
+                    "source": "I.49",
+                    "target": "I.50",
+                    "id": "a2a67df1-c26d-408c-ad62-fd9d64180473"
+                }
+            },
+            {
+                "data": {
+                    "source": "I.47",
+                    "target": "I.49",
+                    "id": "33a43439-4d69-4677-a7f0-2e7aa21611e0"
+                }
+            },
+            {
+                "data": {
+                    "source": "I.47",
+                    "target": "I.50",
+                    "id": "9dd708b5-7b5c-4a42-a04f-5941707bef0d"
+                }
+            },
+            {
+                "data": {
+                    "source": "I.2",
+                    "target": "I.4",
+                    "id": "89e2e13f-edf8-40bb-bd2d-cca54c8beead"
+                }
+            }
+        ]
     },
-    "I.2": {
-      "x": -651.4274430237048,
-      "y": -228.06613827219658
-    },
-    "I.3": {
-      "x": -453.9656900648132,
-      "y": -329.12149453498296
-    },
-    "I.4": {
-      "x": -453.09260732319115,
-      "y": -141.02515857066032
-    },
-    "I.5": {
-      "x": -97.25782710715058,
-      "y": -156.42753327481668
-    },
-    "I.6": {
-      "x": 186.19027603090854,
-      "y": -153.46816325037474
-    },
-    "I.7": {
-      "x": 491.21646040440095,
-      "y": -387.14014148379664
-    },
-    "I.8": {
-      "x": 495.35427055928886,
-      "y": -286.0571428725321
-    },
-    "I.9": {
-      "x": 494.6449011994348,
-      "y": -180.0775688406014
-    },
-    "I.10": {
-      "x": 491.1784326928857,
-      "y": -71.03709829355842
-    },
-    "I.11": {
-      "x": 492.5762690105692,
-      "y": 44.201667650405014
-    },
-    "I.12": {
-      "x": -449.3314419532057,
-      "y": 208.7833305342663
-    },
-    "I.13": {
-      "x": -92.31803202883573,
-      "y": 99.31418099209394
-    },
-    "I.14": {
-      "x": 236.88487114502118,
-      "y": 103.7136212177284
-    },
-    "I.15": {
-      "x": -89.9737492267907,
-      "y": 243.59139987730256
-    },
-    "I.16": {
-      "x": 226.849169536016,
-      "y": 250.46003721896864
-    },
-    "I.17": {
-      "x": -443.8883430879053,
-      "y": 518.0357862649325
-    },
-    "I.18": {
-      "x": -86.82489559715705,
-      "y": 431.9627611411401
-    },
-    "I.19": {
-      "x": -93.42966447846909,
-      "y": 590.4340992805576
-    },
-    "I.20": {
-      "x": 218.66819990002807,
-      "y": 482.99392388144304
-    },
-    "I.21": {
-      "x": 503.2362066043687,
-      "y": 379.8236084286643
-    },
-    "I.22": {
-      "x": 502.55813129069367,
-      "y": 573.4550814349038
-    },
-    "I.23": {
-      "x": -93.70361362752945,
-      "y": 810.5312014365891
-    },
-    "I.24": {
-      "x": 235.56921827076656,
-      "y": 696.6004268187181
-    },
-    "I.25": {
-      "x": 230.9162723830507,
-      "y": 797.3698827020269
-    },
-    "I.26": {
-      "x": 234.81757893883733,
-      "y": 895.2922218402878
-    },
-    "I.27": {
-      "x": 235.88684835574867,
-      "y": 987.2224358554276
-    },
-    "I.28": {
-      "x": 524.1158529075215,
-      "y": 822.9982662265139
-    },
-    "I.29": {
-      "x": -132.71444678967563,
-      "y": 1179.9132218371915
-    },
-    "I.30": {
-      "x": 264.26511741671754,
-      "y": 1190.4870906832211
-    },
-    "I.31": {
-      "x": 731.2188540666401,
-      "y": 987.2341945938896
-    },
-    "I.32": {
-      "x": 740.1779806239308,
-      "y": 1180.9610563912763
-    },
-    "I.33": {
-      "x": 749.2878795713277,
-      "y": 1365.694589606868
-    },
-    "I.34": {
-      "x": 1174.8078554996057,
-      "y": 1113.550176496455
-    },
-    "I.35": {
-      "x": 1162.347512709809,
-      "y": 1226.8598344041193
-    },
-    "I.36": {
-      "x": 1164.4387319856353,
-      "y": 1333.0280564875604
-    },
-    "I.37": {
-      "x": 1171.105991927313,
-      "y": 1429.2273175202572
-    },
-    "I.38": {
-      "x": 1176.5448405884615,
-      "y": 1542.1081467550496
-    },
-    "I.39": {
-      "x": 1175.673009359743,
-      "y": 1660.1063565102254
-    },
-    "I.40": {
-      "x": 604.6121413857073,
-      "y": 1683.5349520599648
-    },
-    "I.41": {
-      "x": -449.6138587139555,
-      "y": 1923.2636138494252
-    },
-    "I.42": {
-      "x": -110.04241597626124,
-      "y": 1730.571326511007
-    },
-    "I.43": {
-      "x": -104.59526516327894,
-      "y": 1935.104964565308
-    },
-    "I.44": {
-      "x": -106.68033525875374,
-      "y": 2134.895732475189
-    },
-    "I.45": {
-      "x": 240.21280765489382,
-      "y": 1784.2602294901674
-    },
-    "I.46": {
-      "x": 225.03702448621596,
-      "y": 1957.6222239603358
-    },
-    "I.47": {
-      "x": 228.84708660694102,
-      "y": 2132.3941187269543
-    },
-    "I.48": {
-      "x": 630.7484234512528,
-      "y": 2006.9732854687584
-    },
-    "I.49": {
-      "x": 634.9967657904391,
-      "y": 2119.1572731428796
-    },
-    "I.50": {
-      "x": 635.8965724090998,
-      "y": 2247.6976865323422
-    },
-    "I.51": {
-      "x": 1494.1384407992769,
-      "y": 2252.9860332124954
+    "positions": {
+        "I.1": {
+            "x": -903.396096734982,
+            "y": -229.0636223212696
+        },
+        "I.2": {
+            "x": -651.4274430237048,
+            "y": -228.06613827219658
+        },
+        "I.3": {
+            "x": -453.9656900648132,
+            "y": -329.12149453498296
+        },
+        "I.4": {
+            "x": -453.09260732319115,
+            "y": -141.02515857066032
+        },
+        "I.5": {
+            "x": -97.25782710715058,
+            "y": -156.42753327481668
+        },
+        "I.6": {
+            "x": 186.19027603090854,
+            "y": -153.46816325037474
+        },
+        "I.7": {
+            "x": 491.21646040440095,
+            "y": -387.14014148379664
+        },
+        "I.8": {
+            "x": 495.35427055928886,
+            "y": -286.0571428725321
+        },
+        "I.9": {
+            "x": 494.6449011994348,
+            "y": -180.0775688406014
+        },
+        "I.10": {
+            "x": 491.1784326928857,
+            "y": -71.03709829355842
+        },
+        "I.11": {
+            "x": 492.5762690105692,
+            "y": 44.201667650405014
+        },
+        "I.12": {
+            "x": -449.3314419532057,
+            "y": 208.7833305342663
+        },
+        "I.13": {
+            "x": -92.31803202883573,
+            "y": 99.31418099209394
+        },
+        "I.14": {
+            "x": 236.88487114502118,
+            "y": 103.7136212177284
+        },
+        "I.15": {
+            "x": -89.9737492267907,
+            "y": 243.59139987730256
+        },
+        "I.16": {
+            "x": 226.849169536016,
+            "y": 250.46003721896864
+        },
+        "I.17": {
+            "x": -443.8883430879053,
+            "y": 518.0357862649325
+        },
+        "I.18": {
+            "x": -86.82489559715705,
+            "y": 431.9627611411401
+        },
+        "I.19": {
+            "x": -93.42966447846909,
+            "y": 590.4340992805576
+        },
+        "I.20": {
+            "x": 218.66819990002807,
+            "y": 482.99392388144304
+        },
+        "I.21": {
+            "x": 503.2362066043687,
+            "y": 379.8236084286643
+        },
+        "I.22": {
+            "x": 502.55813129069367,
+            "y": 573.4550814349038
+        },
+        "I.23": {
+            "x": -93.70361362752945,
+            "y": 810.5312014365891
+        },
+        "I.24": {
+            "x": 235.56921827076656,
+            "y": 696.6004268187181
+        },
+        "I.25": {
+            "x": 230.9162723830507,
+            "y": 797.3698827020269
+        },
+        "I.26": {
+            "x": 234.81757893883733,
+            "y": 895.2922218402878
+        },
+        "I.27": {
+            "x": 235.88684835574867,
+            "y": 987.2224358554276
+        },
+        "I.28": {
+            "x": 524.1158529075215,
+            "y": 822.9982662265139
+        },
+        "I.29": {
+            "x": -132.71444678967563,
+            "y": 1179.9132218371915
+        },
+        "I.30": {
+            "x": 264.26511741671754,
+            "y": 1190.4870906832211
+        },
+        "I.31": {
+            "x": 731.2188540666401,
+            "y": 987.2341945938896
+        },
+        "I.32": {
+            "x": 740.1779806239308,
+            "y": 1180.9610563912763
+        },
+        "I.33": {
+            "x": 749.2878795713277,
+            "y": 1365.694589606868
+        },
+        "I.34": {
+            "x": 1174.8078554996057,
+            "y": 1113.550176496455
+        },
+        "I.35": {
+            "x": 1162.347512709809,
+            "y": 1226.8598344041193
+        },
+        "I.36": {
+            "x": 1164.4387319856353,
+            "y": 1333.0280564875604
+        },
+        "I.37": {
+            "x": 1171.105991927313,
+            "y": 1429.2273175202572
+        },
+        "I.38": {
+            "x": 1176.5448405884615,
+            "y": 1542.1081467550496
+        },
+        "I.39": {
+            "x": 1175.673009359743,
+            "y": 1660.1063565102254
+        },
+        "I.40": {
+            "x": 604.6121413857073,
+            "y": 1683.5349520599648
+        },
+        "I.41": {
+            "x": -449.6138587139555,
+            "y": 1923.2636138494252
+        },
+        "I.42": {
+            "x": -110.04241597626124,
+            "y": 1730.571326511007
+        },
+        "I.43": {
+            "x": -104.59526516327894,
+            "y": 1935.104964565308
+        },
+        "I.44": {
+            "x": -106.68033525875374,
+            "y": 2134.895732475189
+        },
+        "I.45": {
+            "x": 240.21280765489382,
+            "y": 1784.2602294901674
+        },
+        "I.46": {
+            "x": 225.03702448621596,
+            "y": 1957.6222239603358
+        },
+        "I.47": {
+            "x": 228.84708660694102,
+            "y": 2132.3941187269543
+        },
+        "I.48": {
+            "x": 630.7484234512528,
+            "y": 2006.9732854687584
+        },
+        "I.49": {
+            "x": 634.9967657904391,
+            "y": 2119.1572731428796
+        },
+        "I.50": {
+            "x": 635.8965724090998,
+            "y": 2247.6976865323422
+        },
+        "I.51": {
+            "x": 1494.1384407992769,
+            "y": 2252.9860332124954
+        }
     }
-  }
 }
