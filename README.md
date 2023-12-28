@@ -1,2 +1,2 @@
 # Patanjali-project
-New ways of accessing old texts. 
+Graph exploration tool for the Yoga Sutra aphorisms. 
