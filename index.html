@@ -280,14 +280,14 @@
                     }
 
                     // Event listener for the "Add Link" button
-                document.getElementById('add-link-btn').addEventListener('click', function () {
+                document.getElementById('add-link-btn').addEventListener('tap', function () {
                     handleNodeClick((sourceNode, targetNode) => {
                         cy.add({ data: { source: sourceNode.id(), target: targetNode.id() } });
                     });
                 });
 
                // Event listener for the "Remove Link" button
-                document.getElementById('remove-link-btn').addEventListener('click', function () {
+                document.getElementById('remove-link-btn').addEventListener('tap', function () {
                 handleNodeClick((sourceNode, targetNode) => {
                     var edges = cy.edges().filter(edge => {
                         return (edge.source().id() === sourceNode.id() && edge.target().id() === targetNode.id()) ||
