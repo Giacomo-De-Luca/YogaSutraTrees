@@ -28,13 +28,7 @@
         left: 50%;
         transform: translateX(-50%);
     }
-        header::after {
-            content: "";
-            display: block;
-            height: 1px;
-            background-color: gray;
-            margin: 0 25%;
-        }
+
     #details-content {
             overflow: auto;
             max-height: 400px; /* Set the maximum height */
@@ -51,13 +45,17 @@
   <div id="cy"></div>
 
   <div id="sidebar" class="fixed right-0 bottom-0  w-64 overflow-auto p-4 flex flex-col items-center justify-center transition-transform transform duration-500 ease-in-out border-t border-gray-600" style="height: 90%;  transform: translateX(100%); background-color: rgba(201, 201, 201, 0.6);">
-    <h2 class="text-xl font-bold mb-4 text-white">Options</h2>
+    <h2 class="text-xl font-bold mb-4 text-grey-500">Options</h2>
     <button id="add-link-btn" class="bg-blue-500 hover:bg-blue-700 text-white w-full font-bold py-2 px-4 rounded mb-2">Add Edge</button>
     <button id="remove-link-btn" class="bg-blue-500 hover:bg-blue-700 text-white w-full font-bold py-2 px-4 rounded mb-2">Remove edge</button>
+    <div class="flex justify-between">
+        <input type="text" id="node-id-input" placeholder="Enter node ID" class="flex-grow bg-transparent text-center mr-2">
+        <button id="go-to-node-btn" class="flex-none  active:text-indigo-400 " style="width: auto;">Go</button>
+    </div>
     <div class="mt-4 w-full">
         <select id="displaySelector" class="mt-1 block w-full py-4 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" multiple="multiple"></select>  
         <select id="attributeSelector" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" multiple="multiple"></select>  
-        <select id="tagSelect" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" multiple="multiple"></select>  
+        <select id="tagSelect" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-transparent rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" multiple="multiple"></select>  
     </div>
   </div>
 
@@ -65,18 +63,19 @@
 
   <div id="leftSidebar" class="fixed left-0 bottom-0 w-96 resize-x overflow-auto p-4 flex flex-col items-center justify-center transition-transform transform duration-500 ease-in-out border-t border-gray-600" style="height: 90%; transform: translateX(-100%); background-color: rgba(201, 201, 201, 0.6);">
       <button id="resize-btn"></button>
-      <div id="details-content"></div>
-      <div id="editable-content">
-        <p id="tagsSection" ondblclick="makeTagsEditable(this)"><strong>Tags:</strong></p>
-        <p id="referencesSection" ondblclick="makeReferencesEditable(this)"><strong>References:</strong></p>
-        <p id="commentsSection" ondblclick="makeCommentsEditable(this)"><strong>Comments:</strong></p>
+      <div id="details-content" class="w-full text-justified"></div>
+      <div id="editable-content" class="w-full p-2">
+        <p id="tagsSection" ondblclick="makeTagsEditable(this)" class="w-full border-b border-gray-700 p-4 "><strong>Tags:</strong></p>
+        <p id="referencesSection" ondblclick="makeReferencesEditable(this)" class="w-full p-4 border-b border-gray-700 "><strong>References:</strong></p>
+        <p id="commentsSection" ondblclick="makeCommentsEditable(this)" class="w-full p-4"><strong>Comments:</strong></p>
     </div>
-  </div>
+</div>
 
 
   <div id="myDiv" style="background-image: url('bg8.jpg'); background-repeat: no-repeat; background-size: cover; background-attachment: fixed; height: 1000px;">
     <div>
         <header id="wonderHeader" class="fixed w-full bg-white bg-opacity-75 top-0" style="height: 10vh;">
+            <div class="absolute inset-x-1/4 bottom-0 h-px bg-gray-700"></div>
             <nav class="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
                 <div class="flex lg:flex-1 justify-start">
                     <a href="https://github.com/yourusername" target="_blank" class="shadow-xl">
@@ -88,8 +87,7 @@
                     <button id="saveButton" class="text-sm font-semibold leading-6 text-gray-900 hover:text-indigo-600 active:bg-violet-700 ">Save</button>
                     <button id="load-btn" class="text-sm font-semibold leading-6 text-gray-900 hover:text-indigo-600 active:bg-violet-700 ">Load</button>
                     <input type="file" id="file-input" accept=".json" style="display: none;">             
-                    <input type="text" id="nodeSearch" placeholder="Search" class="bg-transparent text-center">
-                </div>
+                    <input type="text" id="nodeSearch" placeholder="Search" class="text-sm bg-transparent w-20 font-semibold text-left">                </div>
                 <div class="flex lg:flex-1 justify-end relative">
                     <button id="sidebarToggle" class="ml-auto z-100 hover:text-indigo-600">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6">
@@ -108,7 +106,7 @@
         <!-- Your existing text content -->
         <div class="text-center">
             <h1 class="text-4xl font-bold tracking-tight text-black sm:text-6xl">Yoga Sutra Trees</h1>
-            <p class="mt-6 text-lg leading-8 text-gray-800">A Graph visualization tool to explore Patanjali's
+            <p class="mt-6 text-lg leading-8 text-gray-800">A Graph visualization project to explore Patanjali's
                 Aphorisms</p>
             <div class="mt-10 flex items-center justify-center gap-x-6">
                 <a href="#" onclick="toggleContent()"
@@ -185,14 +183,7 @@
                                     'line-color': '#8BCCE6', // Change this to the color you want for the new type of edge
                                     'target-arrow-color': '#ccc'
                                 }
-                            },
-                            {
-                                selector: '.highlighted',
-                                style: {
-                                    'background-color': '#E0CD9F'
-                                }
-                            },
-                    
+                            },                    
                             {
                                 selector: '.blurred',
                                 style: {
@@ -312,6 +303,7 @@
                 });
 
                 let detailsContent = "";
+                
                 function openLeftSidebar(node) {
                     const nodeId = node.id();
                     var leftSidebar = document.getElementById('leftSidebar');
@@ -550,7 +542,38 @@
                 
                     return '#' + r.toString(16).padStart(2, '0') + g.toString(16).padStart(2, '0') + b.toString(16).padStart(2, '0');
                 }
-
+                
+                // Function to handle the search action
+                function handleSearch() {
+                    // Remove the 'highlighted' class from all nodes
+                    cy.nodes().removeClass('highlighted');
+                    
+                    // Get the node ID from the input field
+                    var nodeId = document.getElementById('node-id-input').value;
+                    // If the input field is not empty
+                    if (nodeId) {
+                        // Find the node in the Cytoscape graph
+                        var node = cy.getElementById(nodeId);
+                        // Check if the node exists
+                        if (node.length > 0) {
+                            // Highlight the node
+                            node.addClass('highlighted');
+                            // Call the openLeftSidebar function
+                            updateDetailsID(nodeId)
+                        } else {
+                            alert('Node not found');
+                        }
+                    }
+                }
+                // Event listener for the "Go To Node" button
+                document.getElementById('go-to-node-btn').addEventListener('click', handleSearch);
+                // Event listener for the Enter key on the input field
+                document.getElementById('node-id-input').addEventListener('keypress', function (e) {
+                    // Check if the Enter key was pressed
+                    if (e.key === 'Enter') {
+                        handleSearch();
+                    }
+                });
 
 
 
@@ -748,12 +771,11 @@
                          const selectedAttributes = $('#displaySelector').select2('data').map(option => option.id);
                          
                          // Build the details content using the selected attributes
-                         let detailsContent = '<h2>Aphorism Details</h2>';
-                         selectedAttributes.forEach(attribute => {
-                             if (selectedNode.data(attribute)) {
-                                 detailsContent += `<p><strong>${attribute}:</strong> ${selectedNode.data(attribute)}</p>`;
-                             }
-                         });
+                         let detailsContent = '<h2 class="w-full" style="font-weight: bold !important;">Aphorism Details</h2>';                         selectedAttributes.forEach(attribute => {
+                            if (selectedNode.data(attribute)) {
+                                detailsContent += `<p class="w-full text-justified"><strong>${attribute}:</strong> ${selectedNode.data(attribute)}</p>`;
+                            }
+                        });
  
                          // Update the details content
                          document.getElementById('details-content').innerHTML = detailsContent;
@@ -771,8 +793,40 @@
                      }
                  }
 
-                 
+                 function updateDetailsID(nodeId) {
+                    // Get the node from the Cytoscape graph
+                    var selectedNode = cy.getElementById(nodeId);
                 
+                    if (selectedNode.length > 0) {
+                        // Get the selected attributes
+                        const selectedAttributes = $('#displaySelector').select2('data').map(option => option.id);
+                
+                        // Build the details content using the selected attributes
+                        let detailsContent = '<h2>Aphorism Details</h2>';
+                        selectedAttributes.forEach(attribute => {
+                            if (selectedNode.data(attribute)) {
+                                detailsContent += `<p><strong>${attribute}:</strong> ${selectedNode.data(attribute)}</p>`;
+                            }
+                        });
+                
+                        // Update the details content
+                        document.getElementById('details-content').innerHTML = detailsContent;
+                
+                        // Update the editable content
+                        document.getElementById('tagsSection').innerHTML = `<strong>Tags:</strong> ${selectedNode.data('tags') || ''}`;
+                        document.getElementById('referencesSection').innerHTML = `<strong>References:</strong> ${selectedNode.data('references') || ''}`;
+                        document.getElementById('commentsSection').innerHTML = `<strong>Comments:</strong> ${selectedNode.data('comment') || ''}`;
+                    } else {
+                        // Clear the details content if no node is selected
+                        document.getElementById('details-content').innerHTML = '';
+                        document.getElementById('tagsSection').innerHTML = '<strong>Tags:</strong>';
+                        document.getElementById('referencesSection').innerHTML = '<strong>References:</strong>';
+                        document.getElementById('commentsSection').innerHTML = '<strong>Comments:</strong>';
+                    }
+                }
+                
+                updateDetailsID('I.1')
+
 
                 
 
@@ -845,7 +899,13 @@
                 if (sidebar.style.transform === "translateX(100%)") {
                     sidebar.style.transform = "translateX(0)";  
                     sidebar.style.boxShadow = "-1px 0px 3px 0px rgba(0,0,0,0.7)";       
+
                 }
+
+                var leftSidebar = document.getElementById('leftSidebar');
+                leftSidebar.style.transform = "translateX(0)";
+                leftSidebar.style.boxShadow = "1px 0px 3px 0px rgba(0,0,0,0.7)";
+                
             }, 2500);  // Delay in milliseconds
         }
 
