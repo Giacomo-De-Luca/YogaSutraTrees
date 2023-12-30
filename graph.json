@@ -420,7 +420,1015 @@
                     "Translation_Bryant": "Upon the cessation of even those [truth-bearing sa\u1e41sk\u0101ras], nirb\u012bja-sam\u0101dhi, seedless meditative absorption, ensues.",
                     "Translation_Leggett": "When that too is inhibited, everything is inhibited, and thus this sam\u0101dhi is without-seed"
                 }
-            }
+            },
+            {
+                "data": {
+                  "id": "II.1",
+                  "label": "tapaḥ-svādhyāyeśvara-praṇidhānāni kriyā-yogaḥ",
+                  "Translation_Bryant": "Kriyā-yoga, the path of action, consists of self-discipline, study, and dedication to the Lord."
+                }
+              },
+              {
+                "data": {
+                  "id": "II.2",
+                  "label": "samādhi-bhāvanārthaḥ kleśa-tanū-karaṇārthaś ca",
+                  "Translation_Bryant": "[The yoga of action] is for bringing about samādhi and for weakening the impediments [to yoga]."
+                }
+              },
+              {
+                "data": {
+                  "id": "II.3",
+                  "label": "avidyāsmitā-rāga-dveṣābhinivesāḥ klesāḥ.",
+                  "Translation_Bryant": "The impediments [to samādhi] are nescience, ego, desire, aversion, and clinging to life."
+                }
+              },
+              {
+                "data": {
+                  "id": "II.4",
+                  "label": "avidyā kṣetram uttareṣāṁ prasupta-tanu-vicchinnodārāṇām",
+                  "Translation_Bryant": "Ignorance is the breeding ground of the other kleśas, whether they are in a dormant, weak, intermittent, or fully activated state."
+                }
+              },
+              {
+                "data": {
+                  "id": "II.5",
+                  "label": "anityāśuci-duḥkhānātmasu nitya-śuci-sukhātma-khyātir avidyā",
+                  "Translation_Bryant": "Ignorance is the notion that takes the self, which is joyful, pure, and eternal, to be the nonself, which is painful, unclean, and temporary."
+                }
+              },
+              {
+                "data": {
+                  "id": "II.6",
+                  "label": "dṛg-darśana-śaktyor ekātmatevāsmitā",
+                  "Translation_Bryant": "Ego is [to consider] the nature of the seer and the nature of the instrumental power of seeing to be the same thing."
+                }
+              },
+              {
+                "data": {
+                  "id": "II.7",
+                  "label": "sukhānuśayī rāgaḥ",
+                  "Translation_Bryant": "Attachment stems from [experiences] of happiness."
+                }
+              },
+              {
+                "data": {
+                  "id": "II.8",
+                  "label": "duḥkhānuśayī dveṣaḥ",
+                  "Translation_Bryant": "Aversion stems from [experiences] of pain."
+                }
+              },
+              {
+                "data": {
+                  "id": "II.9",
+                  "label": "svarasa-vāhī viduṣo ‘pi tathārūḍho ‘bhiniveśaḥ",
+                  "Translation_Bryant": "[The tendency of] clinging to life affects even the wise; it is an inherent tendency."
+                }
+              },
+              {
+                "data": {
+                  "id": "II.10",
+                  "label": "te pratiprasava-heyāḥ sūkṣmāḥ",
+                  "Translation_Bryant": "These kleśas are subtle; they are destroyed when [the mind] dissolves back into its original matrix."
+                }
+              },
+              {
+                "data": {
+                  "id": "II.11",
+                  "label": "dhyāna-heyās tad-vṛttayaḥ",
+                  "Translation_Bryant": "The states of mind produced by these kleśas are eliminated by meditation."
+                }
+              },
+              {
+                "data": {
+                  "id": "II.12",
+                  "label": "kleśa-mūlaḥ karmāśayo dṛṣṭādṛṣṭa-janma-vedanīyaḥ",
+                  "Translation_Bryant": "The stock of karma has the kleśas as its root. It is experienced in present or future lives."
+                }
+              },
+              {
+                "data": {
+                  "id": "II.13",
+                  "label": "sati mūe tad-vipāko jātyāyur-bhogāḥ",
+                  "Translation_Bryant": "As long as the root [of kleśas] exists, it fructifies as type of birth, span of life, and life experience [of an individual]."
+                }
+              },
+              {
+                "data": {
+                  "id": "II.14",
+                  "label": "te hlāda-paritāpa-phalāḥ puṇyāpuṇya-hetutvāt",
+                  "Translation_Bryant": "These [the type of birth, span of life, and life experience] bear the fruits of pleasure and pain, as a result of [the performance of] virtue and vice."
+                }
+              },
+              {
+                "data": {
+                  "id": "II.15",
+                  "label": "pariṇāma-tāpa-saṁskāra-duḥkhair guṇa-vṛtti-virodhāc ca duḥkham eva sarvaṁ vivekinaḥ",
+                  "Translation_Bryant": "For one who has discrimination, everything is suffering on account of the suffering produced by the consequences [of action], by pain [itself], and by the saṁskāras, as well as on account of the suffering ensuing from the turmoil of the vṛttis due to the guṇas."
+                }
+              },
+              {
+                "data": {
+                  "id": "II.16",
+                  "label": "heyaṁ duḥkham anāgatam",
+                  "Translation_Bryant": "Suffering that has yet to manifest is to be avoided."
+                }
+              },
+              {
+                "data": {
+                  "id": "II.17",
+                  "label": "draṣṭṛ-drśyayoḥ saṁyogo heya-hetuḥ",
+                  "Translation_Bryant": "The conjunction between the seer and that which is seen is the cause [of suffering] to be avoided."
+                }
+              },
+              {
+                "data": {
+                  "id": "II.18",
+                  "label": "prakāśa-kriyā-sthiti-sīlam bhūtendriyātmakaṁ bhogāpavargārthaṁ drśyam",
+                  "Translation_Bryant": "That which is knowable has the nature of illumination, activity, and inertia [sattva, rajas, and tamas]. It consists of the senses and the elements, and exists for the purpose of [providing] either liberation or experience [to puruṣa]."
+                }
+              },
+              {
+                "data": {
+                  "id": "II.19",
+                  "label": "viśeṣāviśeṣa-liṅga-mātrālingāni guṇa-parvāṇi",
+                  "Translation_Bryant": "The different stages of the guṇa qualities consist of the particularized, the unparticularized, the distinctive, and the indistinctive."
+                }
+              },
+              {
+                "data": {
+                  "id": "II.20",
+                  "label": "draṣṭā dṛśi-mātraḥ śuddho ‘pi pratyayānupaśyaḥ",
+                  "Translation_Bryant": "The seer is merely the power of seeing; [however,] although pure, he witnesses the images of mind."
+                }
+              },
+              {
+                "data": {
+                  "id": "II.21",
+                  "label": "tad-artha eva dṛśyasyātmā",
+                  "Translation_Bryant": "The essential nature of that which is seen is exclusively for the sake of the seer."
+                }
+              },
+              {
+                "data": {
+                  "id": "II.22",
+                  "label": "kṛtārthaṁ prati naṣṭam apy anaṣṭam tad-anya-sādhāraṇatvāt",
+                  "Translation_Bryant": "Although the seen ceases to exist for one whose purpose is accomplished [the liberated puruṣa], it has not ceased to exist altogether, since it is common to other [not-liberated] puruṣas."
+                }
+              },
+              {
+                "data": {
+                  "id": "II.23",
+                  "label": "kṛtārthaṁ prati naṣṭam apy anaṣṭam tad-anya-sādhāraṇatvāt",
+                  "Translation_Bryant": "Although the seen ceases to exist for one whose purpose is accomplished [the liberated puruṣa], it has not ceased to exist altogether, since it is common to other [not-liberated] puruṣas."
+                }
+              },
+              {
+                "data": {
+                  "id": "II.24",
+                  "label": "tasya hetur avidyā",
+                  "Translation_Bryant": "The cause of conjunction is ignorance."
+                }
+              },
+              {
+                "data": {
+                  "id": "II.25",
+                  "label": "tad-abhāvāt saṁyogābhāvo hānaṁ tad-dṛśeḥkaivalyam",
+                  "Translation_Bryant": "By the removal of ignorance, conjunction is removed. This is the absolute freedom of the seer."
+                }
+              },
+              {
+                "data": {
+                  "id": "II.26",
+                  "label": "viveka-khyātir aviplavā hānopāyaḥ",
+                  "Translation_Bryant": "The means to liberation is uninterrupted discriminative discernment."
+                }
+              },
+              {
+                "data": {
+                  "id": "II.27",
+                  "label": "tasya saptadhā prānta-bhūmiḥ prajñā",
+                  "Translation_Bryant": "The yogī’s true insight has seven ultimate stages."
+                }
+              },
+              {
+                "data": {
+                  "id": "II.28",
+                  "label": "yogāṅgānuṣṭhānād aśuddhi-kṣaye jñāna-dīptir-āviveka-khyāteḥ",
+                  "Translation_Bryant": "Upon the destruction of impurities as a result of the practice of yoga, the lamp of knowledge arises. This culminates in discriminative discernment."
+                }
+              },
+              {
+                "data": {
+                  "id": "II.29",
+                  "label": "yama-niyamāsana-prāṇāyāma-pratyāhāra-dhāraṇā-dhyāna-samādhayo ‘ṣṭāv aṅgāni",
+                  "Translation_Bryant": "The eight limbs are abstentions, observances, posture, breath control, disengagement of the senses, concentration, meditation, and absorption."
+                }
+              },
+              {
+                "data": {
+                  "id": "II.30",
+                  "label": "ahimsā-satyāsteya-brahmacaryāparigrahā yamāḥ",
+                  "Translation_Bryant": "The yamas are nonviolence, truthfulness, refrainment from stealing, celibacy, and renunciation of [unnecessary] possessions."
+                }
+              },
+              {
+                "data": {
+                  "id": "II.31",
+                  "label": "jāti-deśa-kāla-samayānavacchinnāḥ sārva-bhaumā mahā-vratam",
+                  "Translation_Bryant": "[These yamas] are considered the great vow. They are not exempted by one’s class, place, time, or circumstance. They are universal."
+                }
+              },
+              {
+                "data": {
+                  "id": "II.32",
+                  "label": "śauca-santoṣa-tapaḥ-svādhyāyeśvara-praṇidhānāni niyamāḥ",
+                  "Translation_Bryant": "The observances are cleanliness, contentment, austerity, study [of scripture], and devotion to God."
+                }
+              },
+              {
+                "data": {
+                  "id": "II.33",
+                  "label": "vitarka-bādhane pratipakṣa-bhāvanam",
+                  "Translation_Bryant": "Upon being harassed by negative thoughts, one should cultivate counteracting thoughts."
+                }
+              },
+              {
+                "data": {
+                  "id": "II.34",
+                  "label": "vitarkā hiṁsādayaḥ kṛta-kāritānumoditā lobha-krodha-moha-pūrvakā mṛdu-madhyādhimātrā duḥkhājñānānanta-phalā iti pratipakṣa-bhāvanam",
+                  "Translation_Bryant": "Negative thoughts are violence, etc. They may be [personally] performed, performed on one’s behalf by another, or authorized by oneself; they may be triggered by greed, anger, or delusion; and they may be slight, moderate, or extreme in intensity. One should cultivate counteracting thoughts, namely, that the end results [of negative thoughts] are ongoing suffering and ignorance."
+                }
+              },
+              {
+                "data": {
+                  "id": "II.35",
+                  "label": "ahiṁsā-pratiṣṭhāyāṁ tat-sannidhau vaira-tyāgaḥ",
+                  "Translation_Bryant": "In the presence of one who is established in nonviolence, enmity is abandoned."
+                }
+              },
+              {
+                "data": {
+                  "id": "II.36",
+                  "label": "satya-pratiṣṭhāyāṁ kriyā-phalāśrayatvam",
+                  "Translation_Bryant": "When one is established in truthfulness, one ensures the fruition of actions."
+                }
+              },
+              {
+                "data": {
+                  "id": "II.37",
+                  "label": "asteya-pratiṣṭhāyāṁ sarva-ratnopasthānam",
+                  "Translation_Bryant": "When one is established in refrainment from stealing, all jewels manifest."
+                }
+              },
+              {
+                "data": {
+                  "id": "II.38",
+                  "label": "brahmacarya-pratiṣṭhāyāṁ vīrya-lābhaḥ",
+                  "Translation_Bryant": "Upon the establishment of celibacy, power is attained."
+                }
+              },
+              {
+                "data": {
+                  "id": "II.39",
+                  "label": "aparigraha-sthairye janma-kathantā-sambodhaḥ",
+                  "Translation_Bryant": "When refrainment from covetousness becomes firmly established, knowledge of the whys and wherefores of births manifests."
+                }
+              },
+              {
+                "data": {
+                  "id": "II.40",
+                  "label": "śaucāt svāṅga-jugupsā parair asaṁsargaḥ",
+                  "Translation_Bryant": "By cleanliness, one [develops] distaste for one’s body and the cessation of contact with others."
+                }
+              },
+              {
+                "data": {
+                  "id": "II.41",
+                  "label": "sattva-śuddhi-saumanasyaikāgryendriya-jayātma-darśana-yogyatvāni ca",
+                  "Translation_Bryant": "Upon the purification of the mind, [one attains] cheerfulness, one-pointedness, sense control, and fitness to perceive the self."
+                }
+              },
+              {
+                "data": {
+                  "id": "II.42",
+                  "label": "santoṣād anuttamaḥ sukha-lābhaḥ",
+                  "Translation_Bryant": "From contentment, the highest happiness is attained."
+                }
+              },
+              {
+                "data": {
+                  "id": "II.43",
+                  "label": "kāyendriya-siddhir aśuddhi-kṣayāt tapasaḥ",
+                  "Translation_Bryant": "From austerity, on account of the removal of impurities, the perfection of the senses and body manifests."
+                }
+              },
+              {
+                "data": {
+                  "id": "II.44",
+                  "label": "svādhyāyād iṣṭa-devatā-samprayogaḥ",
+                  "Translation_Bryant": "From study [of scripture], a connection with one’s deity of choice is established."
+                }
+              },
+              {
+                "data": {
+                  "id": "II.45",
+                  "label": "samādhi-siddhir īśvara-praṇidhānāt",
+                  "Translation_Bryant": "From submission to God comes the perfection of samādhi."
+                }
+              },
+              {
+                "data": {
+                  "id": "II.46",
+                  "label": "sthira-sukham āsanam",
+                  "Translation_Bryant": "Posture should be steady and comfortable."
+                }
+              },
+              {
+                "data": {
+                  "id": "II.47",
+                  "label": "prayatna-śaithilyānanta-samāpattibhyām",
+                  "Translation_Bryant": "[Such posture should be attained] by the relaxation of effort and by absorption in the infinite."
+                }
+              },
+              {
+                "data": {
+                  "id": "II.48",
+                  "label": "tato dvandvānabhighātaḥ",
+                  "Translation_Bryant": "From this, one is not afflicted by the dualities of the opposites."
+                }
+              },
+              {
+                "data": {
+                  "id": "II.49",
+                  "label": "tasmin sati śvāsa-praśvāsayor gati-vicchedaḥ prāṇāyāmaḥ",
+                  "Translation_Bryant": "When that [āsana] is accomplished, prāṇāyāma, breath control, [follows]. This consists of the regulation of the incoming and outgoing breaths."
+                }
+              },
+              {
+                "data": {
+                  "id": "II.50",
+                  "label": "bā hyābhyantara-stambha-vṛttiḥ deśa-kāla-saṅkhyābhiḥ paridṛṣṭo dīrgha-sūkṣmaḥ",
+                  "Translation_Bryant": "[Prāṇāyāma] manifests as external, internal, and restrained movements [of breath]. These are drawn out and subtle in accordance with place, time, and number."
+                }
+              },
+              {
+                "data": {
+                  "id": "II.51",
+                  "label": "bā hyābhyantara-viṣayākṣepī caturthaḥ",
+                  "Translation_Bryant": "The fourth [type of prāṇāyāma] surpasses the limits of the external and the internal."
+                }
+              },
+              {
+                "data": {
+                  "id": "II.52",
+                  "label": "tataḥ kṣīyate prakāśāvaraṇam",
+                  "Translation_Bryant": "Then, the covering of the illumination [of knowledge] is weakened."
+                }
+              },
+              {
+                "data": {
+                  "id": "II.53",
+                  "label": "dhāraṇāsu ca yogyatā manasaḥ",
+                  "Translation_Bryant": "Additionally, the mind becomes fit for concentration."
+                }
+              },
+              {
+                "data": {
+                  "id": "II.54",
+                  "label": "svaviṣayāsamprayoge cittasya svarūpānukāra ivendriyāṇāṁ pratyāhāraḥ",
+                  "Translation_Bryant": "Pratyāhāra, withdrawal from sense objects, occurs when the senses do not come into contact with their respective sense objects. It corresponds, as it were, to the nature of the mind [when it is withdrawn from the sense objects]."
+                }
+              },
+              {
+                "data": {
+                  "id": "II.55",
+                  "label": "tataḥ paramā vaśyatendriyāṇām",
+                  "Translation_Bryant": "From this comes the highest control of the senses."
+                }
+              },
+              {
+                "data": {
+                  "id": "III.1",
+                  "label": "deśa-bandhaś cittasya dhāraṇā",
+                  "Translation_Bryant": "Concentration is the fixing of the mind in one place."
+                }
+              },
+              {
+                "data": {
+                  "id": "III.2",
+                  "label": "tatra pratyayaika-tānatā dhyānam",
+                  "Translation_Bryant": "Meditation is the one-pointedness of the mind on one image."
+                }
+              },
+              {
+                "data": {
+                  "id": "III.3",
+                  "label": "tad evārtha-mātra-nirbhāsaṁ svarūpa-śūnyam iva samādhiḥ",
+                  "Translation_Bryant": "Samādhi is when that same dhyāna shines forth as the object alone and [the mind] is devoid of its own [reflective] nature."
+                }
+              },
+              {
+                "data": {
+                  "id": "III.4",
+                  "label": "trayam ekatra saṁyamaḥ",
+                  "Translation_Bryant": "When these three are performed together, it is called saṁyama."
+                }
+              },
+              {
+                "data": {
+                  "id": "III.5",
+                  "label": "taj-jayāt prajñālokaḥ",
+                  "Translation_Bryant": "From saṁyama comes insight."
+                }
+              },
+              {
+                "data": {
+                  "id": "III.6",
+                  "label": "tasya bhūmiṣu viniyogaḥ",
+                  "Translation_Bryant": "Saṁyama is applied on the [different] stages [of samādhi]."
+                }
+              },
+              {
+                "data": {
+                  "id": "III.7",
+                  "label": "trayam antaraṅgam pūrvebhyaḥ",
+                  "Translation_Bryant": "These three [dhāraṇā, dhyāna, and samādhi] are internal limbs compared to the previous limbs [of yoga]."
+                }
+              },
+              {
+                "data": {
+                  "id": "III.8",
+                  "label": "tad api bahir-aṅgaṁ nirbījasya",
+                  "Translation_Bryant": "Yet even these are external limbs in relation to “seedless” samādhi."
+                }
+              },
+              {
+                "data": {
+                  "id": "III.9",
+                  "label": "vyutthāna-nirodha-saṁskārayor abhibhava-prādurbhāvau nirodha-kṣaṇa-cittānvayo nirodha-pariṇāmaḥ",
+                  "Translation_Bryant": "The state of restraint, nirodha, is when there is disappearance of outgoing [i.e., worldly] saṁskāras and the appearance of restraining saṁskāras. These emerge in the mind at the moment of restraint."
+                }
+              },
+              {
+                "data": {
+                  "id": "III.10",
+                  "label": "tasya praśānta-vā hitā saṁskārāt",
+                  "Translation_Bryant": "The mind’s undisturbed flow occurs due to saṁskāras."
+                }
+              },
+              {
+                "data": {
+                  "id": "III.11",
+                  "label": "sarvārthataikāgratayoḥ kṣayodayau cittasya samādhi-pariṇāmaḥ",
+                  "Translation_Bryant": "The attainment of the samādhi state involves the elimination of all-pointedness [i.e., wandering] of the mind and the rise of one-pointedness [i.e., concentration]."
+                }
+              },
+              {
+                "data": {
+                  "id": "III.12",
+                  "label": "tataḥ punaḥ śāntoditau tulya-pratyayau cittasyaikāgratā-pariṇāmaḥ",
+                  "Translation_Bryant": "In that regard, the attainment of one-pointedness occurs when the image in the mind that has just passed is the same as the image in the mind that is present."
+                }
+              },
+              {
+                "data": {
+                  "id": "III.13",
+                  "label": "etena bhūtendriyeṣu dharma-lakṣaṇāvasthā-pariṇāmā vyākhyātāḥ",
+                  "Translation_Bryant": "In this way, the change in the characteristics, state, and condition of objects and of the senses is explained."
+                }
+              },
+              {
+                "data": {
+                  "id": "III.14",
+                  "label": "śāntoditāvyapadeśya-dharmānupātī dharmī",
+                  "Translation_Bryant": "The substratum is that which underpins past, present, and future."
+                }
+              },
+              {
+                "data": {
+                  "id": "III.15",
+                  "label": "kramānyatvaṁ pariṇāmaṅyatve hetuḥ",
+                  "Translation_Bryant": "The change in the sequence [of characteristics] is the cause of the change in transformations [of objects]."
+                }
+              },
+              {
+                "data": {
+                  "id": "III.16",
+                  "label": "pariṇāma-traya-saṁyamād atītānāgata-jñānam",
+                  "Translation_Bryant": "When saṁyama is performed on the three transformations [of characteristics, state, and condition], knowledge of the past and the future ensues."
+                }
+              },
+              {
+                "data": {
+                  "id": "III.17",
+                  "label": "śabdārtha-pratyayānām itaretarādhyāsāt saṅkaras tat-pravibhāga-saṁyamāt sarva-bhūta-ruta-jñānam",
+                  "Translation_Bryant": "Due to the correlation among word, meaning, and idea, confusion ensues. By performing saṁyama on them separately, knowledge of the speech of all creatures arises."
+                }
+              },
+              {
+                "data": {
+                  "id": "III.18",
+                  "label": "saṁskāra-sākṣātkaraṇāt pūrva-jāti-jñānam",
+                  "Translation_Bryant": "By bringing [previous] saṁskāras into direct perception comes the knowledge of previous births."
+                }
+              },
+              {
+                "data": {
+                  "id": "III.19",
+                  "label": "pratyayasya para-citta-jñānam",
+                  "Translation_Bryant": "From [their] ideas, one can attain knowledge of others’ minds."
+                }
+              },
+              {
+                "data": {
+                  "id": "III.20",
+                  "label": "na ca tat-sālambanaṁ tasyāviṣayībhūtatvāt",
+                  "Translation_Bryant": "That knowledge is not accompanied by its object, since this object is not the object [of the yogī’s mind]."
+                }
+              },
+              {
+                "data": {
+                  "id": "III.21",
+                  "label": "kāya-rūpa-saṁyamāt tad-grāhya-śakti-stambhe cakṣuḥ-prakāśāsamprayoge ‘ntardhānam",
+                  "Translation_Bryant": "By performing saṁyama on the outer form of the body, invisibility [is attained]. This occurs when perceptibility is obstructed by blocking contact between light and the eyes."
+                }
+              },
+              {
+                "data": {
+                  "id": "III.22",
+                  "label": "sopakramaṁ nirupakramaṁ ca karma tat-saṁyamād aparānta-jñānam ariṣṭebhyo vā",
+                  "Translation_Bryant": "Karma is either quick to fructify or slow. By saṁyama on karma, or on portents, knowledge of [one’s] death arises."
+                }
+              },
+              {
+                "data": {
+                  "id": "III.23",
+                  "label": "maitryādiṣu balāni",
+                  "Translation_Bryant": "By [saṁyama] on friendliness and such things, strengths are acquired."
+                }
+              },
+              {
+                "data": {
+                  "id": "III.24",
+                  "label": "baleṣu hasti-balādīni",
+                  "Translation_Bryant": "[By practicing saṁyama] on strengths, [the yogī] attains the strength of an elephant, etc."
+                }
+              },
+              {
+                "data": {
+                  "id": "III.25",
+                  "label": "pravṛttyāloka-nyāsāt sūkṣma-vyavahita-viprakṛṣṭa-jñānam",
+                  "Translation_Bryant": "By directing the light of cognition, one obtains knowledge of subtle, concealed, and remote things."
+                }
+              },
+              {
+                "data": {
+                  "id": "III.26",
+                  "label": "bhuvana-jñānaṁ sūrye saṁyamāt",
+                  "Translation_Bryant": "By performing saṁyama on the sun arises knowledge of the different realms in the universe."
+                }
+              },
+              {
+                "data": {
+                  "id": "III.27",
+                  "label": "candre tārā-vyūha-jñānam",
+                  "Translation_Bryant": "[By saṁyama] on the moon, knowledge of the solar systems."
+                }
+              },
+              {
+                "data": {
+                  "id": "III.28",
+                  "label": "dhruve tad-gati-jñānam",
+                  "Translation_Bryant": "[By saṁyama] on the polestar comes knowledge of the movement of the stars."
+                }
+              },
+              {
+                "data": {
+                  "id": "III.29",
+                  "label": "nābhi-cakre kāya-vyūha-jñānam",
+                  "Translation_Bryant": "[By saṁyama] on the navel plexus of the body comes knowledge of the arrangement of the body."
+                }
+              },
+              {
+                "data": {
+                  "id": "III.30",
+                  "label": "kaṇṭha-kūpe kṣut-pipāsā-nivṛttiḥ",
+                  "Translation_Bryant": "[By saṁyama] on the pit of the throat comes the cessation of hunger and thirst."
+                }
+              },
+              {
+                "data": {
+                  "id": "III.31",
+                  "label": "kūrma-nāḍyāṁ sthairyam",
+                  "Translation_Bryant": "[By saṁyama] on the subtle tortoise channel, steadiness is attained."
+                }
+              },
+              {
+                "data": {
+                  "id": "III.32",
+                  "label": "mūrdha-jyotiṣi siddha-darśanam",
+                  "Translation_Bryant": "[By saṁyama] on the light in the skull, a vision of the siddhas, perfected beings, is attained."
+                }
+              },
+              {
+                "data": {
+                  "id": "III.33",
+                  "label": "prātibhād vā sarvam",
+                  "Translation_Bryant": "Or, by intuition, comes [knowledge of] everything."
+                }
+              },
+              {
+                "data": {
+                  "id": "III.34",
+                  "label": "hṛdaye citta-saṁvit",
+                  "Translation_Bryant": "[By saṁyama] on the heart, knowledge of the mind ensues."
+                }
+              },
+              {
+                "data": {
+                  "id": "III.35",
+                  "label": "sattva-puruṣayor atyantāsaṅkīrṇayoḥ pratyayāviśeṣo bhogaḥ parārthatvāt svārtha-saṁyamāt puruṣa-jñānam",
+                  "Translation_Bryant": "Worldly experience consists of the notion that there is no distinction between the puruṣa self and pure intelligence, although these two are completely distinct. Worldly experience exists for another [i.e., for puruṣa]. [By saṁyama] on that which exists for itself [i.e., on puruṣa], comes knowledge of puruṣa."
+                }
+              },
+              {
+                "data": {
+                  "id": "III.36",
+                  "label": "tataḥ prātibha-śrāvaṇa-vedanādarśāsvāda-vārtā jāyante",
+                  "Translation_Bryant": "From this, intuition as well as higher hearing, touch, vision, taste, and smell are born."
+                }
+              },
+              {
+                "data": {
+                  "id": "III.37",
+                  "label": "te samādhāv upasargāḥ vyutthāne siddhayaḥ",
+                  "Translation_Bryant": "These powers are accomplishments for the mind that is outgoing but obstacles to samādhi."
+                }
+              },
+              {
+                "data": {
+                  "id": "III.38",
+                  "label": "bandha-kāraṇa-śaithilyāt pracāra-saṁvedanāc ca cittasya para-śarīrāveśaḥ",
+                  "Translation_Bryant": "By loosening the cause of bondage, and by knowledge of the passageways of the mind, the mind can enter into the bodies of others."
+                }
+              },
+              {
+                "data": {
+                  "id": "III.39",
+                  "label": "udāna-jayāj jala-paṅka-kaṇṭakādiṣv asaṅga utkrāntiś ca",
+                  "Translation_Bryant": "By mastery over the udāna vital air, one attains [the power of] levitation and does not come into contact with water, mud, and thorns, etc."
+                }
+              },
+              {
+                "data": {
+                  "id": "III.40",
+                  "label": "samāna-jayāt jvalanam",
+                  "Translation_Bryant": "By mastery over the samāna vital air, radiance is attained."
+                }
+              },
+              {
+                "data": {
+                  "id": "III.41",
+                  "label": "śrotrākāśayoḥ sambandha-saṁyamād divyaṁ śrotram",
+                  "Translation_Bryant": "By saṁyama on the relationship between the organ of hearing and the ether, divine hearing is attained."
+                }
+              },
+              {
+                "data": {
+                  "id": "III.42",
+                  "label": "kāyākāśayoḥ sambandha-saṁyamāl laghu-tūla-samāpatteś cākāśa-gamanam",
+                  "Translation_Bryant": "By performing saṁyama on the relationship between the body and ether, and by performing samāpatti on the lightness of cotton, one acquires the ability to travel through the sky."
+                }
+              },
+              {
+                "data": {
+                  "id": "III.43",
+                  "label": "bahir-akalpitā vṛttir mahā-videhā tataḥ prakāśāvaraṇa-kṣayaḥ",
+                  "Translation_Bryant": "The state of mind [projected] outside [of the body], which is not an imagined state, is called the great out-of-body [experience]. By this, the covering of the light [of buddhi] is destroyed."
+                }
+              },
+              {
+                "data": {
+                  "id": "III.44",
+                  "label": "sthūla-svarūpa-sūkṣmānvayārthavattva-saṁyamād bhūta-jayaḥ",
+                  "Translation_Bryant": "By saṁyama on the gross nature, essential nature, subtle nature, constitution, and purpose [of objects, one attains] mastery over the elements."
+                }
+              },
+              {
+                "data": {
+                  "id": "III.45",
+                  "label": "tato ‘ṇimādi-prādurbhāvaḥ kāya-sampat-tad-dharmānabhighātaś ca",
+                  "Translation_Bryant": "As a result of this, there are no limitations on account of the body’s natural abilities; mystic powers such as aṇimā, etc., manifest; and the body attains perfection."
+                }
+              },
+              {
+                "data": {
+                  "id": "III.46",
+                  "label": "rūpa-lāvaṇya-bala-vajra-saṁ hananatvāni kāya-sampat",
+                  "Translation_Bryant": "The perfection of the body consists of [possessing] beauty, charm, strength, and the power of a thunderbolt."
+                }
+              },
+              {
+                "data": {
+                  "id": "III.47",
+                  "label": "grahaṇa-svarūpāsmitānvayārthavattva-saṁyamād indriya-jayaḥ",
+                  "Translation_Bryant": "By saṁyama on the process of knowing, on the essence [of the sense organs], on ego, on inherence [the guṇas], and on the purpose [of the guṇas] comes control over the senses."
+                }
+              },
+              {
+                "data": {
+                  "id": "III.48",
+                  "label": "tato mano-javitvaṁ vikaraṇa-bhāvaḥ pradhāna-jayaś ca",
+                  "Translation_Bryant": "As a result of this comes speed like the speed of mind, activity independent of the bodily senses, and mastery over primordial matter."
+                }
+              },
+              {
+                "data": {
+                  "id": "III.49",
+                  "label": "sattva-puruṣ ānyatā-khyāti-mātrasya sarva-bhāvādhiṣṭhātṛtvam sarva-jñātṛtvam ca",
+                  "Translation_Bryant": "Only for one who discerns the difference between the puruṣa and the intellect do omniscience and omnipotence accrue."
+                }
+              },
+              {
+                "data": {
+                  "id": "III.50",
+                  "label": "tad-vairāgyād api doṣa-bīja-kṣaye kaivalyam",
+                  "Translation_Bryant": "By detachment even from this attainment [i.e., omniscience and omnipotence], and upon the destruction of the seeds of all faults, kaivalya, the supreme liberation ensues."
+                }
+              },
+              {
+                "data": {
+                  "id": "III.51",
+                  "label": "sthānyupanimantraṇe saṅgasmayākaraṇaṁ punar-aniṣṭa-prasaṅgāt",
+                  "Translation_Bryant": "If solicited by celestial beings, [the yogī] should not become smug, because the tendency toward undesirable consequences can once again manifest."
+                }
+              },
+              {
+                "data": {
+                  "id": "III.52",
+                  "label": "kṣaṇa-tat-kramayoḥ saṁyamād-viveka-jaṁ jñānaṁ",
+                  "Translation_Bryant": "By performing saṁyama on the moment, and its sequence, one attains knowledge born of discrimination."
+                }
+              },
+              {
+                "data": {
+                  "id": "III.53",
+                  "label": "jāti-lakṣaṇa-deśair anyatā ‘navacchedāt tulyayos tataḥ pratipattiḥ",
+                  "Translation_Bryant": "As a result of this, there is discernment of two comparable things that are not distinguishable by species, characteristics, or location."
+                }
+              },
+              {
+                "data": {
+                  "id": "III.54",
+                  "label": "tārakaṁ sarva-viṣayaṁ sarvathā-viṣayam akramaṁ ceti vivekajaṁ jñānam",
+                  "Translation_Bryant": "Knowledge born of discrimination is a liberator; it has everything as its object at all times simultaneously."
+                }
+              },
+              {
+                "data": {
+                  "id": "III.55",
+                  "label": "sattva-puruṣayoh śuddhi-sāmye kaivalyam iti",
+                  "Translation_Bryant": "When the purity of the intellect is equal to that of the puruṣa, kaivalya liberation ensues."
+                }
+              },
+              {
+                "data": {
+                  "id": "IV.1",
+                  "label": "janmauṣadhi-mantra-tapaḥ-samādhi-jāḥ siddhayaḥ",
+                  "Translation_Bryant": "The mystic powers arise due to birth, herbs, mantras, the performance of austerity, and samādhi."
+                }
+              },
+              {
+                "data": {
+                  "id": "IV.2",
+                  "label": "jāty-antara-pariṇāmaḥ prakṛtyāpūrāt",
+                  "Translation_Bryant": "The changes [in bodily forms that take place] in other births are due to the filling in by prakṛti."
+                }
+              },
+              {
+                "data": {
+                  "id": "IV.3",
+                  "label": "nimittam aprayojakaṁ prakṛtīnāṁ varaṇa-bhedas tu tataḥ kṣetrikavat",
+                  "Translation_Bryant": "The instrumental cause of creation is not its creative cause, but it pierces the covering from creation like a farmer [pierces the barriers between his fields]."
+                }
+              },
+              {
+                "data": {
+                  "id": "IV.4",
+                  "label": "nirmāṇa-cittāny asmitā-mātrāt",
+                  "Translation_Bryant": "Created minds are made from ego only."
+                }
+              },
+              {
+                "data": {
+                  "id": "IV.5",
+                  "label": "pravṛtti-bhede prayojakaṁ cittam ekam anekeṣām",
+                  "Translation_Bryant": "There is one mind, among the many [created by the yogī], which is the director in the different activities [of the different bodies]."
+                }
+              },
+              {
+                "data": {
+                  "id": "IV.6",
+                  "label": "tatra dhyāna-jam anāśayam",
+                  "Translation_Bryant": "From these [five types of minds that possess siddhis], the one born of meditation is without the storehouse of karma."
+                }
+              },
+              {
+                "data": {
+                  "id": "IV.7",
+                  "label": "karmāśuklākṛṣṇaṁ yoginas tri-vidham itareṣām",
+                  "Translation_Bryant": "The karma of a yogī is neither white nor black; of everyone else, it is of three types."
+                }
+              },
+              {
+                "data": {
+                  "id": "IV.8",
+                  "label": "tatas tad-vipākānuguṇānām evābhivyaktir vāsanānām",
+                  "Translation_Bryant": "From [these three types of karma] the activation of only those subliminal impressions that are ready for fruition [in the next life] occurs."
+                }
+              },
+              {
+                "data": {
+                  "id": "IV.9",
+                  "label": "jāti-deśa-kāla-vyavahitānām apy ānantaryaṁ smrti-saṁskārayor eka-rūpatvāt",
+                  "Translation_Bryant": "Because they are identical, there is an uninterrupted connection between memory and saṁskāra, even though they might be separated by birth, time, and place."
+                }
+              },
+              {
+                "data": {
+                  "id": "IV.10",
+                  "label": "tāsām anāditvaṁ cāśiso nityatvāt",
+                  "Translation_Bryant": "The saṁskāras are eternal, because the desire [for life] is eternal."
+                }
+              },
+              {
+                "data": {
+                  "id": "IV.11",
+                  "label": "hetu-phalāśrayālambanaiḥ saṅgṛhītatvād eṣām abhāve tad-abhāvaḥ",
+                  "Translation_Bryant": "Since [saṁskāras] are held together by immediate cause, motive, the mind, and the object of awareness, the saṁskāras cease when the latter cease."
+                }
+              },
+              {
+                "data": {
+                  "id": "IV.12",
+                  "label": "atītānāgataṁ svarūpato ‘sty adhva-bhedād dharmāṇām",
+                  "Translation_Bryant": "The past and the future exist in reality, since they differ [from the present only] in terms of the time of [manifestation] of their characteristics."
+                }
+              },
+              {
+                "data": {
+                  "id": "IV.13",
+                  "label": "te vyakta-sūkṣmā guṇātmānaḥ",
+                  "Translation_Bryant": "The past, present, and future have the guṇas as their essence and are either manifest or latent."
+                }
+              },
+              {
+                "data": {
+                  "id": "IV.14",
+                  "label": "pariṇāmaikatvād vastu-tattvam",
+                  "Translation_Bryant": "The things [of the world] are objectively real, due to the uniformity [of the guṇas that underpin] all change."
+                }
+              },
+              {
+                "data": {
+                  "id": "IV.15",
+                  "label": "vastu-sāmye citta-bhedāt tayor vibhaktaḥ panthāḥ",
+                  "Translation_Bryant": "Because there is a multiplicity of minds [perceiving an object] but yet the object remains consistent, there is a difference in nature between the object and the mind [of the observer]."
+                }
+              },
+              {
+                "data": {
+                  "id": "IV.16",
+                  "label": "na caika-citta-tantraṁ vastu tad apramāṇakaṁ tadā kiṁ syāt",
+                  "Translation_Bryant": "An object is not dependent on a single mind [for its existence]; if it were, then what happens to it when it is not perceived [by that particular mind]?"
+                }
+              },
+              {
+                "data": {
+                  "id": "IV.17",
+                  "label": "tad-uparāgāpekṣitvāc cittasya vastu jñātājñātam",
+                  "Translation_Bryant": "A thing is either known or not known by the mind depending on whether it is noticed by the mind."
+                }
+              },
+              {
+                "data": {
+                  "id": "IV.18",
+                  "label": "sadā jñātāś citta-vṛttayas tat-prabhoḥ puruṣasyāpariṇāmitvāt",
+                  "Translation_Bryant": "The permutations of the mind are always known to its Lord, the puruṣa soul, because of the soul’s unchanging nature."
+                }
+              },
+              {
+                "data": {
+                  "id": "IV.19",
+                  "label": "na tat-svābhāsaṁ dṛśyatvāt",
+                  "Translation_Bryant": "Nor is the mind self-illuminating, because of its nature as the object of perception."
+                }
+              },
+              {
+                "data": {
+                  "id": "IV.20",
+                  "label": "eka-samaye cobhayānavadhāraṇam",
+                  "Translation_Bryant": "There cannot be discernment of both [the mind and the object it perceives] at the same time."
+                }
+              },
+              {
+                "data": {
+                  "id": "IV.21",
+                  "label": "cittāntara-dṛśye buddhi-buddher atiprasaṅgaḥ smṛti-saṅkaraś ca",
+                  "Translation_Bryant": "If [the mind] were cognized by another mind, then there would be an infinite regress of one intelligence [being known] by another intelligence. Moreover, there would also be confusion of memory."
+                }
+              },
+              {
+                "data": {
+                  "id": "IV.22",
+                  "label": "citer apratisaṅkramāyās tad-ākārāpattau svabuddhi-saṁvedanam",
+                  "Translation_Bryant": "Although it is unchanging, consciousness becomes aware of its own intelligence by means of pervading the forms assumed by the intelligence."
+                }
+              },
+              {
+                "data": {
+                  "id": "IV.23",
+                  "label": "draṣṭṛ-dṛśyoparaktaṁ cittaṁ sarvārtham",
+                  "Translation_Bryant": "The mind, colored by the seer as well as by that which is seen, knows all objects."
+                }
+              },
+              {
+                "data": {
+                  "id": "IV.24",
+                  "label": "tad-asaṅkhyeya-vāsanā-citram api parārthaṁ saṁhatya-kāritvāt",
+                  "Translation_Bryant": "That mind, with its countless variegated subliminal impressions, exists for another entity [other than itself], because it operates in conjunction [with other instruments]."
+                }
+              },
+              {
+                "data": {
+                  "id": "IV.25",
+                  "label": "viśeṣa-darśina ātma-bhāva-bhāvanā-vinivṛttiḥ",
+                  "Translation_Bryant": "For one who sees the distinction [between the mind and the soul], reflecting on the nature of the self ceases."
+                }
+              },
+              {
+                "data": {
+                  "id": "IV.26",
+                  "label": "tadā viveka-nimnaṁ kaivalya-prāgbhāraṁ cittām",
+                  "Translation_Bryant": "At that point, the mind, inclined toward discrimination, gravitates toward ultimate liberation."
+                }
+              },
+              {
+                "data": {
+                  "id": "IV.27",
+                  "label": "tac-chidreṣu pratyayāntarāṇi saṁskārebhyaḥ",
+                  "Translation_Bryant": "During the intervals [in this state of discriminate awareness] other ideas [arise] because of previous saṁskāras."
+                }
+              },
+              {
+                "data": {
+                  "id": "IV.28",
+                  "label": "hānam eṣāṁ kleśavad uktam",
+                  "Translation_Bryant": "The removal [of these previous saṁskāras] is said to be like [the removal] of the kleśa afflictions."
+                }
+              },
+              {
+                "data": {
+                  "id": "IV.29",
+                  "label": "prasaṅkhyāne ‘py akusīdasya sarvathā viveka-khyāter dharma-meghaḥ samādhiḥ",
+                  "Translation_Bryant": "For one who has no interest even in [the fruits] of meditative wisdom on account of the highest degree of discriminative insight, the samādhi called dharma-megha, cloud of virtue, ensues."
+                }
+              },
+              {
+                "data": {
+                  "id": "IV.30",
+                  "label": "tataḥ kleśa-karma-nivṛttiḥ",
+                  "Translation_Bryant": "From this comes the cessation of the kleśas [impediments to yoga] and karma."
+                }
+              },
+              {
+                "data": {
+                  "id": "IV.31",
+                  "label": "tadā sarvāvaraṇa-malāpetasya jñānasyānantyāj jñeyam alpam",
+                  "Translation_Bryant": "At this point, because of the unlimited nature of knowledge when all impurities have been removed from it, that which remains to be known is little."
+                }
+              },
+              {
+                "data": {
+                  "id": "IV.32",
+                  "label": "tataḥ kṛtārthānāṁ pariṇāma-krama-parisamāptir guṇānām",
+                  "Translation_Bryant": "As a result, there is a cessation of the ongoing permutations of the guṇas, their purpose now fulfilled."
+                }
+              },
+              {
+                "data": {
+                  "id": "IV.33",
+                  "label": "kṣaṇa-pratiyogī pariṇāmāparānta-nirgrā hyaḥ kramaḥ",
+                  "Translation_Bryant": "The progression [of any object through Time] corresponds to a [series of] moments. It is perceivable at the final [moment] of change."
+                }
+              },
+              {
+                "data": {
+                  "id": "IV.34",
+                  "label": "puruṣārtha-śūnyānāṁ guṇānāṁ pratiprasavaḥ kaivalyaṁ svarūpa-pratiṣṭhā vā citi-śaktir iti",
+                  "Translation_Bryant": "Ultimate liberation is when the guṇas, devoid of any purpose for the puruṣa, return to their original [latent] state; in other words, when the power of consciousness is situated in its own essential nature."
+                }
+              }
         ],
         "edges": [
             {
