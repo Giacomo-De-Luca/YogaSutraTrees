@@ -842,13 +842,7 @@
                          document.getElementById('tagsSection').innerHTML = `<strong>Tags:</strong> ${selectedNode.data('tags') || ''}`;
                          document.getElementById('referencesSection').innerHTML = `<strong>References:</strong> ${selectedNode.data('references') || ''}`;
                          document.getElementById('commentsSection').innerHTML = `<strong>Comments:</strong> ${selectedNode.data('comment') || ''}`;
-                     } else {
-                         // Clear the details content if no node is selected
-                         document.getElementById('details-content').innerHTML = '';
-                         document.getElementById('tagsSection').innerHTML = '<strong>Tags:</strong>';
-                         document.getElementById('referencesSection').innerHTML = '<strong>References:</strong>';
-                         document.getElementById('commentsSection').innerHTML = '<strong>Comments:</strong>';
-                     }
+                     } 
                  }
 
                  function updateDetailsID(nodeId) {
