@@ -80,7 +80,7 @@
   <div id="myDiv" style="background-image: url('bg8.jpg'); background-repeat: no-repeat; background-size: cover; background-attachment: fixed; height: 1000px;">
     <div>
         <header id="wonderHeader" class="fixed w-full bg-white bg-opacity-75 top-0" style="height: 10vh;">
-            <div class="absolute inset-x-1/4 bottom-0 h-px bg-gray-700"></div>
+            <div id="divideLine" class="absolute inset-x-1/4 bottom-0 h-px bg-gray-700"></div>
             <nav class="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
                 <div class="flex lg:flex-1 justify-start">
                     <a href="https://github.com/yourusername" target="_blank" class="shadow-xl">
@@ -941,6 +941,12 @@
                 myDiv.style.opacity = "1";
                 textContainer.style.display = "none";
                 cy.style.opacity = "1";
+
+                var divideLine = document.getElementById('divideLine');
+                // Remove the old class
+                divideLine.classList.remove('inset-x-1/4');
+                // Add the new class
+                divideLine.classList.add('inset-x-0');
 
                 var rightSidebar = document.getElementById('sidebar');
                 rightSidebar.style.transform = "translateX(0)";  
