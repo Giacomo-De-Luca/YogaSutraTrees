@@ -945,8 +945,12 @@
                 var divideLine = document.getElementById('divideLine');
                 // Remove the old class
                 divideLine.classList.remove('inset-x-1/4');
+                divideLine.classList.remove('bg-grey-700');
+
                 // Add the new class
                 divideLine.classList.add('inset-x-0');
+                divideLine.classList.add('bg-grey-500');
+
 
                 var rightSidebar = document.getElementById('sidebar');
                 rightSidebar.style.transform = "translateX(0)";  
