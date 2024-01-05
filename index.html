@@ -44,18 +44,21 @@
 
   <div id="cy"></div>
 
-  <div id="sidebar" class="fixed right-0 bottom-0  w-64 overflow-auto p-4 flex flex-col items-center justify-center transition-transform transform duration-500 ease-in-out border-t border-gray-600" style="height: 90%;  transform: translateX(100%); background-color: rgba(225, 226, 227, 0.6); backdrop-filter: blur(10px);">
+  <div id="sidebar" class="fixed right-0 bottom-0  w-64 overflow-auto p-4 flex flex-col items-center justify-center transition-transform transform duration-500 ease-in-out border-t border-gray-600" style="height: 90%;  transform: translateX(100%); background-color: rgba(225, 226, 227, 0.7); backdrop-filter: blur(10px);">
     <h2 class="text-xl font-bold mb-4 text-grey-500">Options</h2>
-    <button id="add-link-btn" class="hover:teal text-white w-full font-bold py-1 px-4 rounded mb-2" style="background-color: #248e95;">Add Edge</button>
-    <button id="remove-link-btn" class=" hover:teal text-white w-full font-bold py-1 px-4 rounded mb-2" style="background-color: #248e95;" >Remove edge</button>
+    <button id="add-link-btn" class="hover:text-indigo-600 active:text-violet-700 text-white w-full font-bold py-1 px-4 rounded mb-2" style="background-color: #248e95;">Add Edge</button>
+    <button id="remove-link-btn" class="hover:text-indigo-600 active:text-violet-700 w-full font-bold py-1 px-4 rounded mb-2" style="background-color: #248e95;" >Remove edge</button>
     <div style="display: flex; justify-content: space-between;">
-        <input type="color" id="color-picker-nodes" value="#A2E1E4">
+        <input type="color" id="color-picker-nodes" value="#F0F0F0">
         <input type="color" id="color-picker-border" value="#A2E1E4">
         <input type="color" id="color-picker-edges" value="#C6E0EA">
+        <input type="color" id="color-picker-highlight" value="#D29165">
     </div>
-    <div class="mt-4 w-full">
-        <select id="displaySelector" class="mt-1 mb-20 block w-full py-4 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" multiple="multiple"></select>  
-        <select id="attributeSelector" class="mt-1 mb-20 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" multiple="multiple"></select>  
+    <div class="mt-2 w-full">
+        <h2 class="text-base text-center text-gray-600">Display Select</h2>
+        <select id="displaySelector" class="block w-full py-4 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" multiple="multiple"></select>  
+        <h2 class="text-base text-center text-gray-600">Node Select</h2>
+        <select id="attributeSelector" class=" block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" multiple="multiple"></select>  
         <select id="tagSelect" class="mt-1 mb-20 block w-full py-2 px-3 border border-gray-300 bg-transparent rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" multiple="multiple"></select>  
     </div>
     <div class="flex justify-between">
@@ -67,7 +70,7 @@
 
 
 
-  <div id="leftSidebar" class="fixed left-0 bottom-0 w-96 resize-x overflow-auto p-4 flex flex-col items-center backdrop-blur-lg  justify-center transition-transform transform duration-500 ease-in-out border-t border-gray-600" style="height: 90%; transform: translateX(-100%); background-color: rgba(225, 226, 227, 0.6); backdrop-filter: blur(10px);">
+  <div id="leftSidebar" class="fixed left-0 bottom-0 w-96 resize-x overflow-auto p-4 flex flex-col items-center justify-center transition-transform transform duration-500 ease-in-out border-t border-gray-600" style="height: 90%; transform: translateX(-100%); background-color: rgba(225, 226, 227, 0.7); backdrop-filter: blur(10px);">
       <div id="details-content" class="w-full p-4 text-justify"></div>
       <div id="editable-content" class="w-full p-2">
         <p id="tagsSection" ondblclick="makeTagsEditable(this)" class="w-full border-b border-gray-700 p-4 "><strong>Tags:</strong></p>
@@ -127,6 +130,8 @@
     
     <script>
 
+
+
         document.addEventListener('DOMContentLoaded', function () {
             let cy = null; // Define cy here
             // Load your JSON data (replace 'your-graph.json' with your actual file path)
@@ -141,7 +146,9 @@
                         autoungrabify: false,
     
                         minZoom: 0.1, // the furthest you can zoom out
-                        maxZoom: 3, // the furthest you can zoom in
+                        maxZoom: 3, // the furthest you can zoom 
+
+                        
     
     
                         style: [
@@ -153,7 +160,7 @@
                                     'width': 'label', // Set the width based on the label content
                                     'height': 'label', // Set the height based on the label content
                                     'shape': 'roundrectangle',
-                                    'background-color': '#A2E1E4', // Set background color to white
+                                    'background-color': '#F0F0F0', // Set background color to white
                                     'border-width': 2,                                
                                     'text-wrap': 'wrap',
                                     'text-max-width': 150,
@@ -200,6 +207,12 @@
                                 selector: '.highlighted',
                                 style: {
                                     'background-color': '#E0CD9F'
+                                }
+                            },
+                            {
+                                selector: '.spotted',
+                                style: {
+                                    'background-color': '#D29165'
                                 }
                             }
                             
@@ -309,6 +322,8 @@
                 });
 
                 let detailsContent = "";
+
+
                 
                 function openLeftSidebar(node) {
                     const nodeId = node.id();
@@ -376,7 +391,7 @@
                     // Get the nodes that match the search text
                     const matchedNodes = cy.nodes().filter(node => {
                         const nodeId = node.data('id').toLowerCase();
-                        const nodeLabel = node.data('label').toLowerCase();
+                        const nodeLabel = node.data('Sanskrit_Text').toLowerCase();
                         const translationBryant = node.data('Translation_Bryant').toLowerCase();
                 
                         // Check if any of the fields contains the search text
@@ -587,6 +602,8 @@
                 const colorPickerNodes = document.getElementById('color-picker-nodes');
                 const colorPickerBorder = document.getElementById('color-picker-border');
                 const colorPickerEdges = document.getElementById('color-picker-edges');
+                const colorPickerHighlight = document.getElementById('color-picker-highlight');
+
 
 
                 // Change node colour background
@@ -629,6 +646,20 @@
                         'line-color': color,
                     })
                     .update(); // Apply the changes
+                });
+
+                   // Change highlight on select
+                   colorPickerHighlight.addEventListener('change', function () {
+                    // Get the selected color
+                    const color = this.value;
+                    
+                    // Change the styles of the highlight on selection
+                    cy.style()
+                    .selector('.spotted')
+                    .style({
+                        'background-color': color,
+                    })
+                    .update();  // Apply the changes
                 });
 
 
@@ -753,7 +784,7 @@
 
                 // Populate the dropdown with options
                 nodeAttributes.forEach(attribute => {
-                    const isSelected = ['id', 'label', 'Translation_Bryant'].includes(attribute);
+                    const isSelected = ['id', 'Sanskrit_Text', 'Translation_Bryant'].includes(attribute);
                     const option = new Option(attribute, attribute, isSelected, isSelected);
                     attributeSelector.append(option);
                 });
@@ -789,7 +820,7 @@
                 nodeAttributes.forEach(attribute => {
                     // Exclude 'tags', 'references', and 'comment' fields
                     if (!['tags', 'references', 'comment'].includes(attribute)) {
-                        const isSelected = ['id', 'label', 'Translation_Bryant'].includes(attribute);
+                        const isSelected = ['id', 'Sanskrit_Text', 'Translation_Bryant'].includes(attribute);
                         const option = new Option(attribute, attribute, isSelected, isSelected);
                         displaySelector.append(option);
                     }
@@ -811,13 +842,20 @@
                  // Update selectedNode whenever a node is selected
                  cy.on('select', 'node', function(event) {
                      selectedNode = event.target;
+                     selectedNode.addClass('spotted');
                      updateDetailsWindow();
+        
                  });
                  
                  // Clear selectedNode whenever a node is unselected
                  cy.on('unselect', 'node', function() {
-                     selectedNode = null;
-                     updateDetailsWindow();
+                      
+                    selectedNode.removeClass('spotted');
+                
+                    selectedNode = null;
+                    updateDetailsWindow();
+                     
+
                  });
                  
                  // Update the details window whenever the selected options change
@@ -829,7 +867,7 @@
                          const selectedAttributes = $('#displaySelector').select2('data').map(option => option.id);
                          
                          // Build the details content using the selected attributes
-                         let detailsContent = '<h2 class="w-full" style="font-weight: bold !important;">Aphorism Details:</h2>';                         selectedAttributes.forEach(attribute => {
+                         let detailsContent = '<h2 class="w-full" style="font-weight: bold !important;">Aphorism Details</h2>';                         selectedAttributes.forEach(attribute => {
                             if (selectedNode.data(attribute)) {
                                 detailsContent += `<p class="w-full "><strong>${attribute}:</strong> ${selectedNode.data(attribute)}</p>`;
                             }
@@ -945,11 +983,11 @@
                 var divideLine = document.getElementById('divideLine');
                 // Remove the old class
                 divideLine.classList.remove('inset-x-1/4');
-                divideLine.classList.remove('bg-grey-700');
+                divideLine.classList.remove('bg-gray-700');
 
                 // Add the new class
                 divideLine.classList.add('inset-x-0');
-                divideLine.classList.add('bg-grey-500');
+                divideLine.classList.add('bg-gray-500');
 
 
                 var rightSidebar = document.getElementById('sidebar');
