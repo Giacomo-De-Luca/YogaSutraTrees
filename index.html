@@ -277,49 +277,46 @@
                         document.body.removeChild(link);
                     });
 
-                    function handleNodeClick(callback) {
-                        let sourceNode = null;
-                        let targetNode = null;
-    
-                        function onClick(event) {
-                            if (sourceNode === null) {
-                                sourceNode = event.target;
-                            } else {
-                                targetNode = event.target;
-                                if (sourceNode.id() !== targetNode.id()) {
-                                    callback(sourceNode, targetNode);
-                                }
-                                sourceNode = null;
-                                targetNode = null;
-                                cy.nodes().off('click', onClick);
-                            }
-                        }
-    
-                        cy.nodes().on('click', onClick);
-                    }
+         function handleNodeTap(callback) {
+             let sourceNode = null;
+             let targetNode = null;
+             
+             function onTap(event) {
+                 if (sourceNode === null) {
+            sourceNode = event.target;
+        } else {
+            targetNode = event.target;
+            if (sourceNode.id() !== targetNode.id()) {
+                callback(sourceNode, targetNode);
+            }
+            sourceNode = null;
+            targetNode = null;
+            cy.nodes().off('tap', onTap);
+        }
+    }
 
-                    // Event listener for the "Add Link" button
-                document.getElementById('add-link-btn').addEventListener('click', function () {
-                    handleNodeClick((sourceNode, targetNode) => {
-                        cy.add({ data: { source: sourceNode.id(), target: targetNode.id() } });
-                    });
-                });
+    cy.nodes().on('tap', onTap);
+}
 
-               // Event listener for the "Remove Link" button
-                document.getElementById('remove-link-btn').addEventListener('click', function () {
-                handleNodeClick((sourceNode, targetNode) => {
-                    var edges = cy.edges().filter(edge => {
-                        return (edge.source().id() === sourceNode.id() && edge.target().id() === targetNode.id()) ||
-                        (edge.source().id() === targetNode.id() && edge.target().id() === sourceNode.id());
-                    });
-                    if (edges.length > 0) {
-                        edges.remove();
-                    }
-                });
+// Event listener for the "Add Link" button
+document.getElementById('add-link-btn').addEventListener('click', function () {
+    handleNodeTap((sourceNode, targetNode) => {
+        cy.add({ data: { source: sourceNode.id(), target: targetNode.id() } });
+    });
+});
 
-                
-
-                });
+// Event listener for the "Remove Link" button
+document.getElementById('remove-link-btn').addEventListener('click', function () {
+    handleNodeTap((sourceNode, targetNode) => {
+        var edges = cy.edges().filter(edge => {
+            return (edge.source().id() === sourceNode.id() && edge.target().id() === targetNode.id()) ||
+            (edge.source().id() === targetNode.id() && edge.target().id() === sourceNode.id());
+        });
+        if (edges.length > 0) {
+            edges.remove();
+        }
+    });
+});
 
                 let detailsContent = "";
 
