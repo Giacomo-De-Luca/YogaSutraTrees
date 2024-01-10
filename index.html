@@ -37,6 +37,24 @@
     .hide {
             display: none !important;
     }    
+    @media screen and (max-aspect-ratio: 1/1) {
+    body {
+        transform: rotate(-90deg);
+        transform-origin: left top;
+        width: 100vh;
+        height: 100vw;
+        overflow-x: hidden;
+        position: absolute;
+        top: 100%;
+        left: 0;
+    }
+    }
+
+    #leftSidebar {
+        touch-action: pan-x;
+        resize: horizontal;
+        overflow: auto;
+    }
   
 </style>
 
