@@ -17,6 +17,11 @@
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
     
+    <script src="http://cytoscape.github.io/cytoscape.js/api/cytoscape.js-latest/cytoscape.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/cytoscape-node-html-label@1.1.3/dist/cytoscape-node-html-label.min.js"></script>
+  
+    
+    
 </head>
 <style>
     body {
@@ -30,6 +35,11 @@
         left: 50%;
         transform: translateX(-50%);
     }
+    
+  .resizable-section {
+    overflow-y: auto; /* Enable vertical scrollbar if content overflows */
+
+  }
 
     #details-content {
             overflow: auto;
@@ -51,6 +61,12 @@
         left: 0;
     }
     }
+    
+    @media (max-width: 768px) {
+    #wonderHeader {
+      height: 6vh; /* Adjust the height for tablets and mobile devices */
+    }
+   }
 
     #leftSidebar {
         backdrop-filter: blur(3px);
@@ -93,11 +109,27 @@
 
 
   <div id="leftSidebar" class="fixed left-0 bottom-0 w-96 resize-x overflow-auto p-4 flex flex-col items-center justify-center transition-transform transform duration-500 ease-in-out border-t border-gray-600" style="height: 90%; transform: translateX(-100%); background-color: rgba(225, 226, 227, 0.7);">
-      <div id="details-content" class="w-full p-4 text-justify"></div>
-      <div id="editable-content" class="w-full p-2">
-        <p id="tagsSection" ondblclick="makeTagsEditable(this)" class="w-full border-b border-gray-700 p-4 "><strong>Tags:</strong></p>
-        <p id="referencesSection" ondblclick="makeReferencesEditable(this)" class="w-full p-4 border-b border-gray-700 "><strong>References:</strong></p>
-        <p id="commentsSection" ondblclick="makeCommentsEditable(this)" class="w-full p-4"><strong>Comments:</strong></p>
+    <input type="color" id="color-picker-specificnode" value="#F0F0F0" style="position: absolute; top: 10px; right: 10px;">
+    
+    
+<p id="titleSection" ondblclick="makeTitleEditable(this)" class="w-full" style="text-align: center;"></p>    
+            
+    
+<div id="details-content" class="w-full p-4 text-justify"></div>
+
+<div id="editable-content" class="w-full p-2 border-t border-b border-gray-700 m-2 p-4 resizable-section" style="display: flex; flex-direction: column;">
+
+  <p id="tagsSection" ondblclick="makeTagsEditable(this)" class="w-full border-t border-b border-gray-700 m-2 p-4 resizable-section">
+    <strong>Tags:</strong>
+  </p>
+
+  <p id="referencesSection" ondblclick="makeReferencesEditable(this)" class="w-full p-4 border-b border-t m-2 p-2 border-gray-700 resizable-section">
+    <strong>References:</strong>
+  </p>
+
+  <p id="commentsSection" ondblclick="makeCommentsEditable(this)" class="w-full p-4 border-b border-t m-2 border-gray-700 resizable-section">
+    <strong>Comments:</strong>
+  </p>
     </div>
 </div>
 
@@ -185,22 +217,32 @@
                                     'background-color': '#F0F0F0', // Set background color to white
                                     'border-width': 2,                                
                                     'text-wrap': 'wrap',
-                                    'text-max-width': 150,
+                                    'text-max-width': 220,
                                     'text-valign': 'center',
                                     'text-halign': 'center',
                                     'color': '#000',
+                                    'padding-top': '15px',
                                     'font-family': 'Palatino, Palatino Linotype, serif', // Add this line for font-family
                                     'font-size': 12,
+                                    'font-weight': '500',
                                     'border-color': '#5cbcc4', // Set your desired border color
                                     'padding-bottom': '10px', // Add padding to the bottom
                                     
                                 }
                             },
                             {
+                              selector: 'node[title]', // Only apply to nodes that have the 'title' attribute
+                              style: {
+                               'text-margin-y': '10px',
+                               'padding-bottom': '18px',
+                                  
+                              }
+                          },
+                            {
                                 selector: 'edge',
                                 style: {
                                     'curve-style': 'bezier',
-                                    'control-point-step-size': 40,
+                                    
                                     'target-arrow-shape': 'none',
                                     'width': 5,
                                     'line-color': '#73BDC9',
@@ -211,7 +253,11 @@
                             {
                                 selector: 'edge[edgeType = "type2"]',
                                 style: {
-                                    'curve-style': 'bezier',
+  
+                                    
+                                    'curve-style': 'unbundled-bezier',
+                                    'control-point-distance': 50, // Adjust this value as needed
+                                    'control-point-weight': 0.5,
                                     'control-point-step-size': 40,
                                     'target-arrow-shape': 'none',
                                     'width': 5,
@@ -241,6 +287,12 @@
                            
                         ],
                         
+                                    
+              
+                 
+                                                
+                        
+                        
                         
                         layout: { 
                             name: 'preset',
@@ -250,6 +302,14 @@
                             this.fit(); // Fit the viewport to the graph
                         }
                     });
+                    
+                    
+                    
+                            
+                                    
+                             
+       
+                
     
                     document.getElementById('saveButton').addEventListener('click', function () {
                         // Get the current nodes and edges
@@ -368,6 +428,12 @@ document.getElementById('remove-link-btn').addEventListener('click', function ()
                         const commentsSection = document.getElementById('commentsSection');
                         commentsSection.innerHTML = `<strong>Comments:</strong> ${node.data('comment') || ''}`;
                         
+                        
+                        // Display title in the title section
+                        const titleSection = document.getElementById('titleSection');
+                        titleSection.innerHTML = `${node.data('title') || 'Title'}`;
+                        
+                        
                         // Display tags in the tags section
                         const tagsSection = document.getElementById('tagsSection');
                         tagsSection.innerHTML = `<strong>Tags:</strong> ${node.data('tags') || ''}`;
@@ -380,6 +446,10 @@ document.getElementById('remove-link-btn').addEventListener('click', function ()
 
                         commentsSection.addEventListener('dblclick', function () {
                             makeCommentsEditable(commentsSection);
+                        });
+                        
+                        titleSection.addEventListener('dblclick', function () {
+                            makeTitleEditable(titleSection);
                         });
                     
                         tagsSection.addEventListener('dblclick', function () {
@@ -492,6 +562,28 @@ document.getElementById('remove-link-btn').addEventListener('click', function ()
                 // Define the color palette
                 const colorPalette = ['#DBD788', '#DB9B88', '#88DBC5', '#A588DB', '#839993'];
                 
+                
+                function getRandomDesaturatedColor() {
+                    // Function to generate a random desaturated color
+                    const randomHue = Math.random() * 360;
+                    const randomSaturation = 20 + Math.random() * 60; // Adjust the saturation range as needed
+                    const randomLightness = 50 + Math.random() * 30; // Adjust the lightness range as needed
+
+                    return `hsl(${randomHue}, ${randomSaturation}%, ${randomLightness}%)`;
+                }
+                
+                
+                function getRandomHexColor() {
+                    let letters = "0123456789ABCDEF";
+                    let color = '#';
+                    
+                    for (let i = 0; i < 6; i++) {
+                        color += letters[Math.floor(Math.random() * 16)];
+                    }
+                    
+                    return color;
+                }
+                                                    
                 // Create a mapping from tags to colors
                 
                 let tagColors = {};
@@ -500,8 +592,16 @@ document.getElementById('remove-link-btn').addEventListener('click', function ()
                     const nodeTags = node.data('tags') ? node.data('tags').split(', ') : [];
                     nodeTags.forEach(tag => {
                         if (!tagColors[tag]) {
-                            tagColors[tag] = colorPalette[colorIndex];
-                            colorIndex = (colorIndex + 1) % colorPalette.length;
+                                                    if (colorIndex < 6) {
+                                tagColors[tag] = colorPalette[colorIndex];
+                            } else {
+                                // Assign a random desaturated color for each tag
+
+
+                                tagColors[tag] = getRandomHexColor()
+                                
+                            }
+                            colorIndex++;
                         }
                     });
                 });
@@ -512,11 +612,12 @@ document.getElementById('remove-link-btn').addEventListener('click', function ()
                     if (selectedTags.length > 0) {
                         filterNodesByTag(selectedTags);
                     } else {
-                        cy.nodes().removeClass('filtered');
 
                         // Reset all nodes to their default color
-                        cy.nodes().style('background-color', '');
+                        
+                        cy.edges('.temporary-tag').remove();
                         cy.nodes().removeClass('filtered highlighted blurred');
+                        resetNodesToModifiedColor();
                     }
                 });
                 
@@ -524,12 +625,12 @@ document.getElementById('remove-link-btn').addEventListener('click', function ()
 
                 function filterNodesByTag(selectedTags) {
                     
-                    console.log(selectedTags);
+
                     // First, remove all temporary edges
                     cy.edges('.temporary-tag').remove();
                 
                     // Reset all nodes to their default color
-                    cy.nodes().style('background-color', '');
+                    resetNodesToModifiedColor();
                 
                     // If no tags are selected, remove the 'blurred' class from all nodes and return
                     if (selectedTags.length === 0) {
@@ -544,7 +645,6 @@ document.getElementById('remove-link-btn').addEventListener('click', function ()
                         
                         const nodeTags = node.data('tags') ? node.data('tags').split(', ') : [];
                         const nodeSelectedTags = nodeTags.filter(tag => selectedTags.includes(tag));
-                        console.log(nodeTags, nodeSelectedTags);
                         return nodeSelectedTags.length > 0;
                     });
                 
@@ -680,12 +780,29 @@ document.getElementById('remove-link-btn').addEventListener('click', function ()
                     })
                     .update();  // Apply the changes
                 });
+                
+                function resetNodesToModifiedColor() {
+                     // Get all nodes in the graph
+                      const allNodes = cy.nodes();
 
+                      // Iterate through all nodes
+                      allNodes.forEach(node => {
+                        const nodeId = node.id();
+                        const modifiedColor = modifiedNodeColors.get(nodeId);
 
+                        if (modifiedColor !== undefined) {
+                             // If the node has a modified color, set it
+                              node.style('background-color', modifiedColor);
+                            } else {
+                              // If the node doesn't have a modified color, reset to base color
 
-
-
-
+                             node.style('background-color', '');
+                            }
+                          });
+                        }
+                      
+                
+                
                 
 
                     
@@ -728,6 +845,25 @@ document.getElementById('remove-link-btn').addEventListener('click', function ()
                     element.appendChild(input);
                     input.focus();
                 } 
+                
+                function makeTitleEditable(element) {
+                    const nodeId = currentOpenNodeId;
+                    const node = cy.$id(nodeId);
+                    const comments = node.data('title') || '';
+                
+                    const input = document.createElement('input');
+                    input.type = 'text';
+                    input.value = comments;
+                    input.onblur = function () {
+                        const newTitle = input.value;
+                        node.data('title', newTitle);
+                        element.innerHTML = `${newTitle}`;
+                    };
+                
+                    element.innerHTML = '';
+                    element.appendChild(input);
+                    input.focus();
+                }
 
                 function makeReferencesEditable(element) {
                     const nodeId = currentOpenNodeId;
@@ -767,12 +903,16 @@ document.getElementById('remove-link-btn').addEventListener('click', function ()
                 
                         // If the tag doesn't have a color yet, assign it one
                         if (!tagColors[tag]) {
-                            tagColors[tag] = colorPalette[colorIndex];
-                            colorIndex = (colorIndex + 1) % colorPalette.length;
+                            if (colorIndex < 6) {
+                                tagColors[tag] = colorPalette[colorIndex];
+                            } else {
+                                // Assign a random desaturated color for each tag
+                                
+                                tagColors[tag] = getRandomHexColor();
+                            }
+                            colorIndex++;
                         }
-                    });
-                
-                    
+                    });          
                 }
 
                 const nodes = cy.nodes();
@@ -803,7 +943,7 @@ document.getElementById('remove-link-btn').addEventListener('click', function ()
 
                 // Populate the dropdown with options
                 nodeAttributes.forEach(attribute => {
-                    const isSelected = ['id', 'Sanskrit_Text', 'Translation_Bryant'].includes(attribute);
+                    const isSelected = ['id','Sanskrit_Text', 'Translation_Bryant'].includes(attribute);
                     const option = new Option(attribute, attribute, isSelected, isSelected);
                     attributeSelector.append(option);
                 });
@@ -814,7 +954,7 @@ document.getElementById('remove-link-btn').addEventListener('click', function ()
                         // Get the selected attributes
                         const selectedAttributes = $('#attributeSelector').select2('data').map(option => option.id);
                         // Build the label using the selected attributes
-                        let label = '';
+                        let label = '\n\n\n\n\n\n';
                         selectedAttributes.forEach(attribute => {
                             if (ele.data(attribute)) {
                                 label += ele.data(attribute) + '\n\n';
@@ -824,6 +964,23 @@ document.getElementById('remove-link-btn').addEventListener('click', function ()
                     },
                     // Your other styles here
                 });
+                
+                                
+             // Add nodeHtmlLabel for custom HTML labels
+                cy.nodeHtmlLabel([{
+                    query: 'node[title]',
+                    valign: 'top', // Align to the top
+                    halign: 'center',
+                    valignBox: 'center',
+                    halignBox: 'center',
+                    tpl: function (data) {
+                        const title = data.title; // Assuming 'title' is the attribute you want to display
+
+                        // Display only the title in bold, centered, and on the upper part of the node
+                        return '<div style="font-family: Palatino, Palatino Linotype, serif; font-size: 12px; font-weight: bold; text-align: center; max-width: 200px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;">' + title + '</div>';
+                    }
+                }]);
+
 
 
                 // Update the Cytoscape styles whenever the selected options change
@@ -839,7 +996,7 @@ document.getElementById('remove-link-btn').addEventListener('click', function ()
                 nodeAttributes.forEach(attribute => {
                     // Exclude 'tags', 'references', and 'comment' fields
                     if (!['tags', 'references', 'comment'].includes(attribute)) {
-                        const isSelected = ['id', 'Sanskrit_Text', 'Translation_Bryant'].includes(attribute);
+                        const isSelected = ['Sanskrit_Text', 'Translation_Bryant', 'Word_for_Word_Analysis', 'Vyasa_sanskrit'].includes(attribute);
                         const option = new Option(attribute, attribute, isSelected, isSelected);
                         displaySelector.append(option);
                     }
@@ -857,14 +1014,69 @@ document.getElementById('remove-link-btn').addEventListener('click', function ()
 
                  // Store the currently selected node
                  let selectedNode = null;
+                 
+                 
+                 
                 
-                 // Update selectedNode whenever a node is selected
+                 
+                 
+                 
+       
+                 
+                 // Assuming you have an input element with the ID 'color-picker-specificnode'
+                  const colorPickerSpecificNode = document.getElementById('color-picker-specificnode');
+
+                  // Update node color when the color picker changes
+                  colorPickerSpecificNode.addEventListener('input', function() {
+                    const selectedNode = cy.$(':selected'); // Get the currently selected node
+
+                    if (selectedNode.length > 0) {
+                      const color = colorPickerSpecificNode.value;
+
+                      // Change the background color of the selected node
+                      selectedNode.style('background-color', color);
+                      
+                      
+                      // Update the modified color for the selected node
+                      modifiedNodeColors.set(selectedNode.id(), color);
+                    }
+                    
+                  });
+                  
+                  
+                  // Update selectedNode whenever a node is selected
                  cy.on('select', 'node', function(event) {
                      selectedNode = event.target;
+                     
+                     const nodeBackgroundColorRGB = selectedNode.style('background-color');
+                     // Convert RGB to hex
+                     const nodeBackgroundColorHex = rgbToHex(nodeBackgroundColorRGB);
+                     // Update the color picker value
+                     colorPickerSpecificNode.value = nodeBackgroundColorHex;
+                     
                      selectedNode.addClass('spotted');
                      updateDetailsWindow();
-        
-                 });
+                     const nodeBackgroundColor = selectedNode.style('background-color');
+                     
+
+
+                                    // Get the background color in RGB format
+                    
+                });
+                
+                const modifiedNodeColors = new Map();
+
+                // RGB to Hex conversion function
+                function rgbToHex(rgb) {
+                    const rgbArray = rgb.match(/\d+/g).map(Number);
+                    return '#' + rgbArray.map(value => {
+                        const hex = value.toString(16);
+                        return hex.length === 1 ? '0' + hex : hex;
+                    }).join('');
+                }
+
+                 
+                 
                  
                  // Clear selectedNode whenever a node is unselected
                  cy.on('unselect', 'node', function() {
@@ -886,15 +1098,18 @@ document.getElementById('remove-link-btn').addEventListener('click', function ()
                          const selectedAttributes = $('#displaySelector').select2('data').map(option => option.id);
                          
                          // Build the details content using the selected attributes
-                         let detailsContent = '<h2 class="w-full" style="font-weight: bold !important;">Aphorism Details</h2>';                         selectedAttributes.forEach(attribute => {
+                       let detailsContent = '<h2 class="w-full" style="font-weight: bold !important; text-align: center; margin-bottom: 2em;">Sutra ' + selectedNode.id() + '</h2>';               selectedAttributes.forEach(attribute => {
                             if (selectedNode.data(attribute)) {
                                 detailsContent += `<p class="w-full "><strong>${attribute}:</strong> ${selectedNode.data(attribute)}</p>`;
                             }
                         });
+                        
+                         document.getElementById('titleSection').innerHTML = `${selectedNode.data('title') || 'Title'}`;
  
                          // Update the details content
                          document.getElementById('details-content').innerHTML = detailsContent;
- 
+                         
+
                          // Update the editable content
                          document.getElementById('tagsSection').innerHTML = `<strong>Tags:</strong> ${selectedNode.data('tags') || ''}`;
                          document.getElementById('referencesSection').innerHTML = `<strong>References:</strong> ${selectedNode.data('references') || ''}`;
@@ -917,22 +1132,33 @@ document.getElementById('remove-link-btn').addEventListener('click', function ()
                                 detailsContent += `<p><strong>${attribute}:</strong> ${selectedNode.data(attribute)}</p>`;
                             }
                         });
+                        
+                        document.getElementById('titleSection').innerHTML = `${selectedNode.data('title') || ''}`;
                 
                         // Update the details content
                         document.getElementById('details-content').innerHTML = detailsContent;
                 
                         // Update the editable content
+                        
                         document.getElementById('tagsSection').innerHTML = `<strong>Tags:</strong> ${selectedNode.data('tags') || ''}`;
                         document.getElementById('referencesSection').innerHTML = `<strong>References:</strong> ${selectedNode.data('references') || ''}`;
                         document.getElementById('commentsSection').innerHTML = `<strong>Comments:</strong> ${selectedNode.data('comment') || ''}`;
                     } else {
                         // Clear the details content if no node is selected
+                        
+                        
                         document.getElementById('details-content').innerHTML = '';
                         document.getElementById('tagsSection').innerHTML = '<strong>Tags:</strong>';
                         document.getElementById('referencesSection').innerHTML = '<strong>References:</strong>';
                         document.getElementById('commentsSection').innerHTML = '<strong>Comments:</strong>';
                     }
                 }
+                
+                
+
+                
+                
+                
                 
 
 
@@ -1046,29 +1272,30 @@ document.getElementById('remove-link-btn').addEventListener('click', function ()
             });
 
                 
-        
+          interact('.resizable-section')
+            .resizable({
+              edges: {  top: true, bottom: true },
+
+              onmove: function (event) {
+                var target = event.target;
+                
+                var height = parseFloat(target.getAttribute('data-height')) || target.offsetHeight;
+
+
+                height += event.deltaRect.height;
+
+
+                target.style.height = height + 'px';
+
+
+                target.setAttribute('data-height', height);
+              },
+            });
+          
 
                 
         
-
-
-        // Get the sidebar and the button
-        const sidebar = document.getElementById('leftSidebar');
-        const resizeBtn = document.getElementById('resize-btn');
-        
-        // Add a touchmove event listener to the button
-        resizeBtn.addEventListener('touchmove', function (e) {
-            // Prevent the default behavior of the touchmove event
-            e.preventDefault();
-            
-            // Calculate the new width of the sidebar based on the touch position
-            const newWidth = window.innerWidth - e.touches[0].clientX;
-            
-            // Update the width of the sidebar
-            sidebar.style.width = `${newWidth}px`;
-        });
-
-
+ 
         
     
     
