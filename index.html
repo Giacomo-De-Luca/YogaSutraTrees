@@ -87,7 +87,7 @@
     <button id="add-link-btn" class="hover:text-indigo-600 active:text-violet-700 text-white w-full font-bold py-1 px-4 rounded mb-2" style="background-color: #248e95;">Add Edge</button>
     <button id="remove-link-btn" class="hover:text-indigo-600 active:text-violet-700 text-white w-full font-bold py-1 px-4 rounded mb-2" style="background-color: #248e95;" >Remove edge</button>
     <div style="display: flex; justify-content: space-between;">
-        <input type="color" id="color-picker-nodes" value="#FFFFB9">
+        <input type="color" id="color-picker-nodes" value="#FDF6B2">
         <input type="color" id="color-picker-border" value="#A2E1E4">
         <input type="color" id="color-picker-edges" value="#C6E0EA">
         <input type="color" id="color-picker-highlight" value="#F98645">
@@ -107,32 +107,33 @@
 
 
 
-
-  <div id="leftSidebar" class="fixed left-0 bottom-0 w-96 resize-x overflow-auto p-4 flex flex-col items-center justify-center transition-transform transform duration-500 ease-in-out border-t border-gray-600" style="height: 90%; transform: translateX(-100%); background-color: rgba(235, 236, 237, 0.83);">
-    <input type="color" id="color-picker-specificnode" value="#FFFFB9" style="position: absolute; top: 10px; right: 10px;">
+ 
+ <div id="leftSidebar" class="fixed left-0 bottom-0 w-96 resize-x overflow-auto p-4 flex flex-col items-center justify-center transition-transform transform duration-500 ease-in-out border-t border-gray-600" style="height: 90%; transform: translateX(-100%); background-color: rgba(235, 236, 237, 0.85);">
+    <input type="color" id="color-picker-specificnode" value="#FDF6B2" style="position: absolute; top: 10px; right: 10px;">
     
     
-<p id="titleSection" ondblclick="makeTitleEditable(this)" class="w-full" style="text-align: center;"></p>    
+<p id="titleSection" ondblclick="makeTitleEditable(this)" class="w-full" style="text-align: center; font-weight: 500;"></p>    
             
     
 <div id="details-content" class="w-full p-4 text-justify"></div>
 
-<div id="editable-content" class="w-full p-2 border-t border-gray-700 m-2 p-2 resizable-section" style="display: flex; flex-direction: column;">
+<div id="editable-content" class="w-full p-2 " style="display: flex; flex-direction: column;">
 
-  <p id="tagsSection" ondblclick="makeTagsEditable(this)" class="w-full border-t border-b border-gray-700 m-2 p-4 resizable-section">
+  <p id="tagsSection" ondblclick="makeTagsEditable(this)" class="w-full border-b border-gray-700 p-4 resizable-section">
     <strong>Click on a node to start.</strong> Once started, those three fields are editable with double click and resizable with dragging. The title of the Sutra can also be edited with double click. Insert the tags as comma separated.
     
   </p>
 
-  <p id="referencesSection" ondblclick="makeReferencesEditable(this)" class="w-full p-4 border-b border-t m-2 p-2 border-gray-700 resizable-section">
+  <p id="referencesSection" ondblclick="makeReferencesEditable(this)" class="w-full border-b p-4 border-gray-700 resizable-section">
     You can also resize the panel touching the right side. You can change the node color using the color picked in the right corner. You can change the color of the graph (background, border, edge, selected) using the right color pickers.
   </p>
 
-  <p id="commentsSection" ondblclick="makeCommentsEditable(this)" class="w-full p-4 border-b border-t m-2 border-gray-700 resizable-section">
+  <p id="commentsSection" ondblclick="makeCommentsEditable(this)" class="w-full p-4 border-b border-gray-700 resizable-section">
     You can use the right panel to select the content shown for a node, both in the display and in the panel.
   </p>
     </div>
 </div>
+
 
 
   <div id="myDiv" style="background-image: url('bg8.jpg'); background-repeat: no-repeat; background-size: cover; background-attachment: fixed; height: 1000px;">
@@ -223,7 +224,7 @@
                                     'width': 'label', // Set the width based on the label content
                                     'height': 'label', // Set the height based on the label content
                                     'shape': 'roundrectangle',
-                                    'background-color': '#FFFFB9', // Set background color to white
+                                    'background-color': '#FDF6B2', // Set background color to white
                                     'border-width': 2,                                
                                     'text-wrap': 'wrap',
                                     'text-max-width': 220,
@@ -733,6 +734,9 @@ document.getElementById('remove-link-btn').addEventListener('click', function ()
                 const colorPickerHighlight = document.getElementById('color-picker-highlight');
 
 
+                var spottedColor = "#D29165";   
+
+
 
                 // Change node colour background
                 colorPickerNodes.addEventListener('change', function () {
@@ -745,6 +749,17 @@ document.getElementById('remove-link-btn').addEventListener('click', function ()
                     .style({
                         'background-color': color,
                     })
+                    .selector('.spotted')
+                    .style({
+                        'background-color': spottedColor,
+                    })
+                    
+                    .selector('.highlighted')
+                    .style({
+                        'background-color': '#E0CD9F'
+                    })    
+
+                        
                     .update(); // Apply the changes
                 });
 
@@ -788,6 +803,8 @@ document.getElementById('remove-link-btn').addEventListener('click', function ()
                         'background-color': color,
                     })
                     .update();  // Apply the changes
+                    
+                    spottedColor = color
                 });
                 
                 function resetNodesToModifiedColor() {
