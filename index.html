@@ -8,17 +8,21 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
     <script src="https://unpkg.com/interactjs/dist/interact.min.js"></script>
-
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <!-- Include Cytoscape.js -->
-      <!-- Include Cytoscape.js context-menu extension -->
+    
+
     <script src="https://unpkg.com/cytoscape-context-menus/cytoscape-context-menus.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
     
     <script src="http://cytoscape.github.io/cytoscape.js/api/cytoscape.js-latest/cytoscape.min.js"></script>
-     <script src="https://cdn.jsdelivr.net/npm/cytoscape-node-html-label@1.1.3/dist/cytoscape-node-html-label.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/cytoscape-node-html-label@1.1.3/dist/cytoscape-node-html-label.min.js"></script>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@editorjs/editorjs@latest"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-cloud/1.2.5/d3.layout.cloud.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    
+    
   
     
     
@@ -74,15 +78,91 @@
     #sidebar {
         backdrop-filter: blur(3px);
     }
-  
-  
+
+    .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+        }
+
+        .modal-content {
+        background-color: #fefefe;
+        margin: 15% auto; /* 15% from the top and centered */
+        padding: 20px;
+        border: 1px solid #888;
+        width: 60%; /* Could be more or less, depending on screen size */
+        display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    }
+
+    #advancedSearchInput,
+    #advancedSearchSelector {
+        margin-bottom: 10px;
+    }
+
+    #advancedSearchSelector {
+        height: 100px;
+        overflow: auto;
+    }
+
+    #context_menu_text {
+        overflow: auto;
+    }
+
+    .tooltip {
+    position: absolute;
+    text-align: center;
+    width: 60px;
+    height: 28px;
+    padding: 2px;
+    font: 12px sans-serif;
+    background: lightsteelblue;
+    border: 0px;
+    border-radius: 8px;
+    pointer-events: none;
+    }
+
+    #nodeAttributes {
+    max-height: 400px; /* Set this to the maximum height you want */
+    overflow-y: auto; /* Make it scrollable */
+    word-wrap: break-word; /* Break words to prevent horizontal overflow */
+    }
+
+    #context_menu_text {
+            font-family: 'Garamond', 'Adobe Garamond', serif;
+            line-height: 1.5;
+            font-size: 13;
+        }
+
+    table {
+        border-collapse: collapse;
+        width: auto;  /* Change this */
+        table-layout: auto;  /* Add this */
+    }
+    th, td {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: center;
+    }
+    th {
+        background-color: #f1f1f1;
+    }   
+
 </style>
 
 <body>
 
   <div id="cy"></div>
 
-  <div id="sidebar" class="fixed right-0 bottom-0  w-64 overflow-auto p-4 flex flex-col items-center justify-center transition-transform transform duration-500 ease-in-out border-t border-gray-600" style="height: 90%;  transform: translateX(100%); background-color: rgba(240, 241, 242, 0.8); ">
+  <div id="sidebar" class="fixed right-0 bottom-0  w-64 overflow-auto p-4 flex flex-col items-center justify-center transition-transform transform duration-500 ease-in-out border-t border-gray-600" style="height: 90%;  transform: translateX(100%); background-color: rgba(250, 250, 248, 0.8); ">
     <h2 class="text-xl font-bold mb-4 text-grey-500">Options</h2>
     <button id="add-link-btn" class="hover:text-indigo-600 active:text-violet-700 text-white w-full font-bold py-1 px-4 rounded mb-2" style="background-color: #248e95;">Add Edge</button>
     <button id="remove-link-btn" class="hover:text-indigo-600 active:text-violet-700 text-white w-full font-bold py-1 px-4 rounded mb-2" style="background-color: #248e95;" >Remove edge</button>
@@ -105,34 +185,50 @@
   </div>
 
 
-
-
- 
- <div id="leftSidebar" class="fixed left-0 bottom-0 w-96 resize-x overflow-auto p-4 flex flex-col items-center justify-center transition-transform transform duration-500 ease-in-out border-t border-gray-600" style="height: 90%; transform: translateX(-100%); background-color: rgba(235, 236, 237, 0.85);">
-    <input type="color" id="color-picker-specificnode" value="#FDF6B2" style="position: absolute; top: 10px; right: 10px;">
-    
-    
-<p id="titleSection" ondblclick="makeTitleEditable(this)" class="w-full" style="text-align: center; font-weight: 500;"></p>    
-            
-    
-<div id="details-content" class="w-full p-4 border-b border-gray-700 resizable-section text-justify"></div>
-
-<div id="editable-content" class="w-full p-2 " style="display: flex; flex-direction: column;">
-
-  <p id="tagsSection" ondblclick="makeTagsEditable(this)" class="w-full border-b border-gray-700 p-4 resizable-section">
-    <strong>Click on a node to start.</strong> Once started, those three fields are editable with double click and resizable with dragging. The title of the Sutra can also be edited with double click. Insert the tags as comma separated.
-    
-  </p>
-
-  <p id="referencesSection" ondblclick="makeReferencesEditable(this)" class="w-full border-b p-4 border-gray-700 resizable-section">
-    You can also resize the panel touching the right side. You can change the node color using the color picked in the right corner. You can change the color of the graph (background, border, edge, selected) using the right color pickers.
-  </p>
-
-  <p id="commentsSection" ondblclick="makeCommentsEditable(this)" class="w-full p-4 border-b border-gray-700 resizable-section">
-    You can use the right panel to select the content shown for a node, both in the display and in the panel.
-  </p>
+  <div id="searchModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <input type="text" id="advancedSearchInput" placeholder="Search Text Here">
+      <select id="advancedSearchSelector" class=" block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" multiple="multiple"></select>  
+      <div id="graphicPlot"></div>
+      <div id="searchResults"></div>
+      <div id="nodeAttributes"  style="height: 375px;"></div>
+      <div id="wordCloud"  style="height: 300px;"></div>
+      <div id="editorjs" style="height: 375px;"></div>      
     </div>
-</div>
+  </div>
+
+ <div id="custom-context-menu" class="context_menu" style="display: none; position: absolute; z-index: 1000; background-color: #fff; border: 1px solid #ccc; padding: 10px;">
+    <div id="context_menu_text"  style="height: 375px;"></div>
+</div>  
+
+
+
+    <div id="leftSidebar" class="fixed left-0 bottom-0 w-96 resize-x overflow-auto p-4 flex flex-col items-center justify-center transition-transform transform duration-500 ease-in-out border-t border-gray-600" style="height: 90%; transform: translateX(-100%); background-color: rgba(250, 250, 250, 0.85);">
+                <input type="color" id="color-picker-specificnode" value="#FDF6B2" style="position: absolute; top: 10px; right: 10px;">
+                
+                
+            <p id="titleSection" ondblclick="makeTitleEditable(this)" class="w-full" style="text-align: center; font-weight: 500;"></p>    
+                        
+                
+            <div id="details-content" class="w-full p-4 border-b border-gray-700 resizable-section text-justify"></div>
+
+            <div id="editable-content" class="w-full p-2 " style="display: flex; flex-direction: column;">
+
+            <p id="tagsSection" ondblclick="makeTagsEditable(this)" class="w-full border-b border-gray-700 p-4 resizable-section">
+                <strong>Click on a node to start.</strong> Once started, those three fields are editable with double click and resizable with dragging. The title of the Sutra can also be edited with double click. Insert the tags as comma separated.
+                
+            </p>
+
+            <p id="referencesSection" ondblclick="makeReferencesEditable(this)" class="w-full border-b p-4 border-gray-700 resizable-section">
+                You can also resize the panel touching the right side. You can change the node color using the color picked in the right corner. You can change the color of the graph (background, border, edge, selected) using the right color pickers.
+            </p>
+
+            <p id="commentsSection" ondblclick="makeCommentsEditable(this)" class="w-full p-4 border-b border-gray-700 resizable-section">
+                You can use the right panel to select the content shown for a node, both in the display and in the panel.
+            </p>
+                </div>
+    </div>
 
 
 
@@ -145,11 +241,13 @@
                     <a href="https://github.com/Giacomo-De-Luca/YogaSutraTrees/tree/main" target="_blank" class="shadow-xl">
                         <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Logo" width="30" height="30" class="shadow-xl">
                     </a>
-                </div>
+                </div> 
                 <div id="titles" class="flex sm:gap-x-4 md:gap-x-6 lg:gap-x-12 justify-around items-center">
                     <a href="https://project-patanjali.gitbook.io/yoga-sutra-trees/" class="text-sm font-semibold leading-6 text-gray-900 hover:text-indigo-600 active:text-violet-700 ">About</a>
                     <button id="saveButton" class="text-sm font-semibold leading-6 text-gray-900 hover:text-indigo-600 active:bg-violet-700 ">Save</button>
                     <button id="load-btn" class="text-sm font-semibold leading-6 text-gray-900 hover:text-indigo-600 active:bg-violet-700 ">Load</button>
+                    <button id="advancedSearch" class="text-sm font-semibold leading-6 text-gray-900 hover:text-indigo-600 active:bg-violet-700 ">Advanced Search</button>
+
                     <input type="file" id="file-input" accept=".json" style="display: none;">             
                     <input type="text" id="nodeSearch" placeholder="Search" class="text-sm bg-transparent  font-semibold text-left" style="width: 55px;">
                 </div>
@@ -187,16 +285,14 @@
     <script>
 
 
-
         document.addEventListener('DOMContentLoaded', function () {
             let cy = null; // Define cy here
             // Load your JSON data (replace 'your-graph.json' with your actual file path)
             
-            
              // Debugging: Print files in the folder
-              fetch('./') // Change './' to the appropriate path if needed
-                  .then(response => response.text())
-                  .then(files => console.log('Files in the folder:', files));
+             // fetch('./') // Change './' to the appropriate path if needed
+               //   .then(response => response.text())
+               //   .then(files => console.log('Files in the folder:', files));
                       
             fetch('graph.json')
                 .then(response => response.json()) 
@@ -209,12 +305,9 @@
                         userPanningEnabled: true,
                         autoungrabify: false,
     
-                        minZoom: 0.1, // the furthest you can zoom out
+                        minZoom: 0.07, // the furthest you can zoom out
                         maxZoom: 3, // the furthest you can zoom 
-
-                        
-    
-    
+                            
                         style: [
                             {
                                 selector: 'node',
@@ -224,7 +317,7 @@
                                     'width': 'label', // Set the width based on the label content
                                     'height': 'label', // Set the height based on the label content
                                     'shape': 'roundrectangle',
-                                    'background-color': '#FDF6B2', // Set background color to white
+                                    'background-color': '#f5f5f5', // Set background color to white
                                     'border-width': 2,                                
                                     'text-wrap': 'wrap',
                                     'text-max-width': 220,
@@ -297,13 +390,7 @@
                            
                         ],
                         
-                                    
-              
-                 
-                                                
-                        
-                        
-                        
+               
                         layout: { 
                             name: 'preset',
                             positions: node => data.positions[node.data('id')]
@@ -313,12 +400,7 @@
                         }
                     });
                     
-                    
-                    
-                            
-                                    
-                             
-       
+      
                 
     
                     document.getElementById('saveButton').addEventListener('click', function () {
@@ -521,6 +603,9 @@ document.getElementById('remove-link-btn').addEventListener('click', function ()
                         }
                     });
                 });
+
+
+
 
                 document.getElementById('load-btn').addEventListener('click', function () {
                     document.getElementById('file-input').click();
@@ -881,11 +966,6 @@ document.getElementById('remove-link-btn').addEventListener('click', function ()
                           });
                         }
                       
-                
-                
-                
-
-                    
 
                 function makeTagsEditable(element) {
                     const nodeId = currentOpenNodeId;
@@ -943,6 +1023,78 @@ document.getElementById('remove-link-btn').addEventListener('click', function ()
                     element.innerHTML = '';
                     element.appendChild(input);
                     input.focus();
+                }
+
+                function createInflectionTable(inflection_wordsIAST, rowcolstitles) {
+
+                    if (!inflection_wordsIAST || !Array.isArray(inflection_wordsIAST)) {
+                        return '';
+                    }
+                    
+                      // Check if inflection_wordsIAST has length 0 or 1
+                    if (inflection_wordsIAST.length <= 1) {
+                        return "<b>indeclinable</b>";
+                    }
+
+                    // Define row and column titles
+                    let rowtitles = ["First", "Second", "Third"];
+                    let coltitles = ["Sg", "Du", "Pl"];
+
+                    // Check the number of words in inflection_wordsIAST
+                    if (inflection_wordsIAST.length === 24) {
+                        rowtitles = ["Nom", "Acc", "Inst", "Dat", "Abl", "Gen", "Loc", "Voc"];
+                    }
+
+                    // Split the list into a table
+                    let table = [];
+                    for (let i = 0; i < inflection_wordsIAST.length; i += coltitles.length) {
+                        table.push(inflection_wordsIAST.slice(i, i + coltitles.length));
+                    }
+
+                    // Move 'Voc' row and its values to the second row
+                    if (inflection_wordsIAST.length === 24) {
+                        let vocIndex = rowtitles.indexOf('Voc');
+                        let vocRow = table.splice(vocIndex, 1)[0];
+                        table.splice(1, 0, vocRow);
+                        rowtitles.splice(vocIndex, 1);
+                        rowtitles.splice(1, 0, 'Voc');
+                    }
+
+                    // Create a map for bold cells
+                    let boldMap = {};
+                    if (!Array.isArray(rowcolstitles)) {
+                        console.error('rowcolstitles is not an array:', rowcolstitles);
+                        return;
+                    }
+                    for (let rowcol of rowcolstitles) {
+                        let [row, col] = rowcol;
+                        if (!boldMap[row]) {
+                            boldMap[row] = {};
+                        }
+                        boldMap[row][col] = true;
+                    }
+
+                    // Create the HTML table
+                    let output = `<table border="1"><tr><th></th>`;
+                    for (let title of coltitles) {
+                        output += `<th>${title}</th>`;
+                    }
+                    output += `</tr>`;
+                    for (let i = 0; i < table.length; i++) {
+                        output += `<tr><td>${rowtitles[i]}</td>`;
+                        for (let j = 0; j < table[i].length; j++) {
+                            let cell = table[i][j];
+                            if (boldMap[rowtitles[i]] && boldMap[rowtitles[i]][coltitles[j]]) {
+                                output += `<td><b>${cell}</b></td>`;
+                            } else {
+                                output += `<td>${cell}</td>`;
+                            }
+                        }
+                        output += `</tr>`;
+                    }
+                    output += `</table>`;
+
+                    return output;
                 }
 
                 function makeReferencesEditable(element) {
@@ -1018,8 +1170,7 @@ document.getElementById('remove-link-btn').addEventListener('click', function ()
                 });
 
       
-
-                
+          
 
                 // Populate the dropdown with options
                 nodeAttributes.forEach(attribute => {
@@ -1094,14 +1245,522 @@ document.getElementById('remove-link-btn').addEventListener('click', function ()
 
                  // Store the currently selected node
                  let selectedNode = null;
-                 
-                 
-                 
+    
                 
-                 
-                 
-                 
-       
+            // Get the modal
+            var modal = document.getElementById("searchModal");
+
+            // Get the button that opens the modal
+            var btn = document.getElementById("advancedSearch");
+
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+
+            // When the user clicks the button, open the modal 
+            btn.onclick = function() {
+            modal.style.display = "block";
+            }
+
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() {
+            modal.style.display = "none";
+            }
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+            }
+            function kyotoToIAST(text) {
+                return text.replace(/A/g, 'ā').replace(/I/g, 'ī').replace(/U/g, 'ū')
+                        .replace(/R/g, 'ṛ').replace(/RR/g, 'ṝ').replace(/L/g, 'ḷ')
+                        .replace(/LL/g, 'ḹ').replace(/M/g, 'ṃ').replace(/N/g, 'ṇ')
+                        .replace(/H/g, 'ḥ').replace(/L/g, 'ḷ').replace(/\"n/g, 'ṅ')
+                        .replace(/J/g, 'ñ').replace(/z/g, 'ś').replace(/S/g, 'ṣ');
+            }
+
+            // Function to generate bigrams of words
+            function generateBigrams(text, input) {
+                var stopWords = ["the", "be", "to", "of", "and", "a", "in", "that", "have", "I", "it", "for", "not", "on", "with", "he", "as", "you", "do", "at"]; // Add more stop words as needed
+
+                var words = text.split(/[\s-]+/).filter(word => !stopWords.includes(word.toLowerCase()));
+
+                var bigrams = [];
+                for (var i = 0; i < words.length; i++) {
+                    if (words[i].includes(input)) {
+                        if (i > 0) { // If there is a preceding word
+                            bigrams.push(words[i - 1] + ' ' + words[i]);
+                        }
+                        if (i < words.length - 1) { // If there is a following word
+                            bigrams.push(words[i] + ' ' + words[i + 1]);
+                        }
+                    }
+                }
+                return bigrams;
+            }
+
+
+            // Get the select element for the advanced search
+            const advancedSearchSelector = $('#advancedSearchSelector');
+
+            // Populate the dropdown with options
+            nodeAttributes.forEach(attribute => {
+                const isSelected = ['id','Sanskrit_Text', 'Translation_Bryant', 'Vyasa_sanskrit'].includes(attribute);
+                const option = new Option(attribute, attribute, isSelected, isSelected);
+                advancedSearchSelector.append(option);
+            });
+
+
+            // Initialize Select2 for the advancedSearchSelector dropdown
+            advancedSearchSelector.select2({
+                placeholder: 'Select attributes',
+                allowClear: true,
+                closeOnSelect: false
+            }).on('select2:opening', function(e) {
+                // Stop the mousedown event from propagating to Cytoscape
+                e.stopPropagation();
+            }).on('change', function(e) {
+                    // Call updateAverageLength whenever the dropdown selection changes
+            });
+
+            function createVisualization(data, cy) {
+
+
+
+                  
+
+              }   
+
+
+
+
+            function advancedSearch(searchText) {
+                searchText = searchText.trim();
+                            
+                const selectedAttributes = Array.from(document.getElementById('advancedSearchSelector').selectedOptions).map(option => option.value);
+
+                // Split the search text into multiple queries
+                var searchQueries = searchText.split(/[,;]/).map(query => kyotoToIAST(query.trim()));
+
+                // Log the transliterated search text
+                console.log('Transliterated search text:', searchQueries);
+                var wordFrequency = {}; // Map to store word frequency
+
+
+                // Perform the search
+                var results = [];
+                cy.nodes().forEach(function(node) {
+                    for (var attr of selectedAttributes) {
+                        if (node.data(attr)) {
+                            var nodeData = node.data(attr).toString().toLowerCase();
+                            // Check if all of the search queries are included in the node data
+                            if (searchQueries.every(query => nodeData.includes(query))) {
+                                results.push(node);
+                                break;
+                            }
+                            // Split node data into words and update frequency map
+                            nodeData.split(' ').forEach(word => {
+                                word = word.replace(/[.,]$/, '').trim().toLowerCase(); // Remove final '.' and trim
+                                wordFrequency[word] = (wordFrequency[word] || 0) + 1;
+                            });
+
+                        }
+                    }
+                });
+
+
+
+                                
+                // Remove 'highlight' class from all nodes
+                cy.nodes().removeClass('highlighted');
+
+                // Display the results
+                var searchResults = document.getElementById('searchResults');
+                var nodeAttributes = document.getElementById('nodeAttributes');
+
+                searchResults.innerHTML = 'Found ' + results.length + ' results:<br>' + results.map(node => '<a href="#" class="node-link" data-id="' + node.id() + '">' + node.id() + '</a>').join(', ');
+
+                
+                // Add 'highlight' class to the matching nodes
+                results.forEach(node => node.addClass('highlighted'));
+
+
+             // Load your dictionary
+            var dictionary = {}; // Replace this with your actual dictionary
+            fetch('MWIastKey.json')
+                .then(response => response.json())
+                .then(data => dictionary = data);   
+
+                
+               // Add event listener to node-link elements
+                searchResults.addEventListener('click', function(event) {
+                    if (event.target.classList.contains('node-link')) {
+                        var nodeId = event.target.getAttribute('data-id');
+                        var node = cy.nodes().filter(node => node.id() === nodeId);
+                        var text = selectedAttributes.map(attr => {
+                            var attrValue = node.data(attr);
+                            if (typeof attrValue === 'string') {
+                                // Split and wrap the words
+                                var words = attrValue.split(' ');
+                                var wrappedText = words.map(word => `<span class="word">${word}</span>`).join(' ');
+
+                                // Replace searched words with highlighted version
+                                var regex = new RegExp(searchQueries, 'gi');
+                                wrappedText = wrappedText.replace(regex, '<span class="word" style="background-color: turquoise;">$&</span>');
+
+                                attrValue = wrappedText;
+                            }
+                            return attrValue;
+                        }).join(', ');
+
+                        nodeAttributes.innerHTML = text;
+
+                        var wordElements = document.querySelectorAll('.word');
+
+                        wordElements.forEach(wordElement => {
+                            wordElement.addEventListener('click', function(event) {
+                                event.preventDefault();
+
+                                // Show the custom context menu
+                                var contextMenu = document.getElementById('custom-context-menu');
+                                contextMenu.style.display = 'block';
+                                contextMenu.style.right = '10%';
+                                contextMenu.style.top = '50%';
+
+                                // Get the word
+                                var word = event.target.textContent;
+
+
+                                console.log('Sending request with word:', word);  // Print message when request is sent
+                                fetch('http://127.0.0.1:5000/process', {
+                                    method: 'POST',
+                                    headers: { 
+                                        'Content-Type': 'text/plain'
+                                    },
+                                    body: word
+                                })
+                                .then(response => {
+                                    console.log('Received response');  // Print message when response is received
+                                    return response.json();
+                                })
+
+
+                            // Then in your fetch call:
+                            .then(data => {
+                                //debugging
+                                console.log('Response data:', data);
+                                let output = '';
+                                data.forEach(entry => {
+
+                                    if (entry.length === 3) {
+                                            output += `<h1 class="text-xl" style="font-family:Garamond; font-weight:bold;">${entry[0]}</h1>`;
+                                            if (entry[0] !== entry[1]) {
+                                            output +=`<p class="font-style: italic;" style="font-family:Garamond;">${entry[5]}</p>`;
+                                            }                                                  // Dictionary
+                                            if (entry[2]) {
+                                                let vocabEntries = entry[2].join('<br>').replace(/<s>(.*?)<\/s>/g, '<span style="font-style:italic;">$1</span>');
+                                                output += `<p>Vocabulary entries: <br>${vocabEntries}</p>`;
+                                            } else {
+                                                output += `<p>Vocabulary entries: None</p>`;
+                                            }
+                                            output += '<hr>';  // Add a horizontal line for readability
+
+                                    } else {
+
+                                    
+                                    //title
+                                    output += `<h1 class="text-xl" style="font-family:Garamond; font-weight:bold;">${entry[0]}</h1>`;
+                                    //costituents, shows only if there are some
+                                    if (entry[0] !== entry[5]) {
+                                            output +=`<p class="font-style: italic;" style="font-family:Garamond;">${entry[5]}</p>`;
+                                        }                                        
+                                    //original word
+                                    if (entry[0] !== entry[4]) {
+                                        output += `<p><span style="font-family:Garamond;">from:</span> <span style="font-family:Garamond; font-style: italic;">${entry[4]}</span></p>`;                                        }
+                                    //word type (noun, verb, etc.)
+                                    output += `<p>${entry[1]}</p>`;
+                                    //inflection
+
+
+                                    if (entry[2]) {
+                                        entry[2].forEach((inflection, index) => {
+                                            let caseAbbr = inflection[0];
+                                            let numberAbbr = inflection[1];
+
+                                            let caseFull = caseAbbr.split(',').map(abbr => {
+                                                switch (abbr.trim()) {
+                                                    case 'Nom': return 'Nominative';
+                                                    case 'Acc': return 'Accusative';
+                                                    case 'Voc': return 'Vocative';
+                                                    case 'Ins': return 'Instrumental';
+                                                    case 'Dat': return 'Dative';
+                                                    case 'Abl': return 'Ablative';
+                                                    case 'Gen': return 'Genitive';
+                                                    case 'Loc': return 'Locative';
+                                                    default: return abbr;
+                                                }
+                                            }).join(', ');
+
+                                            let numberFull = numberAbbr.split(',').map(abbr => {
+                                                switch (abbr.trim()) {
+                                                    case 'Sg':  return 'Singular';
+                                                    case 'Du':  return 'Dual';
+                                                    case 'Pl':  return 'Plural';
+                                                    default: return abbr;
+                                                }
+                                            }).join(', ');
+
+                                            output += `<span style="font-family:Garamond; font-style: italic;">${caseFull}, ${numberFull}</span>`;
+                                            if (index < entry[2].length - 1) {
+                                                output += `<span> or </span>`;
+                                            }
+                                        });
+                                    }                                    
+                                    //inflection table
+                                    output += `<p>Inflection table:</p>`;
+                                    output += createInflectionTable(entry[3], entry[2]);
+                                    if (entry[6]) {
+                                            let vocabEntries = entry[6].join('<br>').replace(/<s>(.*?)<\/s>/g, function(match, p1) {
+                                                return `<span class="vocab-entry" style="font-style:italic; color: teal;" data-word="${p1}">${p1}</span>`;
+                                            });
+                                            output += `<p>Vocabulary entries: <br>${vocabEntries}</p>`;
+                                        } else {
+                                            output += `<p>Vocabulary entries: None</p>`;
+                                        }
+                                        output += '<hr>';  // Add a horizontal line for readability
+                                    }
+                                });
+                                document.getElementById('context_menu_text').innerHTML = output;
+                            })
+                            .catch((error) => {
+                                console.error('Error:', error);
+                            });
+
+                            document.addEventListener('click', function(e) {
+                                if (e.target.classList.contains('vocab-entry')) {
+                                    let word = e.target.dataset.word;
+                                    console.log('Word:', word);  // Log the word
+                                    fetch('/dict_entry', {
+                                        method: 'POST',
+                                        headers: {
+                                            'Content-Type': 'application/json'
+                                        },
+                                        body: JSON.stringify({ word: word })
+                                    })
+                                    .then(response => {
+                                        console.log('Response:', response);  // Log the response
+                                        return response.json();
+                                    })
+                                    .then(data => {
+                                    console.log('Data:', data);  // Log the data
+                                    if (Array.isArray(data)) {
+                                        // Handle the data here
+                                        let newEntry = document.createElement('p');
+                                        newEntry.innerHTML = data.join('<br>').replace(/<s>(.*?)<\/s>/g, '<span style="font-style:italic; color: teal;">$1</span>');
+                                        e.target.parentNode.appendChild(newEntry);
+                                    } else {
+                                        console.error('Error: Expected an array but received', data);
+                                    }
+                                })
+                                .catch(error => console.error('Error:', error));
+                                }
+                            });
+                            });
+                        });
+                    }
+                });
+
+                  // Prepare data for visualization
+                  var data = cy.nodes().map(node => {
+                        var matchCount = 0;
+                        var attrLength = 0;
+                        for (var attr of selectedAttributes) {
+                            if (node.data(attr)) {
+                                var attrValue = node.data(attr).toString();
+                                if (searchQueries.every(query => attrValue.includes(query))) {
+                                    matchCount++;
+                                }
+                                attrLength += attrValue.length;
+                            }
+                        }
+                        return {
+                            id: node.id(),
+                            match: matchCount,
+                            length: attrLength
+                        };
+                        });
+
+                        function updateAverageLength() {
+
+                                // Calculate average length of selected attributes text
+                                var totalLength = 0;
+                                var count = 0;
+                                cy.nodes().forEach(function(node) {
+                                    for (var attr of selectedAttributes) {
+                                        if (node.data(attr)) {
+                                            totalLength += node.data(attr).toString().length;
+                                            count++;
+                                        }
+                                    }
+                                });
+                                var averageLength = totalLength / count;
+                                // console.log('averageLength:', averageLength);
+
+                                return averageLength;
+
+                                }   
+
+
+
+                                // Calculate total text length
+                                var totalTextLength = 0;
+                                data.forEach(function(d) {
+                                totalTextLength += d.length;
+                                });
+
+                                var averageLength = totalTextLength / data.length;
+
+
+                                // Define color scale
+                                var colorScale = d3.scaleLinear()
+                                .domain([0, d3.max(data, d => d.match)])
+                                .range(["#D3D3D3", "#40E0D0" ]);
+
+                                // Remove existing SVG container
+                                d3.select("#graphicPlot svg").remove();
+
+                                // Create SVG container
+                                var svg = d3.select("#graphicPlot").append("svg")
+                                .attr("width", 1000)
+                                .attr("height", 100); // Increase height to accommodate more rows
+
+                                // Create tooltip
+                                var tooltip = d3.select("body").append("div")
+                                .attr("class", "tooltip")
+                                .style("opacity", 0)
+                                .style("z-index", "10"); 
+
+                                // Define box size and number of boxes per row
+                                // Define box size
+                                var boxSize = 15;
+                                var boxAmplitude = 15;
+
+
+                                // Calculate cumulative widths and row numbers
+                                // Calculate cumulative widths and row numbers
+                                var cumulativeWidths = [];
+                                var rowNumbers = [];
+                                var rowMaxBoxes = [51, 53, 54]; // Maximum number of boxes in each row
+                                var currentRow = 0;
+                                var currentWidth = 0;
+                                var currentBox = 0;
+
+                                for (var i = 0; i < data.length; i++) {
+                                var boxWidth = data[i].length / averageLength * boxAmplitude;
+                                if (currentBox >= (rowMaxBoxes[currentRow] || 55)) {
+                                    // Start a new row
+                                    currentRow++;
+                                    currentWidth = 0;
+                                    currentBox = 0;
+                                }
+                                cumulativeWidths[i] = currentWidth;
+                                rowNumbers[i] = currentRow;
+                                currentWidth += boxWidth;
+                                currentBox++;
+                                }
+
+                                svg.selectAll("rect")
+                                .data(data)
+                                .enter()
+                                .append("rect")
+                                .attr("x", (d, i) => {
+                                    return cumulativeWidths[i];
+                                })
+                                .attr("y", (d, i) => {
+                                    return rowNumbers[i] * boxSize;
+                                })
+
+
+                                .attr("width", d => (d.length / averageLength) * boxAmplitude) // Set width based on text length
+                                .attr("height", boxSize) // Set height to boxSizesize based on text length
+                                .style("fill", d => colorScale(d.match)) // Use color scale based on number of matches
+                                .style("stroke", "black")
+                                .style("stroke-width", 1)
+                                .on("mouseover", function(d) {
+                                    tooltip.transition()
+                                        .duration(200)
+                                        .style("opacity", .9);
+                                    tooltip.html(d.id)
+                                        .style("left", (d3.event.pageX) + "px")
+                                        .style("top", (d3.event.pageY - 28) + "px");
+                                })
+                                .on("mouseout", function(d) {
+                                    tooltip.transition()
+                                        .duration(500)
+                                        .style("opacity", 0);
+                                })  
+                                .on("click", function(d) {
+                                    var node = cy.nodes().filter(node => node.id() === d.id);
+                                    var text = selectedAttributes.map(attr => {
+                                    var attrValue = node.data(attr);
+                                    if (typeof attrValue === 'string') {
+                                        // Replace searched words with highlighted version
+                                        searchQueries.forEach(query => {
+                                        var regex = new RegExp(query, 'gi');
+                                        attrValue = attrValue.replace(regex, '<span style="color: turquoise;">$&</span>');
+                                    });
+                                    }
+                                    return attrValue;
+                                }).join(', ');
+                                nodeAttributes.innerHTML = text;
+
+                                // Wrap each word in a span element
+                                var words = text.split(' ');
+                                var wrappedText = words.map(word => `<span class="word">${word}</span>`).join(' ');
+                                nodeAttributes.innerHTML = wrappedText;
+
+                                var wordElements = document.querySelectorAll('.word');
+
+
+                                wordElements.forEach(wordElement => {
+                                    wordElement.addEventListener('dblclickk', function(event) {
+                                        event.preventDefault();
+
+                                        // Show the custom context menu
+                                        var contextMenu = document.getElementById('custom-context-menu');
+                                        contextMenu.style.display = 'block';
+                                        contextMenu.style.left = `${event.pageX}px`;
+                                        contextMenu.style.top = `${event.pageY}px`;
+
+                                        // Set the word as a data attribute of the "Check in dictionary" link
+                                        var checkInDictLink = document.getElementById('check-in-dict');
+                                        checkInDictLink.setAttribute('data-word', event.target.textContent);
+
+                                        return false;
+                                    });
+                                });
+                                });                        
+
+                                                                
+            }
+
+            // Event listener for the Enter key on the input field
+            document.getElementById('advancedSearchInput').addEventListener('keypress', function (e) {
+                // Check if the Enter key was pressed
+                if (e.key === 'Enter') {
+
+                    var inputElement = document.getElementById('advancedSearchInput');
+                    var searchText = inputElement.value;
+                    advancedSearch(searchText);
+                }
+            });
+
+
+
+
+
+                
                  
                  // Assuming you have an input element with the ID 'color-picker-specificnode'
                   const colorPickerSpecificNode = document.getElementById('color-picker-specificnode');
@@ -1234,12 +1893,6 @@ document.getElementById('remove-link-btn').addEventListener('click', function ()
                     }
                 }
                 
-                
-
-                
-                
-                
-                
 
 
                 cy.on('tap', 'node', function (event) {
@@ -1249,7 +1902,6 @@ document.getElementById('remove-link-btn').addEventListener('click', function ()
             })
             .catch(error => console.error('Error:', error));
         });
-
 
 
         document.getElementById('sidebarToggle').addEventListener('click', function() {
@@ -1370,14 +2022,164 @@ document.getElementById('remove-link-btn').addEventListener('click', function ()
                 target.setAttribute('data-height', height);
               },
             });
-          
 
-                
-        
- 
-        
-    
-    
+
+            interact('.modal-content')
+                .draggable({
+                    listeners: {
+                    move(event) {
+                        var target = event.target;
+                        var x = (parseFloat(target.getAttribute('data-x')) || 0) + event.dx;
+                        var y = (parseFloat(target.getAttribute('data-y')) || 0) + event.dy;
+
+                        target.style.transform = 'translate(' + x + 'px, ' + y + 'px)';
+
+                        target.setAttribute('data-x', x);
+                        target.setAttribute('data-y', y);
+                    }
+                    },
+                    inertia: true,
+                    modifiers: [
+                    interact.modifiers.restrictRect({
+                        restriction: 'parent',
+                        endOnly: true
+                    })
+                    ]
+                })
+                .resizable({
+                    // resize from all edges and corners
+                    edges: { left: true, right: true, bottom: true, top: true },
+
+                    listeners: {
+                    move(event) {
+                        var target = event.target;
+                        var x = (parseFloat(target.getAttribute('data-x')) || 0);
+                        var y = (parseFloat(target.getAttribute('data-y')) || 0);
+
+                        // update the element's style
+                        target.style.width = event.rect.width + 'px';
+                        target.style.height = event.rect.height + 'px';
+
+                        // translate when resizing from top or left edges
+                        x += event.deltaRect.left;
+                        y += event.deltaRect.top;
+
+                        target.style.transform = 'translate(' + x + 'px,' + y + 'px)';
+
+                        target.setAttribute('data-x', x);
+                        target.setAttribute('data-y', y);
+                    }
+                    },
+                    modifiers: [
+                    // keep the edges inside the parent
+                    interact.modifiers.restrictEdges({
+                        outer: 'parent'
+                    }),
+
+                    // minimum size
+                    interact.modifiers.restrictSize({
+                        min: { width: 100, height: 50 }
+                    })
+                    ],
+
+                    inertia: true
+                });
+
+                interact('.context_menu')
+                .draggable({
+                    listeners: {
+                    move(event) {
+                        var target = event.target;
+                        var x = (parseFloat(target.getAttribute('data-x')) || 0) + event.dx;
+                        var y = (parseFloat(target.getAttribute('data-y')) || 0) + event.dy;
+
+                        target.style.transform = 'translate(' + x + 'px, ' + y + 'px)';
+
+                        target.setAttribute('data-x', x);
+                        target.setAttribute('data-y', y);
+                    }
+                    },
+                    inertia: true,
+                    modifiers: [
+                    interact.modifiers.restrictRect({
+                        restriction: 'parent',
+                        endOnly: true
+                    })
+                    ]
+                })
+                .resizable({
+                    // resize from all edges and corners
+                    edges: { left: true, right: true, bottom: true, top: true },
+
+                    listeners: {
+                    move(event) {
+                        var target = event.target;
+                        var x = (parseFloat(target.getAttribute('data-x')) || 0);
+                        var y = (parseFloat(target.getAttribute('data-y')) || 0);
+
+                        // update the element's style
+                        target.style.width = event.rect.width + 'px';
+                        target.style.height = event.rect.height + 'px';
+
+                        // translate when resizing from top or left edges
+                        x += event.deltaRect.left;
+                        y += event.deltaRect.top;
+
+                        target.style.transform = 'translate(' + x + 'px,' + y + 'px)';
+
+                        target.setAttribute('data-x', x);
+                        target.setAttribute('data-y', y);
+                    }
+                    },
+                    modifiers: [
+                    // keep the edges inside the parent
+                    interact.modifiers.restrictEdges({
+                        outer: 'parent'
+                    }),
+
+                    // minimum size
+                    interact.modifiers.restrictSize({
+                        min: { width: 100, height: 50 }
+                    })
+                    ],
+
+                    inertia: true
+                });
+
+                // Initialize Editor.js
+                var editor = new EditorJS({
+                    holder: 'editorjs'
+                });
+
+
+
+        // Fetch the CSV data
+        fetch('stopwords.csv')
+            .then(response => response.text())
+            .then(text => new TextDecoder("utf-8").decode(new TextEncoder().encode(text)))
+            .then(data => {
+                // Parse the CSV data
+                var parsedData = Papa.parse(data, {header: true}).data;
+
+                // Convert the array of objects to an array of stopwords
+                var stopwords = parsedData.map(function(d) { return d.stopword; });
+
+                // Print the stopwords
+                //console.log(stopwords);
+            })
+            .catch(error => console.error('Error:', error));
+                                
+
+                        d3.csv("stopwords.csv").then(function(data) {
+            // Convert the array of objects to an array of stopwords
+            var stopwordsd3 = data.map(function(d) { return d.stopword; });
+
+            // Print the stopwords
+            //console.log(stopwordsd3);
+        }).catch(function(error){
+            console.log("Error:", error);
+        });
+            
     </script>
 </body>
 </html> 
